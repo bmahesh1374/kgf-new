@@ -1,0 +1,246 @@
+
+.nav-link {
+  margin: 0;
+}
+
+.btn-secondary {
+  margin: 0;
+}
+
+.kgf-navbar {
+  background: linear-gradient(to right, #292828, #292828);
+  padding-top: 14px;
+  padding-bottom: 4px; 
+  position: relative;
+}
+
+.dropdown-toggle:empty::after {
+    margin-left: 8px   !important;
+}
+
+.kgf-title {
+  background: #9c6b1f;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 6px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: -65px; 
+  text-align: center;
+}
+
+.nav-header {
+  display: flex;
+  align-items: flex-end; 
+  width: 100%;
+}
+
+
+.navbar-logo {
+  height: auto;
+  
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  border: 1px solid #ffffff!important;
+  padding: 6px 10px;
+  border-radius: 6px;
+   align-self: center;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+.navbar-nav .nav-link {
+  color: #e6e6e6 !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #d4a84f !important;
+}
+
+.membership-btn,
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #9c6b1f;
+  color: #d4a84f;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+
+.membership-btn:hover,
+.btn-secondary:hover {
+  background: #9c6b1f;
+  color: #ffffff;
+}
+
+.contact-btn {
+  background: none;
+  border: none;
+  color: #e6e6e6;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-btn:hover {
+  color: #d4a84f;
+}
+
+
+@media (max-width: 1199px) {
+  .nav-header {
+    position: relative;
+    z-index: 10;
+  }
+ 
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #292828;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 22px;
+  }
+
+  .membership-btn,
+  .btn-secondary {
+    margin-top: 12px;
+  }
+
+  .contact-btn {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+
+}
+
+@media(max-width:768px){
+  .kgf-title {
+    font-size: 18px;
+    padding: 6px 20px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.donate-btn {
+  background: #f0b64d;
+  border: none;
+  color: #000;
+  padding: 7px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.membership-btn{
+  background: transparent;
+  border: 1px solid #9c6b1f;
+  color: #d4a84f;
+  border-radius: 8px;
+  padding: 6px 14px;
+}
+.language-btn {
+  background: transparent;
+  border: none;
+  color: #e6e6e6;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #292828;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 22px;
+  }
+
+  .membership-btn,
+  .btn-secondary {
+    margin-top: 12px;
+  }
+
+  .contact-btn {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+}
+
+@media (min-width: 819px) {
+  .kgf-title {
+    margin-left: 60px;
+  }
+}

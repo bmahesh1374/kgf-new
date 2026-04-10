@@ -1,0 +1,422 @@
+
+.knowledge-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.knowledge-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.knowledge-video {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.knowledge-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.knowledge-description {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  line-height: 2.2;
+}
+
+
+.knowledge-event-card {
+  background: #f3d8a6;
+  display: flex;
+  padding: 15px;
+  border-radius: 12px;
+  width: 48%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* .event-card {
+  background: #f3d8a6;
+  display: flex;
+  padding: 15px;
+  border-radius: 12px;
+  width: 48%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+.globalimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.globalimg img {
+  width: 100%;
+  max-width: 500px;  
+  height: auto;
+  border: 6px solid #EDC473;
+  object-fit: contain;
+  border-radius: 15px;
+}
+  @media (max-width: 768px) {
+  .globalimg img {
+    max-width: 300px;  
+  }
+}
+
+@media (min-width:992px){
+  .globalimg img {
+    margin-bottom: 40px;
+  }
+}
+
+.knowledge-event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.knowledge-event-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.knowledge-event-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowledge-event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 340px;
+  min-width: 400px;
+}
+
+
+.knowledge-event-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.knowledge-event-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+.knowledge-register-btn {
+  width: fit-content;
+  padding: 10px 22px;
+  background-color: #029f0d;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.knowledge-register-btn:hover {
+  background-color: #037d0b;
+  transform: translateY(-2px);
+}
+
+
+.knowledge-title{
+     display: inline-block;
+    border-bottom: 3px solid #333;
+}
+
+@media (max-width: 992px) {
+  .knowledge-video {
+    max-height: 340px;
+  }
+
+  .knowledge-event-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .knowledge-event-content {
+    padding: 18px;
+  }
+
+  .knowledge-event-image-wrapper {
+    width: 100%;
+    height: 240px;
+  }
+
+  .knowledge-event-image {
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+     max-height: 360px;
+  min-width: 300px;
+  }
+
+  .knowledge-register-btn {
+    margin: 12px auto 0;
+  }
+
+  .knowledge-title,
+  .knowledge-description {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .knowledge-video {
+    max-height: 260px;
+  }
+
+  .knowledge-event-image-wrapper {
+    height: 200px;
+  }
+
+  .knowledge-register-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .knowledge-title {
+    font-size: 24px;
+  }
+
+  .knowledge-description {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .knowledge-wrapper {
+    padding: 40px 0;
+  }
+
+  .knowledge-video {
+    max-height: 200px;
+  }
+
+  .knowledge-title {
+    font-size: 20px;
+  }
+
+  .knowledge-description {
+    font-size: 15px;
+  }
+
+  .knowledge-event-card {
+    margin: 0 auto;
+  }
+
+  .knowledge-register-btn {
+    width: 90%;
+    font-size: 13px;
+    padding: 9px 14px;
+  }
+}
+
+
+.support-section {
+  background: #f4f4f4;
+  padding: 50px 20px;
+}
+
+
+.support-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+.support-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+
+.support-title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #333;
+  display: block;
+  margin: 10px auto 0;
+}
+
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px; 
+
+}
+
+@media(min-width:992px){
+  #rowgap{
+  margin-inline: 120px;
+  max-width: 430px;
+  width: 100%;
+
+  
+}
+}
+.support-card {
+  background: #f8f8f8;
+  border: 1px solid #d4af37;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+
+.support-card h5 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+
+.support-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .arrow {
+    font-size: 15px;
+  }
+}
+
+
+
+.donor-section {
+  background: linear-gradient(to bottom, #dcdcdc, #e8dfd0);
+  padding: 60px 0;
+}
+
+.donor-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.donor-title {
+  font-weight: 600;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.donor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.donor-card {
+  background: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #aaa;
+  width: 100%;
+  max-width: 400px;
+}
+
+.donor-card h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.donor-card img {
+  width: 100%;
+  height: auto;
+}
+
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.page-btn {
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background: #ddd;
+  font-weight: bold;
+}
+
+.page-btn:hover {
+  background: #ccc;
+}
+
+
+
+.donor-slider {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #aaa;
+  font-size: 22px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.arrow:hover {
+  background: #ddd;
+}
+
+.arrow.left {
+  left:15px;   
+}
+
+.arrow.right {
+  right: 15px;  
+}

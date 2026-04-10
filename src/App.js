@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Services from './components/Services/Services';
+import NavbarSection from './components/Landing/NavbarSection';
+import LandingPage from './components/Landing/Landingpage';
+import Routing from './components/Routings/Routing';
+import ScrollToHash from './components/Landing/ScrollToHash';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavbarSection />
+      
+       <Routing/>
+      <Routes>
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="/services" element={<Services />} /> 
+      </Routes>
+      <ScrollToHash />
     </div>
   );
 }
