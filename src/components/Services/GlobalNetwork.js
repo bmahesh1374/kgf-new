@@ -5,7 +5,7 @@ import { SlCalender } from "react-icons/sl";
 import { FaClock } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 
-import Globalnetwork from "../../assets/globalnetwork.png";
+import globalImg from "../../assets/global-img.png";
 import event1Image from "../../assets/Events1.png";
 import event2Image from "../../assets/Events3.png";
 
@@ -39,11 +39,14 @@ const GlobalNetwork = () => {
   return (
     <>
       <section className="knowledge-wrapper" id="global">
+      <div className="services-name">
+        <h3>Services</h3>
+      </div>
         <div className="container knowledge-section">
           <div className="row align-items-center g-4">
             <div className="col-lg-6 col-12 text-center mb-4 mb-lg-0">
             <div className="globalimg">
-              <img src={Globalnetwork} className="img-fluid"/>
+              <img src={globalImg} alt= "img" className="img-fluid"/>
             </div>  
             </div>
             <div className="col-lg-6 col-12 text-center text-lg-start">
