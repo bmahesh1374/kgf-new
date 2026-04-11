@@ -5,6 +5,9 @@
   padding: 60px 0;
   font-family: "Poppins", sans-serif;
 }
+.services-name {
+  padding-bottom: 20px;
+}
 
 .knowledge-section {
   max-width: 1300px;
