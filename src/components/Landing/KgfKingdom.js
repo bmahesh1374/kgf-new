@@ -23,7 +23,7 @@
       btnColor: "danger",
     },
     {
-      name: "Gujarat",
+      name: "Sri Lanka",
       members: "more than 20",
       icon: SrilankaImg,
       btnColor: "danger",
@@ -42,7 +42,7 @@
     },
   
     {
-      name: "Maharashtra",
+      name: "Worldwide",
       members: "more than 10",
       icon: WorldwideImg,
       btnColor: "danger",
