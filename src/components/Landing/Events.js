@@ -21,7 +21,7 @@ function Events() {
         </div>
 
         <div className="events-row">
-          <div className="event-card">
+          <div className="event-card-bg">
             <div>
               <img src={img1} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
@@ -47,7 +47,7 @@ function Events() {
             </div>
           </div>
 
-          <div className="event-card">
+          <div className="event-card-bg">
             <div>
               <img src={img2} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
@@ -79,7 +79,7 @@ function Events() {
         </div>
 
         <div className="events-row">
-          <div className="event-card">
+          <div className="event-card-bg">
             <div>
               <img src={img3} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
@@ -102,7 +102,7 @@ function Events() {
             </div>
           </div>
 
-          <div className="event-card">
+          <div className="event-card-bg">
             <div>
               <img src={img4} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>

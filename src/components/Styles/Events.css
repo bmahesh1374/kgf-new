@@ -70,6 +70,17 @@
   border: 2px solid #edc473;
 }
 
+.event-card-bg {
+  background-color: #FFFFFF; 
+  display: flex;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #f1b15c;
+  width: 48%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #edc473;
+}
+
 .event-card img {
   width: 148px;
   height: 145px;
