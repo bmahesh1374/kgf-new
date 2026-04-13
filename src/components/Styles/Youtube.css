@@ -1,171 +1,156 @@
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
 .youtube-section {
   width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: #f9f9f9;
-  display: flex;
-  position: relative;
-  top: -30px;
-  justify-content: center;
-  align-items: center;
-  max-height: 600px;
+ /* height: 100vh !important; */
+ padding: 30px 80px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-
-
-.video-container {
+ 
+.youtube-video-wrapper {
   position: relative;
-  width: 90%;
-  max-width: 900px;
-  /* aspect-ratio: 16 / 9; */
-  border-radius: 12px;
-  overflow: hidden;
+  width: 100%;
+ 
+}
+ 
+ 
+.youtube-thumbnail {
+  position: relative;
+  width: 100%;
   cursor: pointer;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  background: #000;
+  line-height: 0;
 }
-
-
-.thumbnail {
-  position: relative;
+ 
+.thumb-img {
   width: 100%;
-  height: 100%;
-}
-
-.thumbnail-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  transition: background 0.3s ease;
-}
-
-.video-container:hover .overlay {
-  background: rgba(0, 0, 0, 0.55);
-}
-
-.youtube-icon {
-  width: 70px;
-  height: 70px;
+  height: auto;          
+  display: block;
+  object-fit: unset;
   transition: transform 0.3s ease;
-  color: white;
 }
-
-.overlay:hover .youtube-icon {
-  transform: scale(1.1);
+ 
+.youtube-thumbnail:hover .thumb-img {
+  transform: scale(1.03);
 }
-
-.overlay-text {
-  margin-top: 12px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-
-.video-wrapper {
-  position: relative;
-  width: 100%;  
-  height: 100%;
-}
-
-.video-wrapper iframe {
+ 
+ 
+.play-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 56px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.92;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+}
+ 
+.play-btn svg {
   width: 100%;
   height: 100%;
+}
+ 
+.youtube-thumbnail:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  opacity: 1;
+}
+ 
+ 
+.youtube-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border: none;
-  border-radius: 12px;
+  display: block;
 }
-
-
-@media (max-width: 992px) {
-  .youtube-section {
-    
-    padding: 1rem;
-  }
-
-  
-
-  .youtube-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .overlay-text {
-    font-size: 1rem;
-  }
+ 
+/* ================= LARGE LAPTOP ================= */
+ 
+@media (max-width:1200px){
+ 
+.youtube-section{
+background-size:cover;
 }
-
-
-@media (max-width: 768px) {
-  
-
-  .youtube-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .overlay-text {
-    font-size: 0.95rem;
-  }
+ 
+.play-btn{
+width:70px;
+height:50px;
 }
-
-
-@media (max-width: 576px) {
-  .youtube-section {
-    max-height: none;  
-    height: auto;      
-    padding: 1rem 0.8rem;
-    align-items: flex-start;
-  }
-
-  .video-container {
-    width: 100%;
-    max-width: 100%;
-    height: auto;        
-  }
-
-  .youtube-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .overlay-text {
-    font-size: 0.9rem;
-  }
+ 
 }
-
-
-@media (max-width: 400px) {
-  
-
-  .youtube-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .overlay-text {
-    font-size: 0.85rem;
-  }
+ 
+ 
+/* ================= SMALL LAPTOP ================= */
+ 
+@media (max-width:992px){
+ 
+.youtube-section{
+background-size:cover;
+}
+ 
+.play-btn{
+width:65px;
+height:46px;
+}
+ 
+}
+ 
+ 
+/* ================= TABLET ================= */
+ 
+@media (max-width:768px){
+ 
+.youtube-section{
+background-size:cover;
+padding:20px 10px;
+}
+ 
+.play-btn{
+width:55px;
+height:40px;
+}
+ 
+.thumb-img{
+width:100%;
+height:auto;
+}
+ 
+}
+ 
+ 
+/* ================= MOBILE ================= */
+ 
+@media (max-width:576px){
+ 
+.youtube-section{
+padding:15px 8px;
+background-size:cover;
+}
+ 
+.play-btn{
+width:48px;
+height:34px;
+}
+ 
+.youtube-video-wrapper{
+width:100%;
+}
+ 
+}
+ 
+ 
+/* ================= SMALL MOBILE ================= */
+ 
+@media (max-width:400px){
+ 
+.play-btn{
+width:40px;
+height:28px;
+}
+ 
+.youtube-section{
+padding:10px 5px;
+}
+ 
 }
