@@ -5,12 +5,12 @@ function RegistrationForm() {
   return (
     <>
       <section className="kgf-reg-container">
+        <div className="kgf-reg-remove-btn">
+          <button>X</button>
+        </div>
         <div className="kgf-reg-heading">
           <h4>REGISTRATION FORM</h4>
           <p>KGF Global Event</p>
-          <div className="kgf-reg-remove-btn">
-          <button>X</button>
-        </div>
         </div>
         
         <form>
