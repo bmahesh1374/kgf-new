@@ -1,4 +1,3 @@
-
 .nav-link {
   margin: 0;
 }
@@ -7,47 +6,72 @@
   margin: 0;
 }
 
+
+
+.admin-member {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .admin-member {
+    display: none;
+  }
+}
+
+.admin-member button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 .kgf-navbar {
-  background: linear-gradient(to right, #292828, #292828);
+  background: #1B1B1A;
   padding-top: 14px;
-  padding-bottom: 4px; 
+  padding-bottom: 4px;
   position: relative;
 }
 
 .dropdown-toggle:empty::after {
-    margin-left: 8px   !important;
+  margin-left: 8px !important;
 }
 
 .kgf-title {
-  background: #9c6b1f;
+  background: linear-gradient(to right, #c1821a, #000000);
   font-size: 30px;
   color: #ffffff;
   padding: 6px 28px;
   border-radius: 25px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: -65px; 
+  margin-bottom: -65px;
   text-align: center;
 }
 
 .nav-header {
   display: flex;
-  align-items: flex-end; 
+  align-items: flex-end;
   width: 100%;
 }
 
 
 .navbar-logo {
   height: auto;
-  
+
 }
 
 .navbar-toggler {
   margin-left: auto;
-  border: 1px solid #ffffff!important;
+  border: 1px solid #ffffff !important;
   padding: 6px 10px;
   border-radius: 6px;
-   align-self: center;
+  align-self: center;
 }
 
 
@@ -108,7 +132,7 @@
     position: relative;
     z-index: 10;
   }
- 
+
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -124,7 +148,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px; 
+    gap: 5px;
   }
 
   .navbar-nav .nav-item {
@@ -150,7 +174,7 @@
 
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
   .kgf-title {
     font-size: 18px;
     padding: 6px 20px;
@@ -160,7 +184,7 @@
 
 
 .donate-btn {
-  background: #f0b64d;
+  background: linear-gradient(#e6b761, #d69317);
   border: none;
   color: #000;
   padding: 7px 20px;
@@ -169,13 +193,14 @@
   cursor: pointer;
 }
 
-.membership-btn{
+.membership-btn {
   background: transparent;
   border: 1px solid #9c6b1f;
   color: #d4a84f;
   border-radius: 8px;
   padding: 6px 14px;
 }
+
 .language-btn {
   background: transparent;
   border: none;
@@ -191,7 +216,7 @@
 }
 
 @media (min-width: 992px) {
-  .navbar .dropdown:hover > .dropdown-menu {
+  .navbar .dropdown:hover>.dropdown-menu {
     display: block;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Events.css";
-import { SlCalender } from "react-icons/sl";
-import { FaClock } from "react-icons/fa6";
+import { SlCalender} from "react-icons/sl";
+import { FaClock,FaArrowRight } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 
 import img1 from "../../assets/Events1.png";
@@ -17,7 +17,7 @@ function Events() {
 
         <div className="events-header">
           <h4>Up Coming Events :</h4>
-          <button className="view-btn">View All</button>
+          <button className="view-btn">View All <FaArrowRight/></button>
         </div>
 
         <div className="events-row">
@@ -75,7 +75,7 @@ function Events() {
         {/* Completed Events */}
         <div className="events-header">
           <h4>Past/Completed Events :</h4>
-          <button className="view-btn">View All</button>
+          <button className="view-btn">View All <FaArrowRight/></button>
         </div>
 
         <div className="events-row">

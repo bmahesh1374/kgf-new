@@ -7,7 +7,32 @@
   align-items: center;
   color: #ffffff;
 }
+.getintouch-img{
+   position: fixed;
+   right: 0px;
+   bottom: 20px;
+   z-index: 2;
+}
 
+.getintouch-img img{
+   height: 126px;
+    width: 126px;
+   display: block;
+}
+
+@media(max-width:768px) {
+  .getintouch-img {
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  .getintouch-img img {
+    height: 80px;
+    width: 80px;
+    display: block;
+  }
+} 
 
 .overlay {
   position: absolute;
@@ -41,7 +66,7 @@
 
 /* Button */
 .hero-btn {
-  background: #f0b64d;
+  background:linear-gradient(#e6b761, #d69317);
   border: none;
   color: #000;
   padding: 10px 22px;

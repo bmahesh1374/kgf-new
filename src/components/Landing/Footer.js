@@ -1,13 +1,11 @@
 import React from "react";
 import Footerphone from "../../assets/footerphone.png";
-import { IoCallSharp } from "react-icons/io5";
+import { IoCallSharp, IoLocationSharp } from "react-icons/io5";
 import { MdMarkEmailRead } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
 import Logo from "../../assets/Logo.png";
 
 import playstore from "../../assets/playstore.png";
 import appstore from "../../assets/applestore.png";
-import "../Styles/Footer.css";
 
 import pic1 from "../../assets/linkedin.png";
 import pic2 from "../../assets/facebook.png";
@@ -15,73 +13,105 @@ import pic3 from "../../assets/twitter.png";
 import pic4 from "../../assets/instagram.png";
 import pic5 from "../../assets/youtube.png";
 
-function Footer(){
-  return(
-    <>
-    <div className="footer-section" id="contact">
+import "../Styles/Footer.css";
+
+function Footer() {
+  return (
+    <section className="footer-section" id="contact">
       <div className="container">
-        
-        <div className="row align-items-center">
-           <div className="col-lg-4 text-center mb-4">
+        <div className="row footer-row">
+
+      
+          <div className="col-lg-3 text-center mb-4">
             <div className="phone-frame">
-              <img
-                src={Footerphone}
-                className="footer-phone"
-                alt="Footer Phone"
-              />
+              <img src={Footerphone} className="footer-phone" alt="phone" />
             </div>
           </div>
 
-          <div className="col-lg-4 text-center text-md-start mb-4">
-            <img src={Logo} className="footer-logo" alt="Logo" />
-            
-            <h3 className="footer-title">Download KGF App</h3>
-            <p className="footer-sub">
-              Now available on Playstore & App store
-            </p>
+     
+          <div className="col-lg-5 mb-4">
 
-            <div className="store-buttons mt-5">
-              <img src={playstore} className="footer-store" alt="Play Store" />
-              <img src={appstore} className="footer-store" alt="App Store" />
+            <div className="footer-links-wrapper">
+
+              <div className="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Family Tree</li>
+                  <li>Gallery</li>
+                  <li>Events</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+
+              <div className="footer-links">
+                <h5>Services</h5>
+                <ul>
+                  <li>Global Networking</li>
+                  <li>Knowledge Sharing</li>
+                  <li>KGF Skills & Training</li>
+                  <li>Blood Donors</li>
+                </ul>
+              </div>
+
+              <div className="footer-links">
+                <h5>Support</h5>
+                <ul>
+                  <li>Medical</li>
+                  <li>Social Service</li>
+                  <li>Counselling</li>
+                  <li>Legal Advisers</li>
+                  <li>NRI Integration</li>
+                  <li>Ceremonies & Rituals</li>
+                </ul>
+              </div>
+
             </div>
+
+            <div className="download-section">
+              <h3>Download KGF APP</h3>
+
+              <div className="store-buttons">
+                <img src={playstore} alt="playstore" />
+                <img src={appstore} alt="appstore" />
+                <img src={Logo} className="footer-logo" alt="logo" />
+              </div>
+            </div>
+
           </div>
 
-        
-  
-          <div className="col-lg-4 text-center text-md-start contact-column">
-            <h4 className="contact-title">CONTACT US</h4>
+         
+          <div className="col-lg-4 contact-column">
+            <h2 className="contact-title">CONTACT US</h2>
 
-            <p className="contact-item">
-              <IoCallSharp className="me-2" />
-              +91 90555 17555
+            <p><IoCallSharp /> +91 9055517555</p>
+
+            <p><MdMarkEmailRead /> info@kammaglobal.com</p>
+
+            <p>
+              <IoLocationSharp /> Jetti Mansion, Plot No 831/A <br />
+              Road No 41, Jubilee Hills <br />
+              Hyderabad 500033, Telangana, India
             </p>
 
-            <p className="contact-item">
-              <MdMarkEmailRead className="me-2" />
-              info@kammaglobal.com
-            </p>
+            <div className="follow-us">
+              <h5>Follow Us</h5>
 
-            <p className="contact-item">
-              <IoLocationSharp className="me-2" />
-              Jetti Mansion, Plot No 831/A, Road No 41,
-              Jubilee Hills, Hyderabad 500033,
-              Telangana, India
-            </p>
-
-            <div className="social-icons mt-5">
-              <img src={pic1} alt="LinkedIn" />
-              <img src={pic2} alt="Facebook" />
-              <img src={pic3} alt="Twitter" />
-              <img src={pic4} alt="Instagram" />
-              <img src={pic5} alt="YouTube" />
+              <div className="social-icons">
+                <img src={pic1} alt="" />
+                <img src={pic2} alt="" />
+                <img src={pic3} alt="" />
+                <img src={pic4} alt="" />
+                <img src={pic5} alt="" />
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-    </div>
-    
-    </>
-  )
+    </section>
+  );
 }
+
 export default Footer;
