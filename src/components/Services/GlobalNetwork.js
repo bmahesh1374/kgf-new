@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Services.css";
 import { SlCalender } from "react-icons/sl";
@@ -10,28 +10,28 @@ import event1Image from "../../assets/Events1.png";
 import event2Image from "../../assets/Events3.png";
 
 const GlobalNetwork = () => {
-  const events = [
-    {
-      image: event1Image,
-      title: "HR EVENT",
-      organizer: "K. Siva Krishna",
-      speaker: "K. Rajasekhar",
-      eventmode: "In Person",
-      schedule: "Aug 20 - Aug 23",
-      time: "10AM - 4PM",
-      location: "Ameerpet",
-    },
-    {
-      image: event2Image,
-      title: "HR EVENT",
-      organizer: "K. Siva Krishna",
-      speaker: "K. Rajasekhar",
-      eventmode: "Online",
-      schedule: "Jun 20 - Jun 23",
-      time: "10AM - 4PM",
-      location: "Ameerpet",
-    },
-  ];
+  // const events = [
+  //   {
+  //     image: event1Image,
+  //     title: "HR EVENT",
+  //     organizer: "K. Siva Krishna",
+  //     speaker: "K. Rajasekhar",
+  //     eventmode: "In Person",
+  //     schedule: "Aug 20 - Aug 23",
+  //     time: "10AM - 4PM",
+  //     location: "Ameerpet",
+  //   },
+  //   {
+  //     image: event2Image,
+  //     title: "HR EVENT",
+  //     organizer: "K. Siva Krishna",
+  //     speaker: "K. Rajasekhar",
+  //     eventmode: "Online",
+  //     schedule: "Jun 20 - Jun 23",
+  //     time: "10AM - 4PM",
+  //     location: "Ameerpet",
+  //   },
+  // ];
 
   return (
     <>

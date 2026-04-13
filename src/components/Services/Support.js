@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Services.css";
-import { CiMedicalCross } from "react-icons/ci";
+// import { CiMedicalCross } from "react-icons/ci";
 import medical from "../../assets/medical.png";
 import social from "../../assets/social.png";
 import legal from "../../assets/legal.png";

@@ -58,8 +58,9 @@
   flex-wrap: wrap;
 }
 
-.event-card {
-  background: #f3d8a6;
+.event-card { 
+
+  background: linear-gradient(180deg, #f5eedd, #edc473);
   display: flex;
   padding: 15px;
   border-radius: 12px;
