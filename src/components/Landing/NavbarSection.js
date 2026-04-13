@@ -1,6 +1,7 @@
 import { SiGoogletranslate } from "react-icons/si";
 import logo from "../../assets/Logo.png";
 import "../Styles/NavbarSection.css";
+import { LuLogIn } from "react-icons/lu";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useRef, useEffect } from "react";
 
@@ -43,12 +44,14 @@ function NavbarSection() {
     <nav className="navbar navbar-expand-xl kgf-navbar">
       <div className="container-fluid flex-column">
         <div className="kgf-title">KAMMA GLOBAL FEDERATION (KGF)</div>
-
         <div className="d-flex w-100 nav-header">
+         
           <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
             <img src={logo} alt="KGF Logo" className="navbar-logo" />
           </NavLink>
-
+          <div className="admin-member">
+            <button> <LuLogIn />  ADMIN / MEMBER</button>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
