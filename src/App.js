@@ -1,23 +1,24 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Services from './components/Services/Services';
-import NavbarSection from './components/Landing/NavbarSection';
-import LandingPage from './components/Landing/Landingpage';
-import Routing from './components/Routings/Routing';
-import ScrollToHash from './components/Landing/ScrollToHash';
+import Services from "./components/Services/Services";
+import NavbarSection from "./components/Landing/NavbarSection";
+import LandingPage from "./components/Landing/Landingpage";
+import Routing from "./components/Routings/Routing";
+import ScrollToHash from "./components/Landing/ScrollToHash";
+import RegistrationForm from "./components/Services/RegistrationForm";
 
 function App() {
   return (
     <div className="App">
       <NavbarSection />
-      
-       <Routing/>
+      {/* <Routing />
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/services" element={<Services />} /> 
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
-      <ScrollToHash />
+      <ScrollToHash /> */}
+      <RegistrationForm />
     </div>
   );
 }
