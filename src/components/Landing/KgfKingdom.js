@@ -56,7 +56,7 @@
     return (
      <div className="container p-5" id="chapters">
   <div className="text-center mb-5">
-    <h3 className="section-title">KGF KINGDOMS</h3>
+    <h3 className="kingdom-title">KGF KINGDOMS</h3>
   </div>
 
   <div className="row g-4">

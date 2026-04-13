@@ -10,6 +10,7 @@ import Events from "./Events";
 import Footer from "./Footer";
 import GlobalNetwork from "../Services/GlobalNetwork";
 import FamilyTree from "../Pages/FamilyTree";
+import Donate from "./Donate";
 
 function LandingPage() {
   return (
@@ -20,7 +21,8 @@ function LandingPage() {
       <MemberBenefits />
       <TalentPublication />
       <KgfKingdom />
-      <Events />
+      <Events/>
+      <Donate/>
       <Footer />
     </>
   );

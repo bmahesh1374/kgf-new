@@ -13,7 +13,7 @@ function Events() {
   return (
     <section className="events-section">
       <div className="container">
-        <h2 className="main-title">EVENTS</h2>
+        <h2 className="events-title">EVENTS</h2>
 
         <div className="events-header">
           <h4>Up Coming Events :</h4>
