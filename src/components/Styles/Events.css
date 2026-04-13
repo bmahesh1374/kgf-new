@@ -59,11 +59,7 @@
 }
 
 .event-card {
-<<<<<<< HEAD
   background: linear-gradient(180deg, #f5eedd, #edc473);
-=======
-  background: #fff;
->>>>>>> 785248f0d3d4f3bde5065402eb40cc10280a87ca
   display: flex;
   padding: 15px;
   border-radius: 12px;
