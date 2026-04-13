@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <NavbarSection />
-      <Routing />
+      {/* <Routing />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<Services />} />
       </Routes>
-      <ScrollToHash />
-      {/* <RegistrationForm /> */}
+      <ScrollToHash /> */}
+      <RegistrationForm />
     </div>
   );
 }
