@@ -90,6 +90,15 @@
   border: 2px solid #edc473;
 }
 
+.event-card-bg img {
+  width: 148px;
+  height: 145px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #edc473;
+}
+
 @media (min-width: 992px) {
   .event-content {
     position: relative;
@@ -107,8 +116,14 @@
 } */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .event-card {
+    width: 100%;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .event-card-bg {
     width: 100%;
     justify-content: center;
     text-align: start;
