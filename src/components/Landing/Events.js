@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Events.css";
-import { SlCalender} from "react-icons/sl";
-import { FaClock,FaArrowRight } from "react-icons/fa6";
+import { SlCalender } from "react-icons/sl";
+import { FaClock, FaArrowRight } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 
 import img1 from "../../assets/Events1.png";
@@ -11,21 +11,22 @@ import img4 from "../../assets/Events4.png";
 
 function Events() {
   return (
-    <section className="events-section">
+    <section className="events-section mb-5 mt-3">
       <div className="container">
         <h2 className="events-title">EVENTS</h2>
 
         <div className="events-header">
           <h4>Up Coming Events :</h4>
-          <button className="view-btn">View All <FaArrowRight/></button>
+          <button className="view-btn">View All <FaArrowRight /></button>
         </div>
 
         <div className="events-row">
           <div className="event-card-bg">
-            <div>
+            <div className="event-left">
               <img src={img1} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
               <p>Founder of KGF</p>
+
             </div>
 
             <div className="event-content">
@@ -48,7 +49,7 @@ function Events() {
           </div>
 
           <div className="event-card-bg">
-            <div>
+            <div className="event-left">
               <img src={img2} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
             </div>
@@ -75,12 +76,12 @@ function Events() {
         {/* Completed Events */}
         <div className="events-header">
           <h4>Past/Completed Events :</h4>
-          <button className="view-btn">View All <FaArrowRight/></button>
+          <button className="view-btn">View All <FaArrowRight /></button>
         </div>
 
         <div className="events-row">
           <div className="event-card-bg">
-            <div>
+            <div className="event-left">
               <img src={img3} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
             </div>
@@ -103,7 +104,7 @@ function Events() {
           </div>
 
           <div className="event-card-bg">
-            <div>
+            <div className="event-left">
               <img src={img4} alt="event" />
               <h6>Sri Jetti Kusum Kumar</h6>
             </div>

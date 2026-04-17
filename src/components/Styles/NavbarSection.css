@@ -21,6 +21,11 @@
   .admin-member {
     display: none;
   }
+  .navbar-logo {
+  height: 100px;
+  width:100px;
+
+}
 }
 
 .admin-member button {
@@ -31,20 +36,25 @@
   cursor: pointer;
 }
 
+
 .kgf-navbar {
   background: #1B1B1A;
-  padding-top: 14px;
-  padding-bottom: 4px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
-
+body {
+  padding-top: 107px;
+}
 .dropdown-toggle:empty::after {
   margin-left: 8px !important;
 }
 
 .kgf-title {
   background: linear-gradient(to right, #c1821a, #000000);
-  font-size: 30px;
+  font-size: 23px;
   color: #ffffff;
   padding: 6px 28px;
   border-radius: 25px;
@@ -61,10 +71,7 @@
 }
 
 
-.navbar-logo {
-  height: auto;
 
-}
 
 .navbar-toggler {
   margin-left: auto;
@@ -219,6 +226,13 @@
   .navbar .dropdown:hover>.dropdown-menu {
     display: block;
   }
+  .navbar-logo {
+  height: 100px;
+  width:100px;
+  position: relative;
+  top: 10px;
+
+} 
 }
 
 

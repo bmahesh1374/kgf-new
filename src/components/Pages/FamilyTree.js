@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/family.css";
+
 import Ntrimg from "../../assets/ntr.png";
 import kakakaniimg from "../../assets/kakani.png";
 import ranirudramadevi from "../../assets/rudrammadevi.png";
@@ -13,161 +14,98 @@ import shobhanbabuimg from "../../assets/shobhan.png";
 
 
 function FamilyTree() {
-    return (
-        <>
+  const familyData = [
+    {
+      img: Ntrimg,
+      name: "Shri Nandamuri Taraka Rama Rao",
+      year: "1923-1996",
+    },
+    {
+      img: kakakaniimg,
+      name: "Shri Kakani Venkata Ratnam",
+      year: "1900-1972",
+    },
+    {
+      img: ranirudramadevi,
+      name: "Rani Rudrama Devi",
+      year: "1245-1289",
+    },
+    {
+      img: ragavendraimg,
+      name: "Shri Edupuganti Raghavendra Rao",
+      year: "1890-1942",
+    },
+    {
+      img: kallukuriimg,
+      name: "Shri Kalluri Chandramouli",
+      year: "1898-1992",
+    },
+    {
+      img: tripuraneniimg,
+      name: "Shri Tripuraneni Ramaswamy",
+      year: "1887-1943",
+    },
+    {
+      img: muniswamyimg,
+      name: "Shri Bollineni Muniswami Naidu",
+      year: "1895-1935",
+    },
+    {
+      img: rajeswaraoimg,
+      name: "Shri Chandra Rajeswara Rao",
+      year: "1915-1994",
+    },
+    {
+      img: krishnaimg,
+      name: "Ghattamaneni Krishna",
+      year: "1943-2022",
+    },
+    {
+      img: shobhanbabuimg,
+      name: "Uppu Sobhan Babu",
+      year: "1937-2008",
+    },
+  ];
 
-            <section className="family-tree-sec">
+  const firstRow = familyData.slice(0, 5);
+  const secondRow = familyData.slice(5, 10);
 
-                <div className='container'>
-                    <h3 className="pt-3">Family Tree</h3>
+  const renderCards = (data) =>
+    data.map((item, index) => (
+      <figure className="family-card" key={index}>
+        <div className="image-wrapper">
+          <img src={item.img} alt={item.name} className="img-fluid" />
+        </div>
 
-                    <div className="family-grid">
+        <figcaption>
+          {item.name}
+          <p>{item.year}</p>
+        </figcaption>
+      </figure>
+    ));
 
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={Ntrimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Nandamuri Taraka Rama Rao
-                                <p>1923-1996</p>
-                            </figcaption>
-                        </figure>
+  return (
+    <section className="family-tree-sec">
+      <div className="container">
+        <h3 className="gallery-title">Family Tree</h3>
 
+      
+        <div className="scroll-row left-scroll">
+          <div className="scroll-track">
+            {renderCards(firstRow)}
+            {renderCards(firstRow)}
+          </div>
+        </div>
 
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={kakakaniimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri kakani Venkata Ratnam
-                                <p>1900-1972</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={ranirudramadevi} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Rani Rudrama Devi
-                                <p>1245-1289</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={ragavendraimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Edupuganti Raghavendra Rao
-                                <p>1890-1942</p>
-                            </figcaption>
-                        </figure>
-
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={kallukuriimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Kalluri Chandramouli
-                                <p>1898-1992</p>
-                            </figcaption>
-                        </figure>
-
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={tripuraneniimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Kavi Raju Tripuraneni Ramaswamy Choudary
-                                <p>1887-1943</p>
-                            </figcaption>
-                        </figure>
-
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={muniswamyimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Bollineni Muniswami Naidu
-                                <p>1895-1935</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={rajeswaraoimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Chandra Rajeswara Rao
-                                <p>1915-1994</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={krishnaimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Ghattamaneni Siva Rama Krishna Murthy
-                                <p>1943-2022</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={shobhanbabuimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Uppu Sobhan Babu
-                                <p>1937-2008</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={Ntrimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Nandamuri Taraka Rama Rao
-                                <p>1923-1996</p>
-                            </figcaption>
-                        </figure> <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={kakakaniimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                               Shri kakani Venkata Ratnam
-                                <p>1900-1972</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={ranirudramadevi} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Rani Rudrama Devi
-                                <p>1245-1289</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={ragavendraimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Edupuganti Raghavendra Rao
-                                <p>1890-1942</p>
-                            </figcaption>
-                        </figure>
-                        <figure className="family-card">
-                            <div className="image-wrapper">
-                                <img src={kallukuriimg} className="img-fluid" />
-                            </div>
-                            <figcaption>
-                                Shri Kalluri Chandramouli
-                                <p>1898-1992</p>
-                            </figcaption>
-                        </figure>
-
-                    </div>
-
-                </div>
-            </section>
-        </>
-    )
+        <div className="scroll-row right-scroll">
+          <div className="scroll-track">
+            {renderCards(secondRow)}
+            {renderCards(secondRow)}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
+
 export default FamilyTree;

@@ -1,10 +1,10 @@
 .events-section {
   background: #fff;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -15,6 +15,7 @@
   display: inline-block;
   padding-bottom: 5px;
 }
+
 .events-title::after {
   content: "";
   position: absolute;
@@ -34,22 +35,21 @@
   margin: 30px 0 15px;
 }
 
-.view-btn {
-  padding: 6px 15px;
-  border: 1px solid #c59d5f;
-  background: transparent;
-  border-radius: 20px;
-  color: #c59d5f;
-  cursor: pointer;
+
+
+.view-btn{
+    padding:8px 18px;
+    border:1px solid #c59d5f;
+    background:transparent;
+    border-radius:30px;
+    color:#c59d5f;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-.view-btn:hover {
-  padding: 6px 15px;
-  border: 1px solid #e28f11;
-  background: transparent;
-  border-radius: 20px;
-  color: #e28f11;
-  cursor: pointer;
+.view-btn:hover{
+    background:#c59d5f;
+    color:#fff;
 }
 
 .events-row {
@@ -58,7 +58,7 @@
   flex-wrap: wrap;
 }
 
-.event-card { 
+.event-card {
 
   background: linear-gradient(180deg, #f5eedd, #edc473);
   display: flex;
@@ -71,14 +71,33 @@
 }
 
 .event-card-bg {
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
   display: flex;
   padding: 15px;
+  align-items: flex-start;
   border-radius: 12px;
   border: 1px solid #f1b15c;
   width: 48%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #edc473;
+}
+.event-left{
+   width:45%;
+   text-align:center;
+}
+
+.event-left img{
+   width:100%;
+   border-radius:10px;
+}
+
+.event-left h6{
+   margin-top:6px;
+   font-size:12px;
+}
+
+.event-left p{
+   font-size:11px;
 }
 
 .event-card img {
@@ -106,11 +125,13 @@
     text-align: center;
     letter-spacing: 1px;
   }
+
   .event-content-org {
     font-size: 10px;
     padding-top: 5px;
     font-weight: 600;
   }
+
   /* .event-btn {
   text-align: center;
 } */
@@ -124,10 +145,30 @@
   }
 
   .event-card-bg {
+
     width: 100%;
     justify-content: center;
     text-align: start;
   }
+  .event-content {
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid #f1b15c;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #edc473;
+  }
+
+ .register-btn,
+.completed-btn{
+  display: block;
+  margin: 8px auto 0;
+  padding: 6px 12px;
+}
+
 }
 
 .event-content h3 {
@@ -144,7 +185,7 @@
 .register-btn {
   margin-top: 8px;
   padding: 6px 12px;
-  background: linear-gradient(90deg,#D6A84B, #F3D284);
+  background: linear-gradient(90deg, #D6A84B, #F3D284);
   border: 1px solid black;
   border-radius: 8px;
   cursor: pointer;
@@ -155,8 +196,8 @@
 
 .completed-btn {
   margin-top: 8px;
-  padding: 6px 20px;
-  background: linear-gradient(90deg,#D9D9D9, #666464);
+  /* padding: 6px 20px; */
+  background: linear-gradient(90deg, #D9D9D9, #666464);
   border: 1px solid black;
   border-radius: 8px;
   font-weight: bold;

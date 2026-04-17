@@ -9,21 +9,21 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .member-card p {
+ 
+}
+
+@media(max-width:480px){
+   .member-card p {
     margin: 0;
     margin-top: 10px;
     background-color: #FFF3E3;
-    font-size: 14px;
+    font-size: 15px;
     padding: 15px;
     font-weight: 500;
-    color: #333;
+    color: #000 !important; 
   }
-
 }
 
-/* .member-title{
-  margin-bottom: 20px;
-} */
 
 .member-section {
   padding: 40px 20px;
@@ -52,7 +52,7 @@
   margin: 0;
   margin-top: 10px;
   background-color: #FFF3E3;
-  font-size: 14px;
+  font-size: 15px;
   height: 70px;
   font-weight: 500;
   padding: 15px;

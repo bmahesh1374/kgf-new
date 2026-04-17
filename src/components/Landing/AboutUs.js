@@ -7,7 +7,7 @@ import networkimg from "../../assets/network.png";
 
 function AboutUs() {
     return (
-        <section className="aboutus-section container py-5" id='Aboutus'>
+        <section className="aboutus-section container" id='Aboutus'>
 
          
             <div className="row align-items-center g-0">

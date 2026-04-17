@@ -15,14 +15,14 @@
 }
 
 .getintouch-img img{
-   height: 126px;
-    width: 126px;
+   height: 110px;
+    width: 110px;
    display: block;
 }
 
 @media(max-width:768px) {
   .getintouch-img {
-    right: 10px;
+    right: 5px;
     bottom: 20px;
     z-index: 2;
   }
@@ -97,7 +97,7 @@
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .hero-btn {
   background: #f0b64d;

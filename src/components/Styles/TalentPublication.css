@@ -24,14 +24,12 @@
   grid-template-columns:100%;
   align-items:center;
   gap:40px;
-  padding:60px 80px;
+  padding:20px 40px;
   background:var(--bg);
   box-sizing:border-box;
 }
 
-/* =========================
-   LEFT CONTENT
-========================= */
+
 .talent-content{
   width:100%;
 }
@@ -51,16 +49,11 @@
   font-weight:500;
 }
 
-/* =========================
-   RIGHT SIDE
-========================= */
 .talent-left{
   width:100%;
 }
 
-/* =========================
-   SLIDER
-========================= */
+
 .slider-wrapper{
   position:relative;
   display:flex;
@@ -170,203 +163,6 @@
   background:#027c0a;
 }
 
-@media(max-width:992px){
-
-.talent-section{
-  grid-template-columns:1fr;
-  padding:50px 25px;
-}
-
-.talent-content{
-  text-align:center;
-}
-
-.talent-hed{
-  font-size:38px;
-}
-
-.talent-cont{
-  font-size:17px;
-}
-
-.arrow-btn{
-  display:none;
-}
-
-.talent-card{
-  width:200px;
-  min-width:200px;
-}
-
-.talent-image{
-  height:290px;
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media(max-width:576px){
-
-.talent-section{
-  padding:35px 15px;
-  gap:25px;
-}
-
-.talent-hed{
-  font-size:30px;
-}
-
-.talent-cont{
-  font-size:15px;
-  line-height:1.7;
-}
-
-.talent-card{
-  width:170px;
-  min-width:170px;
-}
-
-.talent-image{
-  height:240px;
-}
-
-.download-btn{
-  width:100%;
-  font-size:18px;
-  padding:12px;
-}
-
-}
-
-/* MOBILE */
-@media (max-width:576px){
-
-.talent-section{
-  grid-template-columns:1fr;
-  padding:35px 15px;
-  gap:25px;
-}
-
-.talent-content{
-  text-align:center;
-}
-
-.talent-hed{
-  font-size:30px;
-}
-
-.talent-cont{
-  font-size:15px;
-  line-height:1.7;
-}
-
-/* 🔥 One card per row */
-.talent-cards{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  overflow:visible;
-}
-
-.talent-card{
-  width:100%;
-  min-width:100%;
-}
-
-.talent-image{
-  width:100%;
-  height:auto;
-}
-
-
-.arrow-btn{
-  display:none;
-}
-
-.download-btn{
-  width:100%;
-  font-size:18px;
-  padding:12px;
-}
-
-}
-
-@media (max-width:576px){
-
-.talent-section{
-  grid-template-columns:1fr;
-  padding:30px 15px;
-  gap:20px;
-}
-
-.talent-content{
-  text-align:center;
-}
-
-.talent-hed{
-  font-size:30px;
-}
-
-
-.talent-cont{
-  font-size:15px;
-  line-height:1.7;
-}
-
-/* keep slider horizontal */
-.slider-wrapper{
-  position:relative;
-  width:100%;
-}
-
-.talent-cards{
-  display:flex;
-  flex-direction:row;
-  overflow-x:auto;
-  scroll-behavior:smooth;
-  gap:12px;
-  scrollbar-width:none;
-}
-
-.talent-cards::-webkit-scrollbar{
-  display:none;
-}
-
-.talent-card{
-  width:100%;
-  min-width:100%;
-}
-
-.talent-image{
-  width:100%;
-  height:auto;
-}
-
-/* show arrows in mobile also */
-.arrow-btn{
-  display:flex;
-  width:36px;
-  height:36px;
-  font-size:14px;
-}
-
-.left-btn{
-  left:5px;
-}
-
-.right-btn{
-  right:5px;
-}
-
-.download-btn{
-  width:100%;
-  padding:12px;
-  font-size:17px;
-}
-
-}
 
 
 
@@ -389,3 +185,6 @@
   background:#7B5825;
   border-radius:10px;
 }
+
+
+

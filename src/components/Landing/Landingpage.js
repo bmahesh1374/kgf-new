@@ -12,6 +12,7 @@ import GlobalNetwork from "../Services/GlobalNetwork";
 import FamilyTree from "../Pages/FamilyTree";
 import Donate from "./Donate";
 
+
 function LandingPage() {
   return (
     <>
@@ -23,7 +24,8 @@ function LandingPage() {
       <KgfKingdom />
       <Events/>
       <Donate/>
-      <Footer />
+      <Footer /> 
+     
     </>
   );
 }
