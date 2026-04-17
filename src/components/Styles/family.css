@@ -1,95 +1,143 @@
-@media(min-width:992px){
-  .family-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);  
-  gap: 30px;
-  justify-content: center;
-  margin-top: 30px;
+.family-tree-sec {
+  padding: 30px 0;
+  overflow: hidden;
 }
 
+.gallery-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
-@media(max-width:767px){
-    .family-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);  
-  gap: 30px;
-  justify-content: center;
-  margin-top: 30px;
-}
+.scroll-row {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-/* @media(min-width:821px){
-    .family-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  gap: 30px;
-  justify-content: center;
-  margin-top: 30px;
+
+.scroll-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
 }
-} */
 
 
 .family-card {
+  min-width: 220px;
   background: #f4f0e6;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  transition: 0.3s;
 }
+
+.family-card:hover {
+  transform: translateY(-8px);
+}
+
 
 .image-wrapper img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .family-card figcaption {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.family-card figcaption p {
+  margin-top: 8px;
+  font-weight: 600;
 }
 
-.view-btn {
-    padding: 6px 15px;
-    border: 1px solid #c59d5f;
-    background: transparent;
-    border-radius: 20px;
-    color: #c59d5f;
-    cursor: pointer;
+.left-scroll .scroll-track {
+  animation: scrollLeft 25s linear infinite;
 }
 
-.gallery-title{
-  margin-top: 20px;
-  margin-bottom: 30px;
+
+.right-scroll .scroll-track {
+  animation: scrollRight 25s linear infinite;
 }
 
-.gallery-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  gap: 30px;
-  justify-content: center;
+
+.scroll-row:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+/* KEYFRAMES */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 24px;
+  }
+
+  .family-card {
+    min-width: 170px;
+    padding: 10px;
+  }
+
+  .image-wrapper img {
+    height: 170px;
+  }
+
+  .scroll-track {
+    gap: 15px;
+  }
+
+  .left-scroll .scroll-track,
+  .right-scroll .scroll-track {
+    animation-duration: 18s;
+  }
+
+  .family-tree-sec {
+    padding: 20px 0;
+    overflow: hidden;
+    /* margin-top: 50px; */
+  }
 
 }
 
-@media(max-width:768px){
-  .gallery-grid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);  
-  gap: 10px;
-  justify-content: center;
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .family-tree-sec {
+    padding: 30px 0;
+    overflow: hidden;
+    margin-top: 20px;
+  }
 }
 
-.gall-row{
-   box-shadow: 0 10px 6px rgba(0,0,0,0.1);
-
+@media(max-width:540px) {
+  .family-tree-sec {
+    padding: 50px 0;
+    overflow: hidden;
+    /* margin-top: 30px; */
+  }
 }
-

@@ -1,15 +1,15 @@
 import React from "react";
 import "../Styles/HeroSection.css";
 import heroImg from "../../assets/Herosecimg.png";
-import getInTouchImg from "../../assets/getintouch.png";
+
 
 function HeroSection() {
   return (
-    <section  
+    <section
       className="hero-section"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-     <div className="overlay"></div>
+      <div className="overlay"></div>
       <div className="hero-content">
         <h1>
           Global Unity, Kamma Pride
@@ -21,9 +21,7 @@ function HeroSection() {
 
         <button className="hero-btn">READ MORE</button>
       </div>
-      <div className="getintouch-img">
-        <img src={getInTouchImg} alt="Get In Touch" />
-      </div> 
+      
     </section>
   );
 }
