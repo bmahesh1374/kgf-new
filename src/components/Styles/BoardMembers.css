@@ -170,7 +170,7 @@
     position: relative;
     top: 0;
     right: 0;
-   
+    margin-bottom: 10px;
     justify-content: center;
    
   }
@@ -204,16 +204,18 @@
   object-fit: cover;
   border-radius: 10px;
 }
- 
+
   .board-icons {
-    order: 3;
-    position: relative;
-    top: 0;
-    right: 0;
-   
-    justify-content: center;
-   
-  }
+  order: 3;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;       
+  justify-content: center; 
+  align-items: center;     
+  gap: 10px;             
+  width: 100%;
+}
  
   .board-content {
     order: 2;
@@ -244,9 +246,15 @@
     height: 160px;
   }
  
-  .board-icons a {
-    font-size: 18px;
+   .board-icons {
+    order: 3;
+    position: relative;
+    top: 0;
+    right: 0;
+    justify-content: center;
+   
   }
+ 
 }
  
 @media screen and (min-width: 360px) and (max-width: 360px) and
@@ -281,3 +289,4 @@
   font-size: 12px;
   color: #555;
 }}
+

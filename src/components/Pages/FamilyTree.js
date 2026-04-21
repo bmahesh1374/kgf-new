@@ -19,51 +19,62 @@ function FamilyTree() {
       img: Ntrimg,
       name: "Shri Nandamuri Taraka Rama Rao",
       year: "1923-1996",
+      link: "https://en.wikipedia.org/wiki/Nandamuri_Taraka_Rama_Rao",
     },
     {
       img: kakakaniimg,
       name: "Shri Kakani Venkata Ratnam",
       year: "1900-1972",
+      link: "https://en.wikipedia.org/wiki/Kakani_Venkata_Ratnam",
     },
     {
       img: ranirudramadevi,
       name: "Rani Rudrama Devi",
       year: "1245-1289",
+      link: "https://en.wikipedia.org/wiki/Rani_Rudrama_Devi",
     },
     {
       img: ragavendraimg,
       name: "Shri Edupuganti Raghavendra Rao",
       year: "1890-1942",
+      link: "https://en.wikipedia.org/wiki/Edupuganti_Raghavendra_Rao",
     },
     {
       img: kallukuriimg,
       name: "Shri Kalluri Chandramouli",
       year: "1898-1992",
+      link: "https://en.wikipedia.org/wiki/Kalluri_Chandramouli",
     },
     {
       img: tripuraneniimg,
       name: "Shri Tripuraneni Ramaswamy",
       year: "1887-1943",
+      link: "https://en.wikipedia.org/wiki/Tripuraneni_Ramaswamy_Choudary",
     },
     {
       img: muniswamyimg,
       name: "Shri Bollineni Muniswami Naidu",
       year: "1895-1935",
+      link: "https://en.wikipedia.org/wiki/Bollineni_Muniswami_Naidu",
     },
     {
       img: rajeswaraoimg,
       name: "Shri Chandra Rajeswara Rao",
       year: "1915-1994",
+      link: "https://en.wikipedia.org/wiki/Chandra_Rajeswara_Rao",
     },
     {
       img: krishnaimg,
       name: "Ghattamaneni Krishna",
       year: "1943-2022",
+      link: "https://en.wikipedia.org/wiki/Ghattamaneni_Krishna",
     },
     {
       img: shobhanbabuimg,
       name: "Uppu Sobhan Babu",
       year: "1937-2008",
+      link: "https://en.wikipedia.org/wiki/Uppu_Sobhan_Babu",
+
     },
   ];
 
@@ -74,8 +85,14 @@ function FamilyTree() {
     data.map((item, index) => (
       <figure className="family-card" key={index}>
         <div className="image-wrapper">
-          <img src={item.img} alt={item.name} className="img-fluid" />
-        </div>
+            <a
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={item.img} alt={item.name} className="img-fluid" />
+      </a>
+                 </div>
 
         <figcaption>
           {item.name}
@@ -87,7 +104,7 @@ function FamilyTree() {
   return (
     <section className="family-tree-sec">
       <div className="container">
-        <h3 className="gallery-title">Family Tree</h3>
+        <h3 className="family-title">Family Tree</h3>
 
       
         <div className="scroll-row left-scroll">

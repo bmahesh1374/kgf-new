@@ -83,7 +83,7 @@
 }
 
 .store-buttons {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
@@ -91,6 +91,7 @@
 
 .store-buttons img {
   width: 130px;
+  padding-left: 5px;
 }
 
 .footer-logo {

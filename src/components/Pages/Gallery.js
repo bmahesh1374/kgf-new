@@ -18,6 +18,7 @@ function Gallery() {
     {
       title: "GLOBAL SUMMIT",
       images: [globalsummitimg, globalsummitimg2, globalsummitimg3],
+      
     },
     {
       title: "SPORTS",

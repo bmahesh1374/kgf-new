@@ -82,3 +82,15 @@
   background-color: #7B5825;
   border-radius: 0 0 10px 10px;
 }
+
+@media(min-width:768px), (max-width:991px){
+      .member-card p {
+    margin: 0;
+    margin-top: 10px;
+    background-color: #FFF3E3;
+    font-size: 17px;
+    padding: 15px;
+    font-weight: 500;
+    color: #000 !important; 
+  }
+}
