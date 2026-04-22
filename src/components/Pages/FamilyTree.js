@@ -37,7 +37,7 @@ function FamilyTree() {
       img: ragavendraimg,
       name: "Shri Edupuganti Raghavendra Rao",
       year: "1890-1942",
-      link: "https://en.wikipedia.org/wiki/Edupuganti_Raghavendra_Rao",
+      link: "https://en.wikipedia.org/wiki/E._Raghavendra_Rao",
     },
     {
       img: kallukuriimg,
@@ -55,7 +55,7 @@ function FamilyTree() {
       img: muniswamyimg,
       name: "Shri Bollineni Muniswami Naidu",
       year: "1895-1935",
-      link: "https://en.wikipedia.org/wiki/Bollineni_Muniswami_Naidu",
+      link: "https://en.wikipedia.org/wiki/B._Munuswamy_Naidu",
     },
     {
       img: rajeswaraoimg,
@@ -73,7 +73,7 @@ function FamilyTree() {
       img: shobhanbabuimg,
       name: "Uppu Sobhan Babu",
       year: "1937-2008",
-      link: "https://en.wikipedia.org/wiki/Uppu_Sobhan_Babu",
+      link: "https://en.wikipedia.org/wiki/Sobhan_Babu",
 
     },
   ];
