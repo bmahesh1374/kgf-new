@@ -1,53 +1,35 @@
-// import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Services.css";
 import { SlCalender } from "react-icons/sl";
 import { FaClock } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
-
+ 
 import globalImg from "../../assets/global-img.png";
 import event1Image from "../../assets/Events1.png";
 import event2Image from "../../assets/Events3.png";
-
+ 
 const GlobalNetwork = () => {
-  // const events = [
-  //   {
-  //     image: event1Image,
-  //     title: "HR EVENT",
-  //     organizer: "K. Siva Krishna",
-  //     speaker: "K. Rajasekhar",
-  //     eventmode: "In Person",
-  //     schedule: "Aug 20 - Aug 23",
-  //     time: "10AM - 4PM",
-  //     location: "Ameerpet",
-  //   },
-  //   {
-  //     image: event2Image,
-  //     title: "HR EVENT",
-  //     organizer: "K. Siva Krishna",
-  //     speaker: "K. Rajasekhar",
-  //     eventmode: "Online",
-  //     schedule: "Jun 20 - Jun 23",
-  //     time: "10AM - 4PM",
-  //     location: "Ameerpet",
-  //   },
-  // ];
-
   return (
     <>
       <section className="knowledge-wrapper" id="global">
         <div className="services-name">
           <h3>Services</h3>
         </div>
+ 
         <div className="container knowledge-section">
+ 
+          {/* TOP CONTENT */}
           <div className="row align-items-center g-4">
             <div className="col-lg-6 col-12 text-center mb-4 mb-lg-0">
               <div className="globalimg">
-                <img src={globalImg} alt="img" className="img-fluid" />
+                <img src={globalImg} alt="Global Network" className="img-fluid" />
               </div>
             </div>
+ 
             <div className="col-lg-6 col-12 text-center text-lg-start">
               <h3 className="knowledge-title">GLOBAL NETWORKING</h3>
+ 
               <p className="knowledge-description">
                 We provide global networking solutions that help businesses
                 connect, collaborate, and scale across borders. With secure
@@ -57,57 +39,92 @@ const GlobalNetwork = () => {
               </p>
             </div>
           </div>
-
-          <div className="events-row">
-            <div className="event-card">
-              <div>
-                <img src={event1Image} alt="event" />
+ 
+          {/* EVENT CARDS */}
+          <div className="service-events-row">
+ 
+            {/* CARD 1 */}
+            <div className="service-card">
+              <div className="service-left">
+                <img src={event1Image} alt="Event" />
                 <h6>Sri Jetti Kusum Kumar</h6>
                 <p className="prof">Founder of KGF</p>
               </div>
-
-              <div className="event-content">
+ 
+              <div className="service-content">
                 <h3>KGF Global Event</h3>
-                <p className="event-content-org">
+ 
+                <p className="service-org">
                   Organized by Sri JETTI KUSUM KUMAR
                 </p>
-                <p className="invite">You Are Invited!</p>
-                <p>
-                  <SlCalender /> Aug 20 - Aug 21 | <FaClock /> 10pm - 1am
+ 
+                <p className="service-invite">
+                  You Are Invited!
                 </p>
+ 
                 <p>
-                  <IoLocationOutline /> Venkata Function Hall, Hyderabad-500029
+                  <SlCalender /> Aug 20 - Aug 21
                 </p>
-                <button className="register-btn">REGISTER NOW</button>
+ 
+                <p>
+                  <FaClock /> 10PM - 1AM
+                </p>
+ 
+                <p>
+                  <IoLocationOutline /> Venkata Function Hall,
+                  Hyderabad-500029
+                </p>
+ 
+                <button className="service-btn">
+                  REGISTER NOW
+                </button>
               </div>
             </div>
-
-            <div className="event-card">
-              <div>
-                <img src={event2Image} alt="event" />
+ 
+            {/* CARD 2 */}
+            <div className="service-card">
+              <div className="service-left">
+                <img src={event2Image} alt="Event" />
                 <h6>M. Venkaiah Naidu</h6>
                 <p className="prof">Former Vice President of India</p>
               </div>
-              <div className="event-content">
+ 
+              <div className="service-content">
                 <h3>KGF Global Event</h3>
-                <p className="event-content-org">
+ 
+                <p className="service-org">
                   Organized by Sri JETTI KUSUM KUMAR
                 </p>
-                <p className="invite">You Are Invited!</p>
-                <p>
-                  <SlCalender /> Aug 20 - Aug 21 | <FaClock /> 10pm - 1am
+ 
+                <p className="service-invite">
+                  Event Completed
                 </p>
+ 
                 <p>
-                  <IoLocationOutline /> Venkata Function Hall, Hyderabad-500029
+                  <SlCalender /> Aug 20 - Aug 21
                 </p>
-                <button className="completed-btn">COMPLETED</button>
+ 
+                <p>
+                  <FaClock /> 10PM - 1AM
+                </p>
+ 
+                <p>
+                  <IoLocationOutline /> Venkata Function Hall,
+                  Hyderabad-500029
+                </p>
+ 
+                <button className="service-btn-complete">
+                  COMPLETED
+                </button>
               </div>
             </div>
+ 
           </div>
         </div>
       </section>
     </>
   );
 };
-
+ 
 export default GlobalNetwork;
+ 
