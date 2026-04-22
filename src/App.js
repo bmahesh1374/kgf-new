@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <NavbarSection/>
+       <NavbarSection/>
       <Routing />
 
       <Routes>
@@ -25,9 +25,9 @@ function App() {
         <Route path="/services" element={<Services/>} />
       </Routes>
 
-      <ScrollToHash /> */}
+      <ScrollToHash /> 
 
-      <StudentMembership />
+      {/* <StudentMembership /> */}
 
    
       <div

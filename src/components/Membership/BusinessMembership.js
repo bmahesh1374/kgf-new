@@ -4,7 +4,6 @@ import { useState } from "react";
 import OutOfIndia from "./OutOfIndia";
 import NonResident from "./NonResident";
 import BusinessOutOfIndia from "./BusinessOutOfIndia";
-import BusinessNonResident from "./BusinessNonResident";
 function BusinessMembership() {
   const [residency, setResidency] = useState("In India");
   return (
