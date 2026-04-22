@@ -1,0 +1,352 @@
+@media (min-width: 992px) {
+  .kgf-memb-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .kgf-memb-form-space {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+  }
+
+  .kgf-memb-form-label {
+    display: block;
+    color: white;
+    font-weight: bold;
+  }
+
+  .kgf-memb-form-control {
+    width: 100%;
+    padding: 8px;
+    gap: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+  }
+
+  .kgf-memb-form-select {
+    width: 100%;
+    padding: 8px;
+    gap: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+  }
+
+  .kgf-memb-student-course {
+    margin-top: 40px;
+  }
+  .kgf-memb-form-occupation {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .kgf-memb-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kgf-memb-form-control,
+  .kgf-memb-form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  /* .kgf-memb-form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  } */
+
+  .kgf-memb-form-label {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .kgf-memb-form-org {
+    width: 100%;
+  }
+
+  .kgf-memb-flex-container {
+    flex-direction: column;
+  }
+
+  .kgf-memb-col-1,
+  .kgf-memb-col-2 {
+    width: 100%;
+  }
+
+  .kgf-memb-form-professional {
+    grid-template-columns: 1fr;
+  }
+
+  .kgf-memb-residency-radio {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+  }
+
+  .kgf-memb-marital-form {
+    grid-column: span 1;
+    flex-direction: column;
+  }
+
+  .kgf-memb-form-option {
+    width: 100%;
+  }
+
+  .kgf-memb-col-2 {
+    margin-top: 25px;
+  }
+  .kgf-memb-form-space {
+    gap: 15px;
+  }
+
+  .kgf-memb-radio-gap {
+    gap: 20px;
+  }
+
+  .kgf-memb-student-course {
+    margin-top: 20px;
+  }
+
+  .kgf-memb-form-occupation {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+.kgf-memb {
+    background-color: #ffff;
+    
+}
+
+.kgf-memb-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgb(49, 48, 48);
+  padding: 15px 35px;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+
+.kgf-memb-title h3 {
+  text-align: center;
+  color: #ff9a06;
+}
+
+.kgf-memb-form-label {
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.kgf-required {
+  color: #ff3b3b;
+  padding: 5px;
+}
+
+.kgf-memb-current-add {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kgf-memb-radio-group label {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.kgf-memb-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.kgf-memb-container input[type="radio"]:checked {
+  border-color: orange;
+}
+
+.kgf-memb-container input[type="radio"]:checked::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.kgf-memb-container input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.kgf-memb-container input[type="checkbox"]:checked {
+  border-color: orange;
+}
+
+.kgf-memb-container input[type="checkbox"]:checked::after {
+  display: flex;
+  content: "✔";
+  width: 12px;
+  height: 12px;
+  background: #ff9a06;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  justify-content: center;
+}
+
+.kgf-memb-form-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 3px;
+  text-align: center;
+}
+
+.kgf-memb-btn {
+  text-align: center;
+}
+
+.kgf-memb-btn button {
+  padding: 10px 40px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kgf-memb-container label {
+  color: white;
+}
+
+.kgf-memb-container h4 {
+  color: white;
+  padding: 8px 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.kgf-memb-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.kgf-memb-flex-container h5 {
+  text-align: center;
+}
+
+.kgf-memb-col-1 {
+  margin-top: 10px;
+}
+
+.kgf-memb-container h5 {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.kgf-memb-marital-form {
+  display: flex;
+  grid-column: span 2;
+}
+
+.kgf-memb-marital-form label {
+  margin-right: 20px;
+}
+.kgf-memb-marital-radio {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.kgf-memb-radio-gap {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.kgf-memb-same-add {
+  font-size: 15px;
+}
+
+.kgf-memb-professional-status {
+  margin: 5px auto;
+  padding: 20px;
+}
+
+.kgf-memb-form-professional {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.kgf-memb-form-option {
+  width: 100%;
+  max-width: 40%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.kgf-memb-confirmation {
+  text-align: center;
+  padding: 20px;
+}
+
+.kgf-memb-confirm-check {
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+}
+
+.kgf-memb-form-org {
+  width: 60%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.kgf-memb-student-course input[type="text"] {
+  width: 70%;
+}
