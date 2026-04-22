@@ -200,6 +200,38 @@ function NavbarSection() {
                       Blood Donors
                     </button>
                   </li>
+
+                   <li>
+                    <button
+                      className="dropdown-item"
+                      onClick={() =>
+                        handleAnchorClick("/services", "#matrimonial")
+                      }
+                    >
+                      Matrimonial
+                    </button>
+                  </li>
+                   <li>
+                    <button
+                      className="dropdown-item"
+                      onClick={() =>
+                        handleAnchorClick("/services", "#job-portal")
+                      }
+                    >
+                      Job Portal
+                    </button>
+                  </li>
+
+                   <li>
+                    <button
+                      className="dropdown-item"
+                      onClick={() =>
+                        handleAnchorClick("/services", "#medical-assistance")
+                      }
+                    >
+                      Medical Assistance
+                    </button>
+                  </li>
                 </ul>
               </li>
 
@@ -232,8 +264,9 @@ function NavbarSection() {
                 </button>
               </li>
 
+
               <li className="nav-item">
-                <button className="donate-btn" onClick={closeNavbar}>
+                <button className="donate-btn" onClick={closeNavbar} onClick={() => navigate("#donate")}>
                   Donate
                 </button>
               </li>

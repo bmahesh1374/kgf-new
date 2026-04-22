@@ -7,7 +7,7 @@ import paytm from "../../assets/Paytm.png";
 
 function Donate() {
   return (
-    <section className='donate-section mb-4'>
+    <section className='donate-section mb-4' id='donate'>
         <div className="container text-center">    
             <h2 className='donate-title'>DONATE</h2>
             <div className='row align-items-center'>
