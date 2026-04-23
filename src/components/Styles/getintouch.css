@@ -94,7 +94,7 @@
     cursor: pointer;
 }
 
-input,
+.getintouch-section input,
 select,
 textarea {
     width: 100%;

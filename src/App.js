@@ -10,6 +10,7 @@ import ScrollToHash from "./components/Landing/ScrollToHash";
 import getInTouchImg from "./assets/getintouch.png";
 import Getintouch from "./components/Landing/Getintouch";
 import StudentMembership from "./components/Membership/StudentMembership";
+import Servicesgtregisterlanding from "./components/Register/Servicesgtregisterlanding";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -17,7 +18,11 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
        <NavbarSection/>
+=======
+      <NavbarSection/>
+>>>>>>> Mahesh
       <Routing />
 
       <Routes>
@@ -25,9 +30,15 @@ function App() {
         <Route path="/services" element={<Services/>} />
       </Routes>
 
+<<<<<<< HEAD
       <ScrollToHash /> 
 
       {/* <StudentMembership /> */}
+=======
+      <ScrollToHash />
+
+      
+>>>>>>> Mahesh
 
    
       <div
@@ -41,6 +52,9 @@ function App() {
       {showPopup && (
         <Getintouch closePopup={() => setShowPopup(false)} />
       )}
+      
+      {/* <Servicesgtregisterlanding /> */}
+      {/* <StudentMembership /> */}
     </div>
   );
 }
