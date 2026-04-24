@@ -6,46 +6,39 @@ import NavbarSection from "./components/Landing/NavbarSection";
 import LandingPage from "./components/Landing/Landingpage";
 import Routing from "./components/Routings/Routing";
 import ScrollToHash from "./components/Landing/ScrollToHash";
-
+ 
 import getInTouchImg from "./assets/getintouch.png";
 import Getintouch from "./components/Landing/Getintouch";
 import StudentMembership from "./components/Membership/StudentMembership";
-import Login from "./components/Pages/Login";
-
+import Servicesgtregisterlanding from "./components/Register/Servicesgtregisterlanding";
+ 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
-  
-
+ 
   return (
     <div className="App">
-       <NavbarSection/>
+      <NavbarSection />
       <Routing />
-
+ 
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/services" element={<Services/>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
-
-    
-
-      <ScrollToHash /> 
-
+ 
+      <ScrollToHash />
+ 
       {/* <StudentMembership /> */}
-
-   
-      <div
-        className="getintouch-img"
-        onClick={() => setShowPopup(true)}>
+ 
+      <div className="getintouch-img" onClick={() => setShowPopup(true)}>
         <img src={getInTouchImg} alt="Get In Touch" />
       </div>
-
-  
-  
-      {showPopup && (
-        <Getintouch closePopup={() => setShowPopup(false)} />
-      )}
+ 
+      {showPopup && <Getintouch closePopup={() => setShowPopup(false)} />}
+ 
+      {/* <Servicesgtregisterlanding /> */}
+      {/* <StudentMembership /> */}
     </div>
   );
 }
-
+ 
 export default App;
