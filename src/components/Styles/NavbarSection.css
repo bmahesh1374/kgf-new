@@ -11,13 +11,23 @@
   gap: 5px;
 }
 
-.admin-member button {
-  background: #000;
-  color: #fff;
+.login-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  top: 10px;
+  padding: 10px 13px;
+  background: linear-gradient(#e6b761, #d69317);
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
   font-weight: 600;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
+}
+
+.inside-link{
+  text-decoration: none;
+  color: inherit;
 }
 
 .kgf-navbar {
@@ -95,11 +105,6 @@ body {
 .contact-btn {
   width: 100%;
   padding: 7px;
-}
-
-.language-btn {
-  color: #e6e6e6;
-  font-size: 27px;
 }
 
 .membership-btn {
@@ -238,7 +243,7 @@ body {
 
 @media (max-width: 768px) {
   .admin-member {
-    display: none;
+    display: block;
   }
 
   .navbar-logo {
@@ -252,6 +257,23 @@ body {
     padding: 6px 20px;
     margin-bottom: 10px;
   }
+
+  .login-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  padding: 8px 10px;
+  background: linear-gradient(#e6b761, #d69317);
+  color: #000;
+
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
 }
 
 @media (min-width: 819px) {

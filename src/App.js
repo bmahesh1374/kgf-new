@@ -10,6 +10,7 @@ import ScrollToHash from "./components/Landing/ScrollToHash";
 import getInTouchImg from "./assets/getintouch.png";
 import Getintouch from "./components/Landing/Getintouch";
 import StudentMembership from "./components/Membership/StudentMembership";
+import Login from "./components/Pages/Login";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -24,6 +25,8 @@ function App() {
         <Route path="/" element={<LandingPage/>} />
         <Route path="/services" element={<Services/>} />
       </Routes>
+
+    
 
       <ScrollToHash /> 
 

@@ -1,4 +1,5 @@
-import { SiGoogletranslate } from "react-icons/si";
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.png";
 import "../Styles/NavbarSection.css";
 import { LuLogIn } from "react-icons/lu";
@@ -45,13 +46,16 @@ function NavbarSection() {
       <div className="container-fluid flex-column">
         <div className="kgf-title">KAMMA GLOBAL FEDERATION (KGF)</div>
         <div className="d-flex w-100 nav-header">
-         
+
           <NavLink className="navbar-brand" to="/" onClick={closeNavbar}>
             <img src={logo} alt="KGF Logo" className="navbar-logo" />
           </NavLink>
           <div className="admin-member">
-            <button> <LuLogIn />  ADMIN / MEMBER</button>
+            <Link to="/login" className="login-btn">
+              <LuLogIn /> LOGIN
+            </Link>
           </div>
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -201,7 +205,7 @@ function NavbarSection() {
                     </button>
                   </li>
 
-                   <li>
+                  <li>
                     <button
                       className="dropdown-item"
                       onClick={() =>
@@ -211,7 +215,7 @@ function NavbarSection() {
                       Matrimonial
                     </button>
                   </li>
-                   <li>
+                  <li>
                     <button
                       className="dropdown-item"
                       onClick={() =>
@@ -222,7 +226,7 @@ function NavbarSection() {
                     </button>
                   </li>
 
-                   <li>
+                  <li>
                     <button
                       className="dropdown-item"
                       onClick={() =>
@@ -277,11 +281,7 @@ function NavbarSection() {
                 </button>
               </li>
 
-              <li className="nav-item">
-                <button className="language-btn">
-                  <SiGoogletranslate />
-                </button>
-              </li>
+
             </ul>
           </div>
         </div>
