@@ -14,45 +14,27 @@ import Servicesgtregisterlanding from "./components/Register/Servicesgtregisterl
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
-  
 
   return (
     <div className="App">
-<<<<<<< HEAD
-       <NavbarSection/>
-=======
-      <NavbarSection/>
->>>>>>> Mahesh
+      <NavbarSection />
       <Routing />
 
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/services" element={<Services/>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
 
-<<<<<<< HEAD
-      <ScrollToHash /> 
-
-      {/* <StudentMembership /> */}
-=======
       <ScrollToHash />
 
-      
->>>>>>> Mahesh
+      {/* <StudentMembership /> */}
 
-   
-      <div
-        className="getintouch-img"
-        onClick={() => setShowPopup(true)}>
+      <div className="getintouch-img" onClick={() => setShowPopup(true)}>
         <img src={getInTouchImg} alt="Get In Touch" />
       </div>
 
-  
-  
-      {showPopup && (
-        <Getintouch closePopup={() => setShowPopup(false)} />
-      )}
-      
+      {showPopup && <Getintouch closePopup={() => setShowPopup(false)} />}
+
       {/* <Servicesgtregisterlanding /> */}
       {/* <StudentMembership /> */}
     </div>

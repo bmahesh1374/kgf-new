@@ -89,10 +89,17 @@
   flex-wrap: wrap;
 }
 
+.store-buttons img:hover {
+  transform: translateY(-5px);
+}
+
 .store-buttons img {
   width: 130px;
   padding-left: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
+
 
 .footer-logo {
   width: 85px !important;
