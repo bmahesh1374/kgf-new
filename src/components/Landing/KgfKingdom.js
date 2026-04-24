@@ -7,6 +7,7 @@
   import KarnatakaImg from "../../assets/karnatakaimg.png";
   import TamilnaduImg from "../../assets/tamilnaduimg.png";
   import WorldwideImg from "../../assets/worldwideimg.png";
+import StudentMembership from "../Membership/StudentMembership";
 
 
   const chapters = [
@@ -51,9 +52,10 @@
     
   ];
 
-  export default function KgfKingdom() {
-      
+  export default function KgfKingdom({openPopUp}) {
+      const [membership, setMembership] = useState(false)
     return (
+      <>
      <div className="container p-5" id="chapters">
   <div className="text-center mb-5">
     <h3 className="kingdom-title">KGF KINGDOMS</h3>
@@ -77,12 +79,14 @@
             This chapter has {chapter.members} members
           </p>
 
-          <button className="get-btn">GET MEMBER</button>
+          <button className="get-btn" onClick={() => setMembership(true)}>GET MEMBER</button>
         </div>
       </div>
     ))}
   </div>
 </div>
+{membership && <StudentMembership closeMembership={()=>setMembership(false)}/>}
+</>
 
     );
   }

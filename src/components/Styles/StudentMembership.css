@@ -14,7 +14,7 @@
 
   .kgf-memb-form-label {
     display: block;
-    color: white;
+    color: black;
     font-weight: bold;
   }
 
@@ -23,7 +23,7 @@
     padding: 8px;
     gap: 20px;
     border-radius: 5px;
-    border: none;
+    /* border: none; */
     font-size: 15px;
   }
 
@@ -32,7 +32,7 @@
     padding: 8px;
     gap: 20px;
     border-radius: 5px;
-    border: none;
+    border: 2px solid black;
     font-size: 15px;
   }
 
@@ -40,7 +40,7 @@
     margin-top: 40px;
   }
   .kgf-memb-form-occupation {
-    color: white;
+    color: black;
     font-weight: bold;
     margin-top: 20px;
   }
@@ -117,7 +117,7 @@
   }
 
   .kgf-memb-form-occupation {
-    color: white;
+    color: black;
     font-weight: bold;
     margin-top: 20px;
   }
@@ -145,7 +145,7 @@
 }
 
 .kgf-memb-container::-webkit-scrollbar-thumb {
-  background-color: #ecf013;
+  background-color: beige;
   border-radius: 6px;
 }
 
@@ -161,29 +161,31 @@
   width: 90%;
   max-width: 700px;
   max-height: 95vh;
-  background-color: #c1821a;
+  background-color: #fff;
   border-radius: 20px;
   overflow-y: auto;
   padding: 20px 20px 40px;
+  color: #000000;
 }
 
 .kgf-memb-title {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: #c1821a;
+  background-color: white;
+  color: black;
   
 
 }
 
 .kgf-memb-title h3 {
-  color: #fff;
+  color: black;
 }
 
 .kgf-memb-title button {
   border-radius: 50%;
   /* background-color: #edc473; */
-  color: #ffffff;
+  color: black;
   font-weight: bold;
   border: none;
   /* padding: 5px 9px;   */
@@ -191,9 +193,13 @@
   background: none;
 }
 
+.kgf-memb-title button:hover {
+  color: red;
+}
+
 .kgf-memb-form-label {
   display: block;
-  color: white;
+  color: black;
   font-weight: bold;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -201,7 +207,7 @@
 }
 
 .kgf-required {
-  color: #6e0202;
+  color: red;
   padding: 5px;
 }
 
@@ -213,7 +219,7 @@
 .kgf-memb-radio-group label {
   display: inline-flex;
   align-items: center;
-  color: white;
+  color: black;
   font-weight: normal;
   padding: 5px;
 }
@@ -223,7 +229,7 @@
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
@@ -253,7 +259,7 @@
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
-  border: 2px solid white;
+  border: 2px solid black;
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -301,11 +307,11 @@
 }
 
 .kgf-memb-container label {
-  color: white;
+  color: black;
 }
 
 .kgf-memb-container h4 {
-  color: white;
+  color: black;
   padding: 8px 1px;
   font-weight: bold;
   font-size: 20px;
@@ -329,7 +335,7 @@
 }
 
 .kgf-memb-container h5 {
-  color: white;
+  color: black;
   font-size: 14px;
   font-weight: bold;
 }
@@ -373,7 +379,7 @@
   max-width: 40%;
   padding: 8px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid black;
   font-size: 15px;
 }
 
@@ -392,7 +398,7 @@
   width: 60%;
   padding: 8px;
   border-radius: 5px;
-  border: none;
+  border: 2px solid black;
   font-size: 15px;
 }
 

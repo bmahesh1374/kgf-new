@@ -290,7 +290,7 @@ function NavbarSection() {
         </div>
       </div>
     </nav>
-    {member && <StudentMembership closeMember = {() => setMember(false)}/>}
+    {member && <StudentMembership closeMembership = {() => setMember(false)}/>}
     </>
   );
 }

@@ -9,9 +9,19 @@ import BusinessMembership from "./BusinessMembership.js";
 import AgricultureMembership from "./AgricultureMembership.js";
 import OthersMembership from "./OthersMembership.js";
 
-function StudentMembership({closeMember}) {
+
+function StudentMembership({closeMembership}) {
   const [residency, setResidency] = useState("In India");
   const [occupation, setOccupation] = useState("");
+  const [popUp, setPopUp] = useState(false)
+
+  function openPopup() {
+  return setPopUp(true)
+}
+
+function closePopup() {
+  return setPopUp(false)
+}
 
   return (
     <>
@@ -21,7 +31,7 @@ function StudentMembership({closeMember}) {
         <div className="kgf-memb-container">
            <div className="kgf-memb-title">
           <h3>KGF Membership</h3>
-          <button onClick={closeMember}>X</button>
+          <button onClick={closeMembership}>X</button>
         </div>
           <div className="kgf-memb-heading">
             <h4>MEMBER DETAILS</h4>
@@ -51,7 +61,7 @@ function StudentMembership({closeMember}) {
                     type="file"
                     className="kgf-memb-form-control"
                     placeholder="Attach Photo"
-                    style={{ backgroundColor: "white" }}
+                    style={{border:"2px solid black" }}
                   />
                 </div>
 
@@ -520,7 +530,7 @@ function StudentMembership({closeMember}) {
           </form>
           <div className="kgf-memb-confirmation">
             <div>
-              <label style={{ color: "greenyellow" }}>
+              <label style={{ color: "black" }}>
                 Have you previously registered with any other community
                 organization?<span className="kgf-required">*</span>
               </label>
@@ -529,7 +539,7 @@ function StudentMembership({closeMember}) {
           </div>
           <div className="kgf-memb-confirmation">
             <div>
-              <label className="kgf-memb-form-label">Name of Organization</label>
+              <label className="kgf-memb-form-label" style={{textAlign:"center"}}>Name of Organization</label>
               <select className="kgf-memb-form-org">
                 <option>Organization Name</option>
                 <option>Kamma Maha Samajam</option>
