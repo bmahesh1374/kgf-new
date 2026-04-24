@@ -3,6 +3,9 @@ import "../Styles/Events.css";
 import { SlCalender } from "react-icons/sl";
 import { FaClock, FaArrowRight } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
+import { useState } from "react";
+import RegistrationForm from "../Services/RegistrationForm";
+
 
 import img1 from "../../assets/Events1.png";
 import img2 from "../../assets/Events2.png";
@@ -10,7 +13,9 @@ import img3 from "../../assets/Events3.png";
 import img4 from "../../assets/Events4.png";
 
 function Events() {
+  const [form, setForm] = useState(false)
   return (
+    <>
     <section className="events-section mb-5 mt-3">
       <div className="container">
         <h2 className="events-title">EVENTS</h2>
@@ -43,7 +48,7 @@ function Events() {
                 <IoLocationOutline /> Venkata Function Hall, Hyderabad
               </p>
               <div className="event-btn">
-                <button className="register-btn">REGISTER NOW</button>
+                <button className="register-btn" onClick={() => setForm(true)}>REGISTER NOW</button>
               </div>
             </div>
           </div>
@@ -67,7 +72,7 @@ function Events() {
                 <IoLocationOutline /> Venkata Function Hall, Hyderabad
               </p>
               <div className="event-btn">
-                <button className="register-btn">REGISTER NOW</button>
+                <button className="register-btn" onClick={() => setForm(true)}>REGISTER NOW</button>
               </div>
             </div>
           </div>
@@ -128,6 +133,9 @@ function Events() {
         </div>
       </div>
     </section>
+
+    {form && <RegistrationForm closeForm = {() => setForm(false)}/>}
+    </>
   );
 }
 

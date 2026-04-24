@@ -4,9 +4,11 @@ import logo from "../../assets/Logo.png";
 import "../Styles/NavbarSection.css";
 import { LuLogIn } from "react-icons/lu";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+import StudentMembership from "../Membership/StudentMembership.js";
 
 function NavbarSection() {
+  const [member, setMember] = useState(false)
   const navbarCollapseRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -42,6 +44,7 @@ function NavbarSection() {
   };
 
   return (
+    <>
     <nav className="navbar navbar-expand-xl kgf-navbar">
       <div className="container-fluid flex-column">
         <div className="kgf-title">KAMMA GLOBAL FEDERATION (KGF)</div>
@@ -276,7 +279,7 @@ function NavbarSection() {
               </li>
 
               <li className="nav-item">
-                <button className="membership-btn" onClick={closeNavbar}>
+                <button className="membership-btn"  onClick={() => setMember(true)}>
                   Membership
                 </button>
               </li>
@@ -287,6 +290,8 @@ function NavbarSection() {
         </div>
       </div>
     </nav>
+    {member && <StudentMembership closeMember = {() => setMember(false)}/>}
+    </>
   );
 }
 

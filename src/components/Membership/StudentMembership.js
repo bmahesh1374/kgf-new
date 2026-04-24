@@ -9,20 +9,24 @@ import BusinessMembership from "./BusinessMembership.js";
 import AgricultureMembership from "./AgricultureMembership.js";
 import OthersMembership from "./OthersMembership.js";
 
-function StudentMembership() {
+function StudentMembership({closeMember}) {
   const [residency, setResidency] = useState("In India");
   const [occupation, setOccupation] = useState("");
 
   return (
     <>
-      <div className="kgf-memb">
-        <div className="kgf-memb-title">
-          <h3>KGF Membership</h3>
-        </div>
+    <section className="main-section">
+      <div className="kgf-memb-overlay">
+       
         <div className="kgf-memb-container">
+           <div className="kgf-memb-title">
+          <h3>KGF Membership</h3>
+          <button onClick={closeMember}>X</button>
+        </div>
           <div className="kgf-memb-heading">
             <h4>MEMBER DETAILS</h4>
           </div>
+          
           <form>
             <div className="kgf-memb-details-">
               <div className="kgf-memb-form-grid">
@@ -539,6 +543,7 @@ function StudentMembership() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
