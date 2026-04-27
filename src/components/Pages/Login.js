@@ -10,6 +10,7 @@ function Login() {
 
  const handleLogin = (e) => {
     e.preventDefault();
+    
 
  
     if (email.trim() === "" || password.trim() === "") {
@@ -18,7 +19,8 @@ function Login() {
     }
 
     if (email === "kgf@gmail.com" && password === "kgfadmin123") {
-      alert("Login Successful");
+       navigate("/dashboard");
+
     } else {
       alert("Invalid Email or Password");
     }
