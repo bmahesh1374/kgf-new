@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarSection from "./NavbarSection";
 import HeroSection from "./HeroSection";
 import AboutUs from "./AboutUs";
 import BoardMembers from "./BoardMembers";
@@ -11,11 +10,13 @@ import Footer from "./Footer";
 import GlobalNetwork from "../Services/GlobalNetwork";
 import FamilyTree from "../Pages/FamilyTree";
 import Donate from "./Donate";
+import NavbarSection from "./NavbarSection";
 
 
 function LandingPage() {
   return (
     <>
+      <NavbarSection/>
       <HeroSection />
       <AboutUs />
       <BoardMembers />
