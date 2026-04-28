@@ -10,14 +10,15 @@ import ScrollToHash from "./components/Landing/ScrollToHash";
 
 import getInTouchImg from "./assets/getintouch.png";
 import Getintouch from "./components/Landing/Getintouch";
-import DashboardLayout from "./components/AdminDashboard/DashboardLayout";
+import DashboardLayout from "./components/AdminLoginDashboard/DashboardLayout";
+import AdminDashboardLayout from "./components/AdminDashboard/AdminDashboardLayout";
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
 
   const location = useLocation();
 
-  const hideNavbar = location.pathname.startsWith("/dashboard");
+  const hideNavbar = location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/admindashboard");
 
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/dashboard/*" element={<DashboardLayout />} />
+        <Route path="/admindashboard/*" element={<AdminDashboardLayout/>} />
       </Routes>
 
       
