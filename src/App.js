@@ -27,7 +27,6 @@ function App() {
 
       {!hideNavbar && <Routing />}
 
-
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/services" element={<Services />} />
