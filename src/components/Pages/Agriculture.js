@@ -12,6 +12,10 @@ function Agriculture() {
         <div>
           <h3>Agriculture</h3>
         </div>
+        <div className="kgf-agri-req">
+          <h4>Requirement</h4>
+          <h4>My Requirement</h4>
+        </div>
         {/* <AgriRequirement /> */}
         {/* <AgriMyRequirement /> */}
         <AgriPostRequirements />
