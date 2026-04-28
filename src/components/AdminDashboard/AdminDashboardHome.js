@@ -7,11 +7,11 @@ import { IoLocationOutline } from "react-icons/io5";
 import event1Image from "../../assets/Events1.png";
 import event2Image from "../../assets/Events1.png";
 import event3Image from "../../assets/Events1.png";
-
+import "../Styles/AdminDBH.css";
 import logo from "../../assets/Logo.png";
 import DonateQrCode from "../../assets/Amountqr.png";
 
-import "../../Styles/DashboardHome.css";
+
 
 function AdminDashboardHome() {
 

@@ -9,7 +9,6 @@ function AdminDashboardLayout() {
     <div className="admin-layout">
       <AdminNavbar/>
       <AdminSidebar/>
-
       <main className="admin-main-content">
         <AdminDashboardRoutes/>
       </main>

@@ -271,7 +271,6 @@
   /* don't shrink */
 }
 
-/* INFINITE SMOOTH LOOP */
 @keyframes eventScroll {
   0% {
     transform: translateX(0);

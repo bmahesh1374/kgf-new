@@ -7,7 +7,7 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import "../Styles/AdminNav.css";
+import "../Styles/AdminNavbar.css";
  
 import profilePic from "../../assets/Aboutus.png";
  

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate, Link } from "react-router-dom";
-import "../Styles/Sidebar.css";
+import "../Styles/AdminSidebar.css";
 
 function AdminSidebar() {
   const navigate = useNavigate();
@@ -20,26 +20,26 @@ function AdminSidebar() {
         <li>
           <div>
        
-            <Link to="/dashboard/dashboardhome"><span className="admin-menu-item">Dashboard</span></Link >
+            <Link to="/admindashboard/admindashboard"><span className="admin-menu-item">Registrations</span></Link >
          </div>
         </li>
         <li>
           <div>
        
-            <Link to="/dashboard/student"><span className="admin-menu-item">Student</span></Link >
+            <Link to="/admindashboard"><span className="admin-menu-item">Blood Donors</span></Link >
          </div>
         </li>
          <li>
           <div>
           
-            <Link to="/dashboard/agriculture"><span className="admin-menu-item">Agriculture</span></Link >
+            <Link to="/admindashboard"><span className="admin-menu-item">Events</span></Link >
          </div>
         </li>
          <li>
           <div>
 
-           <Link to="/dashboard/education">
-              <span  className="admin-menu-item">Education</span>
+           <Link to="/admindashboard">
+              <span  className="admin-menu-item">Jobs</span>
             </Link> 
 
          </div>
@@ -47,29 +47,23 @@ function AdminSidebar() {
          <li>
           <div>
            
-            <Link to="/dashboard/business"><span className="admin-menu-item">Business Man</span></Link>
+            <Link to="/admindashboard"><span className="admin-menu-item">Donations</span></Link>
          </div>
         </li>
          <li>
           <div>
             
-            <Link to="/dashboard/others"><span className="admin-menu-item">Others</span></Link>
+            <Link to="/admindashboard"><span className="admin-menu-item">Board Members</span></Link>
          </div>
         </li>
          <li>
           <div>
             
-            <Link to="/dashboard/devents"><span className="admin-menu-item">Events</span></Link>
+            <Link to="/admindashboard"><span className="admin-menu-item">OurPartners</span></Link>
          </div>
          
         </li>
-         <li>
-          <div>
-            
-            <Link to="/dashboard/blood"><span className="admin-menu-item">Donate Blood</span></Link>
-         </div>
          
-        </li>
 
         </ul>
       
