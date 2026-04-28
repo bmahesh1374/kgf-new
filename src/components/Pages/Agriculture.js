@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
+import "../Styles/Agriculture.css";
+import AgriRequirement from "./AgriRequirement";
+import AgriMyRequirement from "./AgriMyRequirement";
+import { Route, Routes } from "react-router-dom";
+import AgriPostRequirements from "./AgriPostRequirement";
 
 function Agriculture() {
   return (
-    <div>
-        <h1>Welcome to the Ariculture Page</h1>
-    </div>
-  )
+    <>
+      <section>
+        <div>
+          <h3>Agriculture</h3>
+        </div>
+        {/* <AgriRequirement /> */}
+        {/* <AgriMyRequirement /> */}
+        <AgriPostRequirements />
+      </section>
+    </>
+  );
 }
 
-export default Agriculture
+export default Agriculture;

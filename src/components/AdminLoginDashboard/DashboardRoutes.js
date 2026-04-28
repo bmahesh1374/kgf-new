@@ -11,22 +11,18 @@ import Blood_Donate from "../Pages/Blood_Donate";
 import DEvents from "../Pages/DEvents";
 import ViewJob from "../Pages/ViewJob";
 
-
 function DashboardRoutes() {
   return (
     <Routes>
-      <Route path="/dashboardhome" element={<DashboardHome/>} />
-      <Route path="/student" element={<Student/>} />
-      <Route path="/viewjob" element={<ViewJob/>} />
-      <Route path="/events" element={<Events/>} />
-      <Route path="/agriculture" element={<Agriculture/>} />
-      <Route path="/education" element={<Education/>} />
-      <Route path="/business" element={<Business_man/>} />
-      <Route path="/others" element={<Others/>} />
-      <Route path="/devents" element={<DEvents/>} />
-      <Route path="/blood" element={<Blood_Donate/>} />
-
-       
+      <Route path="/dashboardhome" element={<DashboardHome />} />
+      <Route path="/student" element={<Student />} />
+      <Route path="/agriculture" element={<Agriculture />} />
+      <Route path="/education" element={<Education />} />
+      <Route path="/business" element={<Business_man />} />
+      <Route path="/others" element={<Others />} />
+      <Route path="/devents" element={<DEvents />} />
+      <Route path="/blood" element={<Blood_Donate />} />
+      <Route path="/viewjob" element={<ViewJob />} />
     </Routes>
   );
 }
