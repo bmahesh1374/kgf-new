@@ -157,7 +157,7 @@ function closePopup() {
                   />
                 </div>
 
-                {/*Mobile Number */}
+                
                 <div className="kgf-memb-form-content">
                   <label className="kgf-memb-form-label">
                     Mobile Number<span className="kgf-required">*</span>
@@ -184,7 +184,7 @@ function closePopup() {
                   </div>
                 </div>
 
-                {/*Father Name */}
+               
                 <div className="kgf-memb-form-content">
                   <label className="kgf-memb-form-label">
                     Father Name<span className="kgf-required">*</span>
@@ -197,7 +197,7 @@ function closePopup() {
                   />
                 </div>
 
-                {/*Whatsapp Number */}
+              
                 <div className="kgf-memb-form-content">
                   <label className="kgf-memb-form-label">
                     Whatsapp Number<span className="kgf-required">*</span>
@@ -210,7 +210,7 @@ function closePopup() {
                   />
                 </div>
 
-                {/*Kulam */}
+              
                 <div className="kgf-memb-form-content">
                   <label className="kgf-memb-form-label">
                     Kulam <span className="kgf-required">*</span>
@@ -224,7 +224,7 @@ function closePopup() {
                   </select>
                 </div>
 
-                {/*Gothram */}
+            
                 <div className="kgf-memb-form-content">
                   <label className="kgf-memb-form-label">
                     Gothram<span className="kgf-required">*</span>
@@ -238,7 +238,7 @@ function closePopup() {
                   </select>
                 </div>
 
-                {/*Blood Donor */}
+              
                 <div className="kgf-memb-form-content kgf-memb-form-space">
                   <label className="kgf-memb-form-label">
                     Blood Donor<span className="kgf-required">*</span>

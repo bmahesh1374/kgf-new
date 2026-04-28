@@ -33,19 +33,19 @@
 }
 
 .job-left h4 {
-  font-size: 34px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 0;
+  margin-bottom: 20px;
   color: #111;
 }
 
 .salary {
-  font-size: 20px;
+  font-size: 14px;
   margin: 4px 0;
 }
 
 .company {
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -54,19 +54,26 @@
 }
 
 .job-middle {
-  margin-top: 12px;
+  margin-top: 4px;
+  text-align: left;
 }
 
 .job-middle p {
   margin: 6px 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .job-info {
-  /* display: flex; */
-  /* gap: 25px; */
   margin: 8px 0;
-  /* flex-wrap: wrap; */
+
+
+}
+.content-jsb{
+  display: flex;
+  margin-top: 20px;
+  border-bottom: 2px solid #dcdcdc;
+  border-top: 2px solid #dcdcdc;
+  justify-content: space-between;   
 }
 
 .job-info span {
@@ -86,10 +93,10 @@
   background: #08b113;
   color: white;
   border: none;
-  padding: 8px 28px;
+  padding: 6px 15px;
   border-radius: 5px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .jobs-apptra div {
@@ -100,9 +107,6 @@
   cursor: pointer;
 }
 
-.skills{
-text-align:left;
-}
 
 .active-tab {
   background: #fff;
