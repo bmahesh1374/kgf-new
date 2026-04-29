@@ -32,7 +32,7 @@ function AdminSidebar() {
          <li>
           <div>
           
-            <Link to="/admindashboard"><span className="admin-menu-item">Events</span></Link >
+            <Link to="/admindashboard/events"><span className="admin-menu-item">Events</span></Link >
          </div>
         </li>
          <li>
