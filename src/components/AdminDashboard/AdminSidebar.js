@@ -1,72 +1,120 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "../Styles/AdminSidebar.css";
 
 function AdminSidebar() {
-  const navigate = useNavigate();
-  const [openMenus, setOpenMenus] = useState({});
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [openMenus, setOpenMenus] = useState({
+
+  });
 
   const toggleMenu = (menu) => {
-    setOpenMenus((prev) => ({ ...prev, [menu]: !prev[menu] }));
+    setOpenMenus((prev) => ({
+      ...prev,
+      [menu]: !prev[menu],
+    }));
   };
 
   return (
-    <div className={`admin-sidebar ${isCollapsed ? "collapsed" : ""}`}>
-      {/* HEADER */}
-
+    <div className="admin-sidebar">
       <ul className="admin-sidebar-menu">
-
         <li>
-          <div>
-       
-            <Link to="/admindashboard/admindashboard"><span className="admin-menu-item">Registrations</span></Link >
-         </div>
+          <NavLink
+            to="/admindashboard/admindashboard"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Registrations
+          </NavLink>
         </li>
         <li>
-          <div>
-       
-            <Link to="/admindashboard"><span className="admin-menu-item">Blood Donors</span></Link >
-         </div>
+          <NavLink
+            to="/admindashboard/blood-donors"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Blood Donors
+          </NavLink>
         </li>
-         <li>
-          <div>
-          
-            <Link to="/admindashboard"><span className="admin-menu-item">Events</span></Link >
-         </div>
+        <li>
+          <NavLink
+            to="/admindashboard/events"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Events
+          </NavLink>
         </li>
-         <li>
-          <div>
+        <li>
+          <NavLink
+            to="/admindashboard/jobs"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Jobs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/admindashboard/donations"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Donations
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/admindashboard/board-members"
+            className={({ isActive }) =>
+              isActive ? "admin-menu-item active" : "admin-menu-item"
+            }
+          >
+            Board Members
+          </NavLink>
+        </li>
+        <li>
+          <div
+            className="admin-menu-item toggle-menu"
+            onClick={() => toggleMenu("partners")}
+          >
+            Our Partners{" "}
+            {openMenus.partners ? <FaChevronUp /> : <FaChevronDown />}
+          </div>
 
-           <Link to="/admindashboard">
-              <span  className="admin-menu-item">Jobs</span>
-            </Link> 
+          {openMenus.partners && (
+            <ul className="submenu">
+              <li>
+                <NavLink
+                  to="/admindashboard/colleges"
+                  className={({ isActive }) =>
+                    isActive ? "submenu-link active" : "submenu-link"
+                  }
+                >
+                  Colleges & Schools
+                </NavLink>
+              </li>
 
-         </div>
+              <li>
+                <NavLink
+                  to="/admindashboard/hospitals"
+                  className={({ isActive }) =>
+                    isActive ? "submenu-link active" : "submenu-link"
+                  }
+                >
+                  Hospitals
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </li>
-         <li>
-          <div>
-           
-            <Link to="/admindashboard"><span className="admin-menu-item">Donations</span></Link>
-         </div>
-        </li>
-         <li>
-          <div>
-            
-            <Link to="/admindashboard"><span className="admin-menu-item">Board Members</span></Link>
-         </div>
-        </li>
-         <li>
-          <div>
-            
-            <Link to="/admindashboard"><span className="admin-menu-item">OurPartners</span></Link>
-         </div>
-         
-        </li>
-         
 
-        </ul>
-      
+      </ul>
     </div>
   );
 }
