@@ -38,13 +38,7 @@ function AdminSidebar() {
             Blood Donors
           </NavLink>
         </li>
-<<<<<<< HEAD
-         <li>
-          <div>
-          
-            <Link to="/admindashboard/events"><span className="admin-menu-item">Events</span></Link >
-         </div>
-=======
+        
         <li>
           <NavLink
             to="/admindashboard/events"
@@ -54,7 +48,7 @@ function AdminSidebar() {
           >
             Events
           </NavLink>
->>>>>>> Surya
+
         </li>
         <li>
           <NavLink
