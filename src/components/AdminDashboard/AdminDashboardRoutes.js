@@ -32,7 +32,7 @@ import AdminStTbleView from "../Pages/AdminStTbleView";
 function AdminDashboardRoutes() {
   return (
     <Routes>
-      {/* <Route path="/admindashboardhome" element={<AdminDashboardHome/>} /> */}
+ 
      <Route path="/" element={<AdminDashboardHome/>} />
       <Route path="/admindashboardhome" element={<AdminDashboardHome/>} />
       <Route path="/events" element={<AdminEvents />} />
