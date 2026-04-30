@@ -17,7 +17,7 @@ function DashboardRoutes() {
 
 
    
-      <Route path="/dashboardhome" element={<DashboardHome />} />
+      <Route path="/" element={<DashboardHome />} />
       <Route path="/student" element={<Student />} />
       <Route path="/agriculture" element={<Agriculture />} />
       <Route path="/education" element={<Education />} />

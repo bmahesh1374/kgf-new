@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate, Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import "../Styles/Sidebar.css";
 
 function Sidebar() {
-  const navigate = useNavigate();
   const [openMenus, setOpenMenus] = useState({});
   const [isCollapsed, setIsCollapsed] = useState(false);
 
@@ -15,60 +14,100 @@ function Sidebar() {
     <div className={`admin-sidebar ${isCollapsed ? "collapsed" : ""}`}>
       {/* HEADER */}
 
-      <ul className="admin-sidebar-menu">
+      <ul className="sidebar-menu">
 
         <li>
-          <div>
-       
-            <Link to="/dashboard/dashboardhome"><span className="admin-menu-item">Dashboard</span></Link >
-         </div>
+            {/* <NavLink className="menu-item" to="/dashboard/dashboardhome">Dashboard</NavLink > */}
+                      <NavLink
+                        to="/dashboard/"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Dashboard
+                      </NavLink> 
         </li>
+
         <li>
-          <div>
-       
-            <Link to="/dashboard/student"><span className="admin-menu-item">Student</span></Link >
-         </div>
-        </li>
-         <li>
-          <div>
-          
-            <Link to="/dashboard/agriculture"><span className="admin-menu-item">Agriculture</span></Link >
-         </div>
-        </li>
-         <li>
-          <div>
 
-           <Link to="/dashboard/education">
-              <span  className="admin-menu-item">Education</span>
-            </Link> 
+                    <NavLink
+                        to="/dashboard/student"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Student
+                      </NavLink> 
 
-         </div>
+         {/* <NavLink to="/dashboard/student"><span className="menu-item">Student</span></NavLink > */}
         </li>
          <li>
-          <div>
-           
-            <Link to="/dashboard/business"><span className="admin-menu-item">Business Man</span></Link>
-         </div>
+              <NavLink
+                        to="/dashboard/agriculture"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Agriculture
+                      </NavLink> 
+            {/* <NavLink to="/dashboard/agriculture"><span className="menu-item">Agriculture</span></NavLink > */}
+        
         </li>
          <li>
-          <div>
-            
-            <Link to="/dashboard/others"><span className="admin-menu-item">Others</span></Link>
-         </div>
+
+          <NavLink
+                        to="/dashboard/education"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Education
+                      </NavLink> 
+           {/* <NavLink to="/dashboard/education">
+              <span  className="menu-item">Education</span>
+            </NavLink>  */}
+
         </li>
          <li>
-          <div>
-            
-            <Link to="/dashboard/devents"><span className="admin-menu-item">Events</span></Link>
-         </div>
+           <NavLink
+                        to="/dashboard/business"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Business Man
+                      </NavLink> 
+
+            {/* <NavLink to="/dashboard/business"><span className="menu-item">Business Man</span></NavLink> */}
+        </li>
+         <li>
+              <NavLink
+                        to="/dashboard/others"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Others
+                      </NavLink> 
+
+            {/* <NavLink to="/dashboard/others"><span className="menu-item">Others</span></NavLink> */}
          
         </li>
          <li>
-          <div>
+              <NavLink
+                        to="/dashboard/devents"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Events
+                      </NavLink> 
+            {/* <NavLink to="/dashboard/devents"><span className="menu-item">Events</span></NavLink> */}
+        </li>
+         <li>
+
+          <NavLink
+                        to="/dashboard/blood"
+                        className={({ isActive }) =>
+                          isActive ? "menu-item active" : "menu-item"
+                        }>
+                        Donate Blood
+                      </NavLink> 
             
-            <Link to="/dashboard/blood"><span className="admin-menu-item">Donate Blood</span></Link>
-         </div>
-         
+            {/* <NavLink to="/dashboard/blood"><span className="menu-item">Donate Blood</span></NavLink> */}
         </li>
 
         </ul>

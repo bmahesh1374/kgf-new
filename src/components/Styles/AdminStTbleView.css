@@ -1,4 +1,4 @@
-/* Main card */
+
 .student-view-card{
   background:#f7f7f7;
   border:1px solid #ddd;
@@ -8,7 +8,7 @@
   box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* Header */
+
 .student-card-header{
   background:#ccb066;
   color:#fff;
@@ -20,9 +20,9 @@
 
 .back-icon{
   font-size:26px;
-  background-color: #fff;
-  color: #333;
-  border-radius: 8px;
+  background-color:#fff;
+  color:#333;
+  border-radius:8px;
   cursor:pointer;
 }
 
@@ -32,20 +32,34 @@
   font-weight:600;
 }
 
-/* Top profile */
-.student-profile-top{
-  display:flex;
-  justify-content:space-evenly;
-  gap:30px;
-  padding:20px;
+
+.student-profile-top {
+  position: relative;
+  padding: 20px;
 }
 
-.student-details-grid{
-  flex:1;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px 35px;
+
+.student-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 35px;
+
 }
+
+
+.student-image-box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.student-image-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 
 .student-details-grid p,
 .info-box p,
@@ -61,17 +75,7 @@
   font-weight:700;
 }
 
-.student-image-box img{
-  width:120px;
-  height:120px;
-  border-radius:8px;
-  object-fit:cover;
-}
 
-
-
-
-/* 2 column section */
 .double-section{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -90,29 +94,29 @@
   padding:10px;
 }
 
-/* Bottom */
 .bottom-line{
   text-align:center;
   padding:15px 20px 25px;
 }
 
-/* Mobile */
 @media(max-width:768px){
 
-.student-profile-top{
-  flex-direction:column;
-}
+  .student-profile-top{
+    position: static;
+  }
 
-.student-details-grid{
-  grid-template-columns:1fr;
-}
+  .student-details-grid{
+    grid-template-columns:1fr;
+    padding-right:0;
+  }
 
-.double-section{
-  grid-template-columns:1fr;
-}
+  .double-section{
+    grid-template-columns:1fr;
+  }
 
-.student-image-box{
-  text-align:center;
-}
-
+  .student-image-box{
+    position: static;
+    text-align:center;
+    margin-bottom:10px;
+  }
 }

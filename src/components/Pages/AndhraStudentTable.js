@@ -5,7 +5,7 @@ import msgicon from "../../assets/msgicon.png";
 import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import "../Styles/AdminStudentTable.css";
-const AdminStudentTable = () => {
+const AndhraStudentTable = () => {
     const navigate = useNavigate();
   return (
     <div className='admin-student-table-container'>
@@ -65,7 +65,7 @@ const AdminStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-          <button onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
+          <button className='atview-btn' onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
             </td>
           </tr>
           <tr>
@@ -77,7 +77,7 @@ const AdminStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
+              <button className='atview-btn' onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
              
             </td>
           </tr>
@@ -87,4 +87,4 @@ const AdminStudentTable = () => {
   );
 }
 
-export default AdminStudentTable;
+export default AndhraStudentTable;

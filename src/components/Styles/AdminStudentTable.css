@@ -56,6 +56,7 @@
     border: none;
     padding: 2px 20px;
     width: 250px;
+    margin-right: 5px;
     border-radius: 10px;
 }
 
@@ -142,15 +143,17 @@ tr{
 } */
 
 
-button {
-  background: #7B5825;
+
+.atview-btn{
+     background: #7B5825;
   color: white;
   border: none;
-  padding: 8px 14px;
+  padding: 3px 12px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #5e431b;
+.atview-btn:hover{
+    
+ background: #5e431b;
 }

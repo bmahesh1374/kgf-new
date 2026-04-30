@@ -10,7 +10,7 @@ function AndhraPradesh() {
       <div className="container">
       
 
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/admin-student-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/andhra-student-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Students</p>
         </card>

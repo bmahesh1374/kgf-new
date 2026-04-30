@@ -3,9 +3,13 @@ import msgicon from "../../assets/msgicon.png";
 import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import { IoArrowBackCircle } from "react-icons/io5";
+
+import { useNavigate } from "react-router-dom";
+
 import "../Styles/AdminStTbleView.css";
 
 function AdminStTbleView() {
+  const navigate = useNavigate();
   return (
     <div className='Admin-student-table-view'>
       <h1>Students</h1>
@@ -43,10 +47,10 @@ function AdminStTbleView() {
         <button>Add +</button>
       </div>
 
-      {/* STUDENT VIEW CARD */}
+    
       <div className="student-view-card">
         <div className="student-card-header">
-          <IoArrowBackCircle className="back-icon" />
+          <IoArrowBackCircle className="back-icon" onClick={()=> navigate(("/admindashboard/andhra-student-table"))} />
           <h3>Kishore</h3>
         </div>
 
@@ -79,7 +83,7 @@ function AdminStTbleView() {
         </div>
 
         
-        {/* Address */}
+  
         <div className="double-section">
 
           <div className="info-box">
@@ -100,7 +104,7 @@ function AdminStTbleView() {
 
         </div>
 
-        {/* Professional */}
+      
         <div className="double-section">
 
           <div className="info-box">
