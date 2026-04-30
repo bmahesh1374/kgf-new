@@ -1,14 +1,16 @@
 import React from "react";
 import "../Styles/AdminDBH.css";
+import { useNavigate } from "react-router-dom";
 
 function AndhraPradesh() {
+  const navigate = useNavigate();
   return (
     <section className="admin-dashboard-section">
         <h1 className="admin-dh-title">Andhra Pradesh</h1>
       <div className="container">
       
 
-        <card className="admin-dh-card">
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/admin-student-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Students</p>
         </card>
