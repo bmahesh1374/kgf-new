@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/AdminDBH.css";
 import { useNavigate } from "react-router-dom";
 
-function AdminDashboardHome() {
+ function AdminDashboardHome() {
 
   const navigate = useNavigate();
   return (
