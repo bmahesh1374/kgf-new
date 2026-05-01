@@ -2,8 +2,11 @@ import React from "react";
 import msgicon from "../../assets/msgicon.png";
 import { IoMdDownload } from "react-icons/io";
 import "../Styles/AdminEvents.css";
+import {useNavigate} from "react-router-dom"
+import whatsappIcon from "../../assets/whatsApp-icon.png"
 
 function AdminEvents() {
+const navigate = useNavigate();
   return (
     <>
       <section>
@@ -13,6 +16,7 @@ function AdminEvents() {
         <div className="kgf-admin-event-flex-container">
           <div className="kgf-admin-event-ckeckbox">
             <input type="checkbox" />
+            <img src={whatsappIcon} alt="img" />
             <label>WhatsApp</label>
           </div>
           <div className="kgf-admin-event-ckeckbox">
@@ -37,7 +41,7 @@ function AdminEvents() {
           </div>
         </div>
         <div className="kgf-admin-event-add-btn">
-          <button>Add +</button>
+          <button onClick={() => navigate("/admindashboard/adminAddEvents")}>Add +</button>
         </div>
         <div className="kgf-admin-event-container">
           <div className="kgf-admin-event-data">
@@ -49,12 +53,12 @@ function AdminEvents() {
               <p>Hyderabad</p>
             </div>
             <div className="kgf-admin-event-preview-btn">
-              <button>Event Preview</button>
+              <button onClick={() => navigate("/admindashboard/adminEventsPreview")}>Event Preview</button>
             </div>
           </div>
           <div className="kgf-admin-event-card-data">
             <div className="kgf-admin-event-responses">
-              <button>
+              <button onClick={() => navigate("/admindashboard/adminEventsTable")}>
                 50 <br />
                 Total Responses
               </button>

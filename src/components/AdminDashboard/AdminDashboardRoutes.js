@@ -23,10 +23,11 @@ import Organizations from "../Pages/Organizations";
 import Tamilnadu from "../Pages/Tamilnadu";
 import AdminStudentTable from "../Pages/AdminStudentTable";
 import AdminStTbleView from "../Pages/AdminStTbleView";
-
-
-
-
+import AdminAddEvents from "../Pages/AdminAddEvents";
+import AdminEventsTable from "../Pages/AdminEventsTable";
+import AdminEventPreview from "../Pages/AdminEventPreview";
+import AdminDonations from "../Pages/AdminDonations";
+import AdminDonorForm from "../Pages/AdminDonorForm";
 
 
 function AdminDashboardRoutes() {
@@ -45,8 +46,12 @@ function AdminDashboardRoutes() {
        <Route path="/tamil-nadu" element={<Tamilnadu/>} />
        <Route path="/admin-student-table" element={<AdminStudentTable/>} />
        <Route path="/AdminStTbleView" element={<AdminStTbleView/>}/>
-
-x
+        <Route path="/adminAddEvents" element = {<AdminAddEvents  />} />
+        <Route path="/adminEventsTable" element = {<AdminEventsTable />} />
+        <Route path="/adminEventsPreview" element = {<AdminEventPreview />} />
+        <Route path="/donations" element ={<AdminDonations />} />
+        <Route path="/addDonor" element ={<AdminDonorForm />} />
+  
     </Routes>
   );
 }

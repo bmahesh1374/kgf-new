@@ -1,0 +1,166 @@
+.admin-events-table-container {
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.admin-events-table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.admin-events-table-total {
+    position: relative;
+    left: 38%;
+}
+
+.admin-events-table-total p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+.kgf-admin-events-table-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    border: 1.5px solid;
+    padding: 4px;
+    border-radius: 10px;
+    
+}
+
+.kgf-admin-events-table-ckeckbox {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.kgf-admin-events-table-ckeckbox input {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+
+.kgf-admin-events-table-send-btn button {
+    padding: 0px 15px;
+    border: none;
+    background-color: #7B5825;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-events-table-search {
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding: 2px;
+
+
+}
+
+.kgf-admin-events-table-search input {
+    border: none;
+    padding: 2px 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.kgf-admin-events-table-search button {
+    padding: 2px 16px;
+    border: none;
+    background-color: #211AEB;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-events-table-download button {
+    padding: 2px 15px;
+    border: none;
+    background-color: #AF7E36;
+    color: #ffff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.kgf-admin-events-table-delete button {
+    padding: 2px 15px;
+    border: none;
+    background-color: #EA4335;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-event-container {
+    max-width: 90%;
+    border: 1.5px solid;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.kgf-admin-events-table-add-btn {
+    text-align: end;
+    max-width: 97%;
+}
+
+.kgf-admin-events-table-add-btn button {
+    padding: 2px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #010088;
+    color: #ffff;
+    font-weight: 500;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.admin-events-table-header th {
+  background-color: #D8BB79;
+  padding: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+tr{
+    border: 1px solid #333;  
+}
+
+/* tbody tr:hover {
+  background: #faf7ef;
+} */
+
+
+button {
+  background: #7B5825;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5e431b;
+}

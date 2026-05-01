@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Login.css";
 
-function Login() {
+function Login({onClose}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showRegister, setShowRegister] = useState(false);
@@ -36,7 +36,7 @@ function Login() {
 
           <span
             className="close-btn"
-            onClick={() => navigate(-1)}
+            onClick={onClose}
           >
             ✖
           </span>

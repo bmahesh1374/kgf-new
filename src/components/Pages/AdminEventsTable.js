@@ -1,53 +1,53 @@
-
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import msgicon from "../../assets/msgicon.png";
-import { IoMdDownload } from "react-icons/io";
+import { IoMdDownload, IoLogoWhatsapp } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
-import "../Styles/AdminStudentTable.css";
 import whatsappIcon from "../../assets/whatsApp-icon.png"
-
-
-const AdminStudentTable = () => {
+import "../Styles/AdminEventsTable.css";
+const AdminEventsTable = () => {
     const navigate = useNavigate();
   return (
-    <div className='admin-student-table-container'>
-      <h2>Student Table</h2>
-      <div className="kgf-admin-table-flex-container">
-        <div className="kgf-admin-table-ckeckbox">
+    <div className='admin-events-table-container'>
+      <h2>Events</h2>
+      <div className="admin-events-table-total">
+        <p>Total Responses :- 50</p>
+      </div>
+      <div className="kgf-admin-events-table-flex-container">
+        <div className="kgf-admin-events-table-ckeckbox">
           <input type="checkbox" />
           <img src={whatsappIcon} alt="img" />
           <label>WhatsApp</label>
         </div>
-        <div className="kgf-admin-table-ckeckbox">
+        <div className="kgf-admin-events-table-ckeckbox">
           <input type="checkbox" />
           <img src={msgicon} alt="img" />
           <label>Email</label>
         </div>
-        <div className="kgf-admin-table-send-btn">
+        <div className="kgf-admin-events-table-send-btn">
           <button>Send</button>
         </div>
-        <div className="kgf-admin-table-search">
+        <div className="kgf-admin-events-table-search">
           <input type="text" placeholder="Search by Event location......" />
           <button>Search</button>
         </div>
-        <div className="kgf-admin-table-download">
+        <div className="kgf-admin-events-table-download">
           <button>
             <IoMdDownload /> Download
           </button>
         </div>
-        <div className="kgf-admin-table-delete">
+        <div className="kgf-admin-events-table-delete">
           <button>Delete</button>
 
         </div>
         <IoFilter />
       </div>
-      <div className="kgf-admin-table-add-btn mb-3">
+      <div className="kgf-admin-events-table-add-btn mb-3">
         <button>Add +</button>
       </div>
 
       <table>
-        <thead className='admin-student-table-header'>
+        <thead className='admin-events-table-header'>
           <tr>
             <th><input type="checkbox" /></th>
             <th>Name</th>
@@ -69,7 +69,7 @@ const AdminStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-          <button onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
+          <button>View</button>
             </td>
           </tr>
           <tr>
@@ -81,7 +81,7 @@ const AdminStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button onClick={()=> navigate("/admindashboard/AdminStTbleView")}>View</button>
+              <button>View</button>
              
             </td>
           </tr>
@@ -91,4 +91,4 @@ const AdminStudentTable = () => {
   );
 }
 
-export default AdminStudentTable;
+export default AdminEventsTable;

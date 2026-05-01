@@ -25,6 +25,31 @@
   font-weight: 600;
 }
 
+.login-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  z-index: 9999;
+  width: 160px;
+}
+
+.login-dropdown p {
+  padding: 8px 12px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #061657;
+}
+
+.login-dropdown p:hover {
+  background: #735702;
+  color: white;
+}
+
 .inside-link{
   text-decoration: none;
   color: inherit;
