@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { IoMdDownload,  } from "react-icons/io";
+import { IoMdDownload} from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import whatsappIcon from "../../assets/whatsApp-icon.png";
 import "../Styles/AdminDonations.css";

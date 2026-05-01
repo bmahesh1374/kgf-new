@@ -7,7 +7,9 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import StudentMembership from "../Membership/StudentMembership.js";
 import { Navbar, Nav, Button, Modal, Container } from "react-bootstrap";
-import Login from "../Pages/Login";
+import Login from "../Pages/UserLogin.js";
+import AdminLogin from "../Pages/AdminLogin";
+import UserLogin from "../Pages/UserLogin.js";
 
 function NavbarSection() {
   const [member, setMember] = useState(false);
@@ -83,7 +85,7 @@ function NavbarSection() {
               {showLoginDropDown && (
                 <div className="login-dropdown">
                   <p onClick={() => openLoginModal("admin")}>Login as Admin</p>
-                  <p onClick={() => openLoginModal("login")}>Login</p>
+                  <p onClick={() => openLoginModal("login")}>Login as User</p>
                 </div>
               )}
             </div>
@@ -98,8 +100,8 @@ function NavbarSection() {
             >
             <Modal.Header closeButton className="border-0"></Modal.Header>
               <Modal.Body className="p-0">
-                {selectedLoginType === "admin" && <Login onClose={handleCloseLogin}/>}
-                {selectedLoginType === "login" && <Login onClose={handleCloseLogin}/>}
+                {selectedLoginType === "admin" && <AdminLogin onClose={handleCloseLogin}/>}
+                {selectedLoginType === "login" && <UserLogin onClose={handleCloseLogin}/>}
               </Modal.Body>
             </Modal>
 
@@ -350,6 +352,7 @@ function NavbarSection() {
         </div>
       </nav>
       {member && <StudentMembership closeMembership={() => setMember(false)} />}
+
     </>
   );
 }

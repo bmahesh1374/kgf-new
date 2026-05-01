@@ -6,72 +6,94 @@ const AdminDonorForm = () => {
   <>
     <section className="kgf-admin-donor-section">
         <div className='kgf-admin-donor-close-btn'>
-            <button>x</button>
+            <button>X</button>
         </div>
         <div className="kgf-admin-donor-grid-container">
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              Donor Name<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="Donor Name"
               required
             />
           </div>
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              Phone Number<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="Phone Number"
               required
             />
           </div>
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              Amount Donate<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="Amount Donate"
               required
             />
           </div>
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              State<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="State"
               required
             />
           </div>
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              District<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="District"
               required
             />
           </div>
           <div className="kgf-admin-donor-form-content">
             <label className="kgf-admin-donor-form-label">
-              Event Title<span className="kgf-admin-donor-required">*</span>
+              Village / City<span className="kgf-admin-donor-required">*</span>
             </label>
             <input
               type="text"
               className="kgf-admin-donor-form-control"
-              placeholder="Event Title"
+              placeholder="Village / City"
+              required
+            />
+          </div>
+          <div className="kgf-admin-donor-form-content">
+            <label className="kgf-admin-donor-form-label">
+              Pincode<span className="kgf-admin-donor-required">*</span>
+            </label>
+            <input
+              type="text"
+              className="kgf-admin-donor-form-control"
+              placeholder="Pincode"
+              required
+            />
+          </div>
+          <div className="kgf-admin-donor-form-content">
+            <label className="kgf-admin-donor-form-label">
+              Way of Pay<span className="kgf-admin-donor-required">*</span>
+            </label>
+            <input
+              type="text"
+              className="kgf-admin-donor-form-control"
+              placeholder="Way of Pay"
               required
             />
           </div>

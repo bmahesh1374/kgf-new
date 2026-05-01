@@ -5,7 +5,7 @@ import FamilyTree from "../Pages/FamilyTree";
 import Gallery from "../Pages/Gallery";
 import AboutUs from "../Landing/AboutUs";
 import Getintouch from "../Landing/Getintouch";
-import Login from "../Pages/Login";
+import UserLogin from "../Pages/UserLogin";
 import NavbarSection from "../Landing/NavbarSection";
 
 function Routing() {
@@ -14,7 +14,7 @@ function Routing() {
       <NavbarSection />
 
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<UserLogin />} />
         <Route path="/familytree" element={<FamilyTree />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/aboutus" element={<AboutUs />} />

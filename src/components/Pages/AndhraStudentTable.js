@@ -2,9 +2,10 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import msgicon from "../../assets/msgicon.png";
-import { IoMdDownload, whatsappIcon} from "react-icons/io";
+import { IoMdDownload} from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import "../Styles/AdminStudentTable.css";
+import whatsappIcon from "../../assets/whatsApp-icon.png"
 const AndhraStudentTable = () => {
     const navigate = useNavigate();
   return (

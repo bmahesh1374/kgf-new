@@ -152,15 +152,3 @@ tr{
 } */
 
 
-button {
-  background: #7B5825;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #5e431b;
-}
