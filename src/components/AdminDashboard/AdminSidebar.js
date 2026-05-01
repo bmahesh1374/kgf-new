@@ -20,7 +20,7 @@ function AdminSidebar() {
       <ul className="admin-sidebar-menu">
         <li>
           <NavLink
-            to="/admindashboard/admindashboard"
+            to="/admindashboard/admindashboardhome"
             className={({ isActive }) =>
               isActive ? "admin-menu-item active" : "admin-menu-item"
             }

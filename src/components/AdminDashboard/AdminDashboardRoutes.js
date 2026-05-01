@@ -21,7 +21,7 @@ import Organization from "../Pages/Organization";
 import OutsideOfIndia from "../Pages/OutsideOfIndia";
 import Organizations from "../Pages/Organizations";
 import Tamilnadu from "../Pages/Tamilnadu";
-import AdminStudentTable from "../Pages/AdminStudentTable";
+import AndhraStudentTable from "../Pages/AndhraStudentTable";
 import AdminStTbleView from "../Pages/AdminStTbleView";
 import AdminAddEvents from "../Pages/AdminAddEvents";
 import AdminEventsTable from "../Pages/AdminEventsTable";
@@ -33,7 +33,9 @@ import AdminDonorForm from "../Pages/AdminDonorForm";
 function AdminDashboardRoutes() {
   return (
     <Routes>
-      <Route path="/admindashboard" element={<AdminDashboardHome/>} />
+ 
+     <Route path="/" element={<AdminDashboardHome/>} />
+      <Route path="/admindashboardhome" element={<AdminDashboardHome/>} />
       <Route path="/events" element={<AdminEvents />} />
       <Route path="/telangana" element={<Telangana/>} />
       <Route path="/andhra-pradesh" element={<AndhraPradesh/>} />
@@ -44,7 +46,7 @@ function AdminDashboardRoutes() {
        <Route path="/outside-of-india" element={<OutsideOfIndia/>} />
        <Route path="/organizations" element={<Organizations/>} />
        <Route path="/tamil-nadu" element={<Tamilnadu/>} />
-       <Route path="/admin-student-table" element={<AdminStudentTable/>} />
+       <Route path="/andhra-student-table" element={<AndhraStudentTable/>} />
        <Route path="/AdminStTbleView" element={<AdminStTbleView/>}/>
         <Route path="/adminAddEvents" element = {<AdminAddEvents  />} />
         <Route path="/adminEventsTable" element = {<AdminEventsTable />} />
