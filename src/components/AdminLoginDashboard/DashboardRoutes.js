@@ -13,10 +13,8 @@ import ViewJob from "../Pages/ViewJob";
 
 function DashboardRoutes() {
   return (
+
     <Routes>
-
-
-   
       <Route path="/" element={<DashboardHome />} />
       <Route path="/student" element={<Student />} />
       <Route path="/agriculture" element={<Agriculture />} />
@@ -26,8 +24,8 @@ function DashboardRoutes() {
       <Route path="/devents" element={<DEvents />} />
       <Route path="/blood" element={<Blood_Donate />} />
       <Route path="/viewjob" element={<ViewJob />} />
-
     </Routes>
+
   );
 }
 
