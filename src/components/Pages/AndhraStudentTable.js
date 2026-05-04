@@ -84,7 +84,7 @@ const AndhraStudentTable = () => {
             </td>
           </tr>
         </tbody>
-      </table>
+      </table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     </div>
   );
 }

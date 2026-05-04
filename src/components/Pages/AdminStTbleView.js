@@ -50,8 +50,8 @@ function AdminStTbleView() {
     
       <div className="student-view-card">
         <div className="student-card-header">
-          <IoArrowBackCircle className="back-icon" onClick={()=> navigate(("/admindashboard/andhra-student-table"))} />
-          <h3>Kishore</h3>
+          <IoArrowBackCircle className="back-icon" onClick={()=> navigate((-1))} />
+          <h3>Surya</h3>
         </div>
 
         <div className="student-profile-top">
