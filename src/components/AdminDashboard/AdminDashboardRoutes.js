@@ -23,7 +23,7 @@ import Organizations from "../Pages/Organizations";
 import Tamilnadu from "../Pages/Tamilnadu";
 import AndhraStudentTable from "../Pages/AndhraStudentTable";
 import AdminStTbleView from "../Pages/AdminStTbleView";
-<<<<<<< HEAD
+
 import AdminAddEvents from "../Pages/AdminAddEvents";
 import AdminEventsTable from "../Pages/AdminEventsTable";
 import AdminEventPreview from "../Pages/AdminEventPreview";
@@ -31,7 +31,6 @@ import AdminDonations from "../Pages/AdminDonations";
 import AdminDonorForm from "../Pages/AdminDonorForm";
 import AdminJobs from "../Pages/AdminJobs";
 import AdminJobsLists from "../Pages/AdminJobsLists";
-=======
 import AndhraEmpTable from "../Pages/AndhraEmpTable";
 import  AndhraEmpTableView from "../Pages/AndhraEmpTableView";
 import AndhraBusiTable from "../Pages/AndhraBusiTable";
@@ -159,7 +158,6 @@ import OsiOthersTableView from "../Pages/OsiOthersTableView";
 import GujOthersTableView from "../Pages/GujOthersTableView";
 import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
 
->>>>>>> Surya
 
 
 function AdminDashboardRoutes() {
@@ -317,7 +315,6 @@ function AdminDashboardRoutes() {
        <Route path="/guj-other-table-view" element={<GujOthersTableView/>}/>
        <Route path="/orgs-other-table-view" element={<OrgsOthersTableView/>}/>
 
->>>>>>> Surya
     </Routes>
   
   );
