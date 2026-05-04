@@ -28,6 +28,8 @@ import AdminEventsTable from "../Pages/AdminEventsTable";
 import AdminEventPreview from "../Pages/AdminEventPreview";
 import AdminDonations from "../Pages/AdminDonations";
 import AdminDonorForm from "../Pages/AdminDonorForm";
+import AdminJobs from "../Pages/AdminJobs";
+import AdminJobsLists from "../Pages/AdminJobsLists";
 
 
 function AdminDashboardRoutes() {
@@ -37,6 +39,8 @@ function AdminDashboardRoutes() {
      <Route path="/" element={<AdminDashboardHome/>} />
       <Route path="/admindashboardhome" element={<AdminDashboardHome/>} />
       <Route path="/events" element={<AdminEvents />} />
+      <Route path="/jobs" element={<AdminJobs />} />
+      <Route path="/adminjobslists" element={<AdminJobsLists />} />
       <Route path="/telangana" element={<Telangana/>} />
       <Route path="/andhra-pradesh" element={<AndhraPradesh/>} />
       <Route path="/gujarat" element={<Gujarat/>} />

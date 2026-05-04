@@ -69,7 +69,7 @@ const AdminEventsTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-          <button>View</button>
+          <button className='kgf-admin-view-btn'>View</button>
             </td>
           </tr>
           <tr>
@@ -81,7 +81,7 @@ const AdminEventsTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button>View</button>
+              <button className='kgf-admin-view-btn'>View</button>
              
             </td>
           </tr>

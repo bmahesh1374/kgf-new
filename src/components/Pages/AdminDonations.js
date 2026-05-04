@@ -61,7 +61,7 @@ const AdminDonations = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button>View</button>
+              <button className='kgf-admin-view-btn'>View</button>
             </td>
           </tr>
           <tr>
@@ -74,11 +74,11 @@ const AdminDonations = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button>View</button>
+              <button className='kgf-admin-view-btn'>View</button>
             </td>
           </tr>
         </tbody>
-      </table>
+      </table>  
     </div>
   );
 };
