@@ -100,6 +100,7 @@
   color: #fff;
   position: relative;
   right: 44%;
+  cursor: pointer;
 }
 
 .admin-jobslist-header h4 {

@@ -16,7 +16,7 @@ const AdminJobs = () => {
           <img src={whatsappIcon} alt="img" />
           <label>WhatsApp</label>
         </div>
-        <div className="kgf-admin-jobs-ckeckbox">
+        <div className="kgf-admin-jobs-checkbox">
             <input type="checkbox" />
             <img src={msgicon} alt="img" />
             <label>Email</label>

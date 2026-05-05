@@ -7,6 +7,7 @@ import msgicon from "../../assets/msgicon.png";
 import "../Styles/AdminJobsLists.css";
 
 function AdminJobsLists() {
+  const navigate = useNavigate()
   return (
     <>
       <section className="admin-jobslist-section">
@@ -39,7 +40,7 @@ function AdminJobsLists() {
           </div>
         </div>
         <div className="admin-jobslist-header">
-          <LuArrowBigLeft className="admin-jobslist-left-arrow" />
+          <LuArrowBigLeft className="admin-jobslist-left-arrow" onClick={() => navigate(-1)}/>
           <h4>Surya</h4>
         </div>
         <div className="admin-jobslist-grid">
@@ -67,7 +68,7 @@ function AdminJobsLists() {
             </div>
 
             <div className="admin-jobslist-preview-btn">
-              <button>Job Preview</button>
+              <button onClick={() => navigate("/admindashboard/adminjobslists/adminjobpreview")}>Job Preview</button>
             </div>
           </div>
           <div className="row">
@@ -119,7 +120,7 @@ function AdminJobsLists() {
             </div>
 
             <div className="admin-jobslist-preview-btn">
-              <button>Job Preview</button>
+              <button onClick={() => navigate("/admindashboard/adminjobslists/adminjobpreview")}>Job Preview</button>
             </div>
           </div>
           <div className="row">

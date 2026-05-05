@@ -23,7 +23,6 @@ import Organizations from "../Pages/Organizations";
 import Tamilnadu from "../Pages/Tamilnadu";
 import AndhraStudentTable from "../Pages/AndhraStudentTable";
 import AdminStTbleView from "../Pages/AdminStTbleView";
-
 import AdminAddEvents from "../Pages/AdminAddEvents";
 import AdminEventsTable from "../Pages/AdminEventsTable";
 import AdminEventPreview from "../Pages/AdminEventPreview";
@@ -157,6 +156,7 @@ import OrgsOthersTable from "../Pages/OrgsOthersTable";
 import OsiOthersTableView from "../Pages/OsiOthersTableView";
 import GujOthersTableView from "../Pages/GujOthersTableView";
 import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
+import AdminJobPreview from "../Pages/AdminJobPreview.js";
 
 
 
@@ -169,6 +169,7 @@ function AdminDashboardRoutes() {
       <Route path="/events" element={<AdminEvents />} />
       <Route path="/jobs" element={<AdminJobs />} />
       <Route path="/adminjobslists" element={<AdminJobsLists />} />
+      <Route path="/adminjobslists/adminjobpreview" element={<AdminJobPreview/>} />
       <Route path="/telangana" element={<Telangana/>} />
       <Route path="/andhra-pradesh" element={<AndhraPradesh/>} />
       <Route path="/gujarat" element={<Gujarat/>} />
