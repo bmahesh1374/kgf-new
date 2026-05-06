@@ -19,8 +19,8 @@
 }
 
 .admin-dh-card {
-  width: 230px;
-  min-height: 200px;
+  width: 200px;
+  min-height: 180px;
   grid-template-columns: repeat(3, 1fr);
   background: #ffffff;
   border: 1px solid #c4944d;
