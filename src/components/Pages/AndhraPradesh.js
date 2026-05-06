@@ -35,6 +35,15 @@ function AndhraPradesh() {
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Agriculture</p>
         </card>
+
+          <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/ap-media-table")}>
+          <h2 className="admin-dh-card-title">20</h2>
+          <p className="admin-dh-card-text">Media</p>
+        </card>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/ap-flm-industry-table")}>
+          <h2 className="admin-dh-card-title">20</h2>
+          <p className="admin-dh-card-text">Film Industry</p>
+        </card>
         
          <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/andhra-others-table")}>
           <h2 className="admin-dh-card-title">20</h2>

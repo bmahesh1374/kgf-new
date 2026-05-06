@@ -7,7 +7,7 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import StudentMembership from "../Membership/StudentMembership.js";
 import { Navbar, Nav, Button, Modal, Container } from "react-bootstrap";
-import Login from "../Pages/UserLogin.js";
+// import Login from "../Pages/UserLogin.js";
 import AdminLogin from "../Pages/AdminLogin";
 import UserLogin from "../Pages/UserLogin.js";
 
@@ -96,8 +96,7 @@ function NavbarSection() {
               centered
               size="lg"
               backdrop="true"
-              className="login-modal"
-            >
+              className="login-modal">
             <Modal.Header closeButton className="border-0"></Modal.Header>
               <Modal.Body className="p-0">
                 {selectedLoginType === "admin" && <AdminLogin onClose={handleCloseLogin}/>}

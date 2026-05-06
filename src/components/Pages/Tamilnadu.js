@@ -33,15 +33,15 @@ function Tamilnadu() {
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Agriculture</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tg-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tn-media-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Media</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tg-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tn-flm-industry-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Film Industry</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tg-others-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/tn-others-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Others</p>
         </card>

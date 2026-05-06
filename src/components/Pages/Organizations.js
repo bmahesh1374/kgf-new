@@ -33,11 +33,11 @@ function Organizations() {
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Agriculture</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/orgs-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/orgs-media-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Media</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/orgs-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/orgs-flm-industry-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Film Industry</p>
         </card>

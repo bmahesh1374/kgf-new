@@ -45,12 +45,11 @@ const TnMedTable = () => {
 
       <table>
         <thead className='admin-student-table-header'>
-          <tr>
+         <tr>
             <th><input type="checkbox" /></th>
             <th>Name</th>
-            <th>Business Type</th>
-            <th>Company Name</th>
-            <th> Business Nature</th>
+            <th>Role Type</th>
+            <th>Type Of Work</th>
             <th>Blood Group</th>
             <th>District</th>
             <th>Village</th>
@@ -61,9 +60,8 @@ const TnMedTable = () => {
           <tr>
             <td><input type="checkbox" /></td>
             <td>Siva</td>
-            <td>Individual</td>
-            <td>Ysk Infotech</td>
-            <td>It</td>
+            <td>Doctor</td>
+            <td>Doctor</td>
             <td>o+</td>
             <td>Hyderabad</td>
             <td>Ameerpet</td>

@@ -33,11 +33,11 @@ function Gujarat() {
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Agriculture</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/guj-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/guj-media-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Media</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/guj-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/guj-flm-industry-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Film Industry</p>
         </card>
