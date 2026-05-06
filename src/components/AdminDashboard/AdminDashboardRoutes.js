@@ -70,8 +70,8 @@ import TnAgriTable from "../Pages/TnAgriTable";
 import TnAgriTableView from "../Pages/TnAgriTableView";
 import TnOthersTable from "../Pages/TnOthersTable";
 import TnOtherTableView from "../Pages/TnOtherTableView"
-// import ApFlmIndustryTable from "../Pages/ApFlmIndustryTable"
-// import ApMediaTable from "../Pages/ApMediaTable";
+import ApFlmIndustryTable from "../Pages/ApFlmIndustryTable"
+import ApMediaTable from "../Pages/ApMediaTable";
 import NRIStudentTable from "../Pages/NRIStudentTable";
 import NRIStTableView from "../Pages/NRIStTableView";
 import NriEmpTable from "../Pages/NriEmpTable";
@@ -156,8 +156,45 @@ import OrgsOthersTable from "../Pages/OrgsOthersTable";
 import OsiOthersTableView from "../Pages/OsiOthersTableView";
 import GujOthersTableView from "../Pages/GujOthersTableView";
 import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
+
 import AdminJobPreview from "../Pages/AdminJobPreview.js";
 import AdminDonorView from "../Pages/AdminDonorView.js";
+
+import ApMediaTableView from "../Pages/ApMediaTableView";
+import ApFlmIndustryView from "../Pages/ApFlmIndustryView";
+import TgMediaTable  from "../Pages/TgMediaTable";
+import TnMediaTable from "../Pages/TgMediaTable";
+import NriMediaTable from "../Pages/NriMediaTable";
+import KaMediaTable from "../Pages/KaMediaTable"
+import OrgMediaTable  from "../Pages/OrgMediaTable";
+import OsiMediaTable from "../Pages/OsiMediaTable";
+import GujMediaTable from "../Pages/GujMediaTable";
+import OrgsMediaTable from "../Pages/OrgsMediaTable";
+import TgMediaTableView from "../Pages/TgMediaTableView";
+import TnMediaTableView from "../Pages/TnMediaTableView";
+import NriMediaTableView from "../Pages/NriMediaTableView";
+import KaMediaTableView from "../Pages/KaMediaTableView";
+import OrgMediaTableView from "../Pages/OrgMediaTableView";
+import OsiMediaTableView from "../Pages/OsiMediaTableView";
+import GujMediaTableView from "../Pages/GujMediaTableView";
+import OrgsMediaTableView from "../Pages/OrgsMediaTableView";
+import TgFlmIndustryTable from "../Pages/TgFlmIndustryTable";
+import TnFlmIndustryTable from "../Pages/TnFlmIndustryTable";
+import NriFlmIndustryTable from "../Pages/NriFlmIndustryTable";
+import KaFlmIndustryTable from "../Pages/KaFlmIndustryTable";
+import OrgFlmIndustryTable from "../Pages/OrgFlmIndustryTable";
+import OsiFlmIndustryTable from "../Pages/OsiFlmIndustryTable";
+import GujFlmIndustryTable from "../Pages/GujFlmIndustryTable";
+import OrgsFlmIndustryTable from "../Pages/OrgsFlmIndustryTable";
+import TgFlmIndustryView from "../Pages/TgFlmIndustryView";
+import TnFlmIndustryView from "../Pages/TnFlmIndustryView";
+import NriFlmIndustryView from "../Pages/NriFlmIndustryView";
+import KaFlmIndustryView from "../Pages/KaFlmIndustryView";
+import OrgFlmIndustryView from "../Pages/OrgFlmIndustryView";
+import OsiFlmIndustryView from "../Pages/OsiFlmIndustryView";
+import GujFlmIndustryView from "../Pages/GujFlmIndustryView";
+import OrgsFlmIndustryView from "../Pages/OrgsFlmIndustryView";
+
 
 
 
@@ -196,8 +233,14 @@ function AdminDashboardRoutes() {
         <Route path="/adminEventsPreview" element = {<AdminEventPreview />} />
         <Route path="/donations" element ={<AdminDonations />} />
         <Route path="/addDonor" element ={<AdminDonorForm />} />
+<<<<<<< HEAD
         <Route path="/donorview" element ={<AdminDonorView />} />
         
+=======
+        
+  
+
+>>>>>>> 78ae0901383309964dd66e09fedcfdd492b7e75a
        <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>} />
        <Route path="/tn-st-table-view" element={<TnStTableView/>} />
        <Route path="/nri-st-table-view" element={<NRIStTableView/>} />
@@ -264,8 +307,42 @@ function AdminDashboardRoutes() {
        <Route path="/tg-advo-table" element={<TgAdvoTable/>}/>
        <Route path="/tn-advo-table" element={<TnAdvoTable/>}/>
        <Route path="/ka-advo-table" element={<KaAdvoTable/>}/>
-       {/* <Route path="/ap-media-table" element={<ApMediaTable/>}/>
-       <Route path="/ap-flm-industry-table" element={<ApFlmIndustryTable/>}/> */}
+       <Route path="/ap-media-table" element={<ApMediaTable/>}/>
+       <Route path="/tg-media-table" element={<TgMediaTable/>}/>//
+       <Route path="/tn-media-table" element={<TnMediaTable/>}/>
+       <Route path="/nri-media-table" element={<NriMediaTable/>}/>
+       <Route path="/ka-media-table" element={<KaMediaTable/>}/>
+       <Route path="/org-media-table" element={<OrgMediaTable/>}/>
+       <Route path="/osi-media-table" element={<OsiMediaTable/>}/>
+       <Route path="/guj-media-table" element={<GujMediaTable/>}/>
+       <Route path="/orgs-media-table" element={<OrgsMediaTable/>}/>
+       <Route path="/ap-media-table-view" element={<ApMediaTableView/>}/>
+       <Route path="/tg-media-table-view" element={<TgMediaTableView/>}/>
+       <Route path="/tn-media-table-view" element={<TnMediaTableView/>}/>
+       <Route path="/nri-media-table-view" element={<NriMediaTableView/>}/>
+       <Route path="/ka-media-table-view" element={<KaMediaTableView/>}/>
+       <Route path="/org-media-table-view" element={<OrgMediaTableView/>}/>
+       <Route path="/osi-media-table-view" element={<OsiMediaTableView/>}/>
+       <Route path="/guj-media-table-view" element={<GujMediaTableView/>}/>
+       <Route path="/orgs-media-table-view" element={<OrgsMediaTableView/>}/>
+       <Route path="/ap-flm-industry-table" element={<ApFlmIndustryTable/>}/>
+       <Route path="/tg-flm-industry-table" element={<TgFlmIndustryTable/>}/>
+       <Route path="/tn-flm-industry-table" element={<TnFlmIndustryTable/>}/>
+       <Route path="/nri-flm-industry-table" element={<NriFlmIndustryTable/>}/>
+       <Route path="/ka-flm-industry-table" element={<KaFlmIndustryTable/>}/>
+       <Route path="/org-flm-industry-table" element={<OrgFlmIndustryTable/>}/>
+       <Route path="/osi-flm-industry-table" element={<OsiFlmIndustryTable/>}/>
+       <Route path="/guj-flm-industry-table" element={<GujFlmIndustryTable/>}/>
+       <Route path="/orgs-flm-industry-table" element={<OrgsFlmIndustryTable/>}/>
+       <Route path="/ap-flm-industry-view" element={<ApFlmIndustryView/>}/>
+       <Route path="/tg-flm-industry-view" element={<TgFlmIndustryView/>}/>
+       <Route path="/tn-flm-industry-view" element={<TnFlmIndustryView/>}/>
+       <Route path="/nri-flm-industry-view" element={<NriFlmIndustryView/>}/>
+       <Route path="/ka-flm-industry-view" element={<KaFlmIndustryView/>}/>
+       <Route path="/org-flm-industry-view" element={<OrgFlmIndustryView/>}/>
+       <Route path="/osi-flm-industry-view" element={<OsiFlmIndustryView/>}/>
+       <Route path="/guj-flm-industry-view" element={<GujFlmIndustryView/>}/>
+       <Route path="/orgs-flm-industry-view" element={<OrgsFlmIndustryView/>}/>//
        <Route path="/nri-advo-table" element={<NriAdvoTable/>}/>
        <Route path="/org-advo-table" element={<OrgAdvoTable/>}/>
        <Route path="/osi-advo-table" element={<OsiAdvoTable/>}/>

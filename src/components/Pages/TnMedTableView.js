@@ -107,21 +107,18 @@ function TnMedTableView() {
       
         <div className="double-section">
 
-          <div className="info-box">
+         <div className="info-box">
             <h4>PROFESSIONAL STATUS</h4>
-            <p><span>Occupation :-</span>Business</p>
-            <p><span>Company Type :-</span> Private</p>
-            <p><span>Designation :-</span>CEO</p>
-            <p><span>Location :-</span>Hi-tech City</p>
+            <p><span>Occupation :-</span>Doctor</p>
+            <p><span>TypeOf Work :-</span> Doctor</p>
+           
           </div>
 
 
           <div className="info-box">
             <h4>&nbsp;</h4>
-            <p><span>Business Type :-</span>Individual</p>
-            <p><span>Company Name :-</span> Ysk</p>
-            <p><span>Nature Of Business :-</span>IT</p>
-            <p><span>Choose File :-</span>Pan (Pdf)</p>
+            <p><span>Role Type :-</span>Emergency Doctor</p>
+           
           </div>
 
         </div>

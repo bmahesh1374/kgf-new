@@ -34,11 +34,11 @@ function OutsideOfIndia() {
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Agriculture</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/osi-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/osi-media-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Media</p>
         </card>
-        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/osi-advo-table")}>
+        <card className="admin-dh-card" onClick={()=> navigate("/admindashboard/osi-flm-industry-table")}>
           <h2 className="admin-dh-card-title">20</h2>
           <p className="admin-dh-card-text">Film Industry</p>
         </card>
