@@ -233,14 +233,8 @@ function AdminDashboardRoutes() {
         <Route path="/adminEventsPreview" element = {<AdminEventPreview />} />
         <Route path="/donations" element ={<AdminDonations />} />
         <Route path="/addDonor" element ={<AdminDonorForm />} />
-<<<<<<< HEAD
         <Route path="/donorview" element ={<AdminDonorView />} />
         
-=======
-        
-  
-
->>>>>>> 78ae0901383309964dd66e09fedcfdd492b7e75a
        <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>} />
        <Route path="/tn-st-table-view" element={<TnStTableView/>} />
        <Route path="/nri-st-table-view" element={<NRIStTableView/>} />
