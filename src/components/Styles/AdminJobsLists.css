@@ -53,7 +53,8 @@
   border: none;
   padding: 2px 20px;
   width: 250px;
-  border-radius: 10px;
+  background: transparent;
+  outline: none;
 }
 
 .kgf-admin-jobslist-search button {

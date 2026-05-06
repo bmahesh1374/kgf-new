@@ -87,7 +87,7 @@ function AdminJobPreview() {
             />
           </div>
 
-          <div className="admin-job-preview-form-content">
+          <div className="admin-job-preview-form-textarea">
             <label className="admin-job-preview-form-label">
               Roles & Responsibilities
               <span className="admin-job-preview-required">*</span>

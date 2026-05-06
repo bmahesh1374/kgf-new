@@ -1,14 +1,19 @@
-import React from 'react';
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import msgicon from "../../assets/msgicon.png";
-import { IoMdDownload} from "react-icons/io";
+import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
-import whatsappIcon from "../../assets/whatsApp-icon.png"
+import whatsappIcon from "../../assets/whatsApp-icon.png";
 import "../Styles/AdminEventsTable.css";
+
 const AdminEventsTable = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [showFilter, setShowFilter] = useState(false);
+  const [showLocationFilter, setShowLocationFilter] = useState(false);
+  const [showDateFilter, setShowDateFilter] = useState(false);
   return (
-    <div className='admin-events-table-container'>
+    <div className="admin-events-table-container">
       <h2>Events</h2>
       <div className="admin-events-table-total">
         <p>Total Responses :- 50</p>
@@ -38,18 +43,60 @@ const AdminEventsTable = () => {
         </div>
         <div className="kgf-admin-events-table-delete">
           <button>Delete</button>
-
         </div>
-        <IoFilter />
+        <IoFilter
+          className="admin-events-filter-icon"
+          onClick={() => setShowFilter(!showFilter)}
+        />
       </div>
       <div className="kgf-admin-events-table-add-btn mb-3">
         <button>Add +</button>
       </div>
 
+      {showFilter && (
+        <div className="admin-events-filter-popup">
+          <div className="admin-events-filter-box">
+            <span onClick={() => setShowFilter(false)}>X</span>
+            <p onClick={() => setShowLocationFilter(!showLocationFilter)}>
+              Location
+            </p>
+            <p onClick={() => setShowDateFilter(!showDateFilter)}>
+              Sort by Date
+            </p>
+          </div>
+        </div>
+      )}
+
+      {showLocationFilter && (
+        <div className="admin-events-location-filter-popup">
+          <div className="admin-events-location-filter-box">
+            <span onClick={() => setShowLocationFilter(false)}>X</span>
+            <label>State :</label>
+            <input type="text" />
+            <label>District :</label>
+            <input type="text" />
+            <label>Village :</label>
+            <input type="text" />
+          </div>
+        </div>
+      )}  
+
+      {showDateFilter && (
+        <div className="admin-events-date-filter-popup">
+          <div className="admin-events-date-filter-box">
+            <span onClick={() => setShowDateFilter(false)}>X</span>
+            <label>Date :</label>
+            <input type="date" />
+          </div>
+        </div>
+      )}
+    
       <table>
-        <thead className='admin-events-table-header'>
+        <thead className="admin-events-table-header">
           <tr>
-            <th><input type="checkbox" /></th>
+            <th>
+              <input type="checkbox" />
+            </th>
             <th>Name</th>
             <th>College Name</th>
             <th>Course</th>
@@ -61,7 +108,9 @@ const AdminEventsTable = () => {
         </thead>
         <tbody>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td>
+              <input type="checkbox" />
+            </td>
             <td>Surya</td>
             <td>Gitam</td>
             <td>B tech Cse</td>
@@ -69,11 +118,13 @@ const AdminEventsTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-          <button className='kgf-admin-view-btn'>View</button>
+              <button className="kgf-admin-view-btn">View</button>
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td>
+              <input type="checkbox" />
+            </td>
             <td>Surya</td>
             <td>Gitam</td>
             <td>B tech Cse</td>
@@ -81,14 +132,13 @@ const AdminEventsTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button className='kgf-admin-view-btn'>View</button>
-             
+              <button className="kgf-admin-view-btn">View</button>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
   );
-}
+};
 
 export default AdminEventsTable;

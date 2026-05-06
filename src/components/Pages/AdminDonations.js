@@ -1,11 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { IoMdDownload} from "react-icons/io";
+import { useState } from "react";
+import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import whatsappIcon from "../../assets/whatsApp-icon.png";
 import "../Styles/AdminDonations.css";
+
 const AdminDonations = () => {
   const navigate = useNavigate();
+  const [showFilter, setShowFilter] = useState(false);
+  const [showLocationFilter, setShowLocationFilter] = useState(false);
+  const [showAmountFilter, setShowAmountFilter] = useState(false);
+  const [showDateFilter, setShowDateFilter] = useState(false);
+
   return (
     <div className="admin-donation-container">
       <h2>Donations</h2>
@@ -30,11 +37,63 @@ const AdminDonations = () => {
         <div className="kgf-admin-donation-delete">
           <button>Delete</button>
         </div>
-        <IoFilter />
+        <IoFilter
+          className="admin-donation-filter-icon"
+          onClick={() => setShowFilter(!showFilter)}
+        />
       </div>
       <div className="kgf-admin-donation-add-btn mb-3">
-        <button onClick={() => navigate("/admindashboard/addDonor")}>Add Donor +</button>
+        <button onClick={() => navigate("/admindashboard/addDonor")}>
+          Add Donor +
+        </button>
       </div>
+
+      {showFilter && (
+        <div className="admin-donation-filter-popup">
+          <div className="admin-donation-filter-box">
+            <span onClick={() => setShowFilter(false)}>X</span>
+            <p onClick={() => setShowLocationFilter(!showLocationFilter)}>
+              Location
+            </p>
+            <p onClick={() => setShowAmountFilter(!showAmountFilter)}>Amount</p>
+            <p onClick={() => setShowDateFilter(!showDateFilter)}>
+              Sort by Date
+            </p>
+          </div>
+        </div>
+      )}
+
+      {showLocationFilter && (
+        <div className="admin-donation-location-filter-popup">
+          <div className="admin-donation-location-filter-box">
+            <span onClick={() => setShowLocationFilter(false)}>X</span>
+            <label>District :</label>
+            <input type="text" />
+            <label>Village :</label>
+            <input type="text" />
+          </div>
+        </div>
+      )}
+
+      {showAmountFilter && (
+        <div className="admin-donation-amnt-filter-popup">
+          <div className="admin-donation-amnt-filter-box">
+            <span onClick={() => setShowAmountFilter(false)}>X</span>
+            <label>Amount :</label>
+            <input type="text" />
+          </div>
+        </div>
+      )}
+
+      {showDateFilter && (
+        <div className="admin-donation-date-filter-popup">
+          <div className="admin-donation-date-filter-box">
+            <span onClick={() => setShowDateFilter(false)}>X</span>
+            <label>Date :</label>
+            <input type="date" />
+          </div>
+        </div>
+      )}
 
       <table>
         <thead className="admin-donation-header">
@@ -61,7 +120,12 @@ const AdminDonations = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button className='kgf-admin-view-btn'>View</button>
+              <button
+                className="kgf-admin-view-btn"
+                onClick={() => navigate("/admindashboard/donorview")}
+              >
+                View
+              </button>
             </td>
           </tr>
           <tr>
@@ -74,11 +138,16 @@ const AdminDonations = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button className='kgf-admin-view-btn'>View</button>
+              <button
+                className="kgf-admin-view-btn"
+                onClick={() => navigate("/admindashboard/donorview")}
+              >
+                View
+              </button>
             </td>
           </tr>
         </tbody>
-      </table>  
+      </table>
     </div>
   );
 };

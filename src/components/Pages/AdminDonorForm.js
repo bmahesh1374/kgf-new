@@ -1,12 +1,14 @@
 import React from "react";
 import "../Styles/AdminDonorForm.css";
+import { useNavigate } from "react-router-dom";
 
 const AdminDonorForm = () => {
+  const navigate = useNavigate()
     return (
   <>
     <section className="kgf-admin-donor-section">
         <div className='kgf-admin-donor-close-btn'>
-            <button>X</button>
+            <button onClick={() => navigate(-1)}>X</button>
         </div>
         <div className="kgf-admin-donor-grid-container">
           <div className="kgf-admin-donor-form-content">
@@ -97,6 +99,9 @@ const AdminDonorForm = () => {
               required
             />
           </div>
+        </div>
+        <div className="kgf-admin-donor-form-sub-btn">
+          <button>Submit</button>
         </div>
     </section>
   </>

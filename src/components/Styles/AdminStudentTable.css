@@ -57,7 +57,8 @@
     padding: 2px 20px;
     width: 250px;
     margin-right: 5px;
-    border-radius: 10px;
+    background: transparent;
+    outline: none;
 }
 
 .kgf-admin-table-search button {

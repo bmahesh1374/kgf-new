@@ -157,6 +157,7 @@ import OsiOthersTableView from "../Pages/OsiOthersTableView";
 import GujOthersTableView from "../Pages/GujOthersTableView";
 import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
 import AdminJobPreview from "../Pages/AdminJobPreview.js";
+import AdminDonorView from "../Pages/AdminDonorView.js";
 
 
 
@@ -195,8 +196,8 @@ function AdminDashboardRoutes() {
         <Route path="/adminEventsPreview" element = {<AdminEventPreview />} />
         <Route path="/donations" element ={<AdminDonations />} />
         <Route path="/addDonor" element ={<AdminDonorForm />} />
-  
-
+        <Route path="/donorview" element ={<AdminDonorView />} />
+        
        <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>} />
        <Route path="/tn-st-table-view" element={<TnStTableView/>} />
        <Route path="/nri-st-table-view" element={<NRIStTableView/>} />
