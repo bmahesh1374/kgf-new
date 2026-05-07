@@ -314,7 +314,7 @@ function AdminDashboardRoutes() {
        <Route path="/tn-advo-table" element={<TnAdvoTable/>}/>
        <Route path="/ka-advo-table" element={<KaAdvoTable/>}/>
        <Route path="/ap-media-table" element={<ApMediaTable/>}/>
-       <Route path="/tg-media-table" element={<TgMediaTable/>}/>//
+       <Route path="/tg-media-table" element={<TgMediaTable/>}/>
        <Route path="/tn-media-table" element={<TnMediaTable/>}/>
        <Route path="/nri-media-table" element={<NriMediaTable/>}/>
        <Route path="/ka-media-table" element={<KaMediaTable/>}/>
@@ -348,7 +348,7 @@ function AdminDashboardRoutes() {
        <Route path="/org-flm-industry-view" element={<OrgFlmIndustryView/>}/>
        <Route path="/osi-flm-industry-view" element={<OsiFlmIndustryView/>}/>
        <Route path="/guj-flm-industry-view" element={<GujFlmIndustryView/>}/>
-       <Route path="/orgs-flm-industry-view" element={<OrgsFlmIndustryView/>}/>//
+       <Route path="/orgs-flm-industry-view" element={<OrgsFlmIndustryView/>}/>
        <Route path="/nri-advo-table" element={<NriAdvoTable/>}/>
        <Route path="/org-advo-table" element={<OrgAdvoTable/>}/>
        <Route path="/osi-advo-table" element={<OsiAdvoTable/>}/>
