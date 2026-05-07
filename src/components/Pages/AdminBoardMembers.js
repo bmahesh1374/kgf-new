@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { IoMdDownload} from "react-icons/io";
+import { useState } from "react";
+import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import whatsappIcon from "../../assets/whatsApp-icon.png";
 import "../Styles/AdminBoardMember.css";
 const AdminBoardMembers = () => {
   const navigate = useNavigate();
+  const [showFilter, setShowFilter] = useState(false);
+  const [showNameFilter, setShowNameFilter] = useState(false);
+  const [showProffFilter, setShowProffFilter] = useState(false);
   return (
     <div className="admin-boardmem-container">
       <h2>Board Members</h2>
@@ -30,11 +34,43 @@ const AdminBoardMembers = () => {
         <div className="kgf-admin-donation-delete">
           <button>Delete</button>
         </div>
-        <IoFilter />
+        <IoFilter className="admin-donation-filter-icon" onClick={() => setShowFilter(!showFilter)}/>
       </div>
       <div className="kgf-admin-donation-add-btn mb-3">
-        <button onClick={() => navigate("/admindashboard/addmember")}>Add Member +</button>
+        <button onClick={() => navigate("/admindashboard/addmember")}>
+          Add Member +
+        </button>
       </div>
+
+      {showFilter && (
+        <div className="admin-board-filter-popup">
+          <div className="admin-board-filter-box">
+            <span onClick={() => setShowFilter(false)}>X</span>
+            <p onClick={() => setShowNameFilter(!showNameFilter)}>Name</p>
+            <p onClick={() => setShowProffFilter(!showProffFilter)}>Professional</p>
+          </div>
+        </div>
+      )}
+
+      {showNameFilter && (
+        <div className="admin-board-location-filter-popup">
+          <div className="admin-board-location-filter-box">
+            <span onClick={() => setShowNameFilter(false)}>X</span>
+            <label>Name :</label>
+            <input type="text" />
+          </div>
+        </div>
+      )}
+
+      {showProffFilter && (
+        <div className="admin-board-prof-filter-popup">
+          <div className="admin-board-prof-filter-box">
+            <span onClick={() => setShowProffFilter(false)}>X</span>
+            <label>Profession :</label>
+            <input type="text" />
+          </div>
+        </div>
+      )}
 
       <table>
         <thead className="admin-donation-header">
@@ -56,14 +92,18 @@ const AdminBoardMembers = () => {
             <td>Kusam kumar Jetti</td>
             <td>Founder of KGF</td>
             <td>Founder</td>
-            
+
             <td>
-              <button onClick={()=>navigate('/admindashboard/addmember')} className='kgf-admin-view-btn'>View</button>
+              <button
+                onClick={() => navigate("/admindashboard/addmember")}
+                className="kgf-admin-view-btn"
+              >
+                View
+              </button>
             </td>
           </tr>
-         
         </tbody>
-      </table>  
+      </table>
     </div>
   );
 };

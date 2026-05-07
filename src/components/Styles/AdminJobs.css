@@ -129,21 +129,21 @@ table {
   font-weight: 600;
 }
 
-td {
+.admin-jobs-body td {
   padding: 16px;
   text-align: center;
   border-bottom: 1px solid #333;
 }
 
-tr {
+.admin-jobs-container tr {
   border: 1px solid #333;
 }
 
-.admin-jobs-container tbody tr:nth-child(even) {
+.admin-jobs-body  tr:nth-child(even) {
   background-color: #d9d9d9;
 }
 
-.admin-jobs-container tbody tr:nth-child(odd) {
+.admin-jobs-body  tr:nth-child(odd) {
   background-color: #ffff;
 }
 
