@@ -71,7 +71,7 @@ const AdminJobs = () => {
           </tr>
           <tr>
             <td>
-              {/* <input type="checkbox" /> */}
+           
             </td>
             <td></td>
             <td></td>
@@ -94,28 +94,13 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              {/* <input type="checkbox" /> */}
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
+          
             </td>
           </tr>
 
           <tr>
             <td>
-              {/* <input type="checkbox" /> */}
+         
             </td>
             <td></td>
             <td></td>
@@ -124,28 +109,13 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              {/* <input type="checkbox" /> */}
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
+            
             </td>
           </tr>
 
           <tr>
             <td>
-              {/* <input type="checkbox" /> */}
+             
             </td>
             <td></td>
             <td></td>
@@ -154,13 +124,13 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
+              
             </td>
           </tr>
 
           <tr>
             <td>
-              {/* <input type="checkbox" /> */}
+            
             </td>
             <td></td>
             <td></td>
@@ -169,7 +139,37 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td>
-              {/* <button className='kgf-admin-view-btn'>View</button> */}
+           
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+             
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+             
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+           
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+            
             </td>
           </tr>
 

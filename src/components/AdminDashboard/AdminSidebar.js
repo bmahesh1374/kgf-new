@@ -93,7 +93,7 @@ function AdminSidebar() {
             <ul className="submenu">
               <li>
                 <NavLink
-                  to="/admindashboard/colleges"
+                  to="/admindashboard/collegesschools"
                   className={({ isActive }) =>
                     isActive ? "submenu-link active" : "submenu-link"
                   }
