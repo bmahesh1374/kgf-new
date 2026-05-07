@@ -159,6 +159,7 @@ import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
 
 import AdminJobPreview from "../Pages/AdminJobPreview.js";
 import AdminDonorView from "../Pages/AdminDonorView.js";
+import AdminBloodDonors from "../Pages/AdminBloodDonors.js"
 
 import ApMediaTableView from "../Pages/ApMediaTableView";
 import ApFlmIndustryView from "../Pages/ApFlmIndustryView";
@@ -194,6 +195,7 @@ import OrgFlmIndustryView from "../Pages/OrgFlmIndustryView";
 import OsiFlmIndustryView from "../Pages/OsiFlmIndustryView";
 import GujFlmIndustryView from "../Pages/GujFlmIndustryView";
 import OrgsFlmIndustryView from "../Pages/OrgsFlmIndustryView";
+import AdminBloodDonorsDetails from "../Pages/AdminBloodDonorsDetails.js";
 
 
 
@@ -234,6 +236,8 @@ function AdminDashboardRoutes() {
         <Route path="/donations" element ={<AdminDonations />} />
         <Route path="/addDonor" element ={<AdminDonorForm />} />
         <Route path="/donorview" element ={<AdminDonorView />} />
+        <Route path="/blood-donors" element ={<AdminBloodDonors />} />
+        <Route path="/blooddonorsdetails" element ={<AdminBloodDonorsDetails />} />
         
        <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>} />
        <Route path="/tn-st-table-view" element={<TnStTableView/>} />

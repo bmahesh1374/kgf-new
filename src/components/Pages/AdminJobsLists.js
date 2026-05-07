@@ -7,7 +7,7 @@ import msgicon from "../../assets/msgicon.png";
 import "../Styles/AdminJobsLists.css";
 
 function AdminJobsLists() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <section className="admin-jobslist-section">
@@ -40,7 +40,10 @@ function AdminJobsLists() {
           </div>
         </div>
         <div className="admin-jobslist-header">
-          <LuArrowBigLeft className="admin-jobslist-left-arrow" onClick={() => navigate(-1)}/>
+          <LuArrowBigLeft
+            className="admin-jobslist-left-arrow"
+            onClick={() => navigate(-1)}
+          />
           <h4>Surya</h4>
         </div>
         <div className="admin-jobslist-grid">
@@ -68,7 +71,13 @@ function AdminJobsLists() {
             </div>
 
             <div className="admin-jobslist-preview-btn">
-              <button onClick={() => navigate("/admindashboard/adminjobslists/adminjobpreview")}>Job Preview</button>
+              <button
+                onClick={() =>
+                  navigate("/admindashboard/adminjobslists/adminjobpreview")
+                }
+              >
+                Job Preview
+              </button>
             </div>
           </div>
           <div className="row">
@@ -77,15 +86,26 @@ function AdminJobsLists() {
             </div>
 
             <div className="admin-jobslist-responses-btn">
-              <button>20<br />All Responses</button>
+              <button>
+                20
+                <br />
+                All Responses
+              </button>
             </div>
 
             <div className="admin-jobslist-shortlist-btn">
-              <button>5<br />Shortlist</button>
+              <button>
+                5<br />
+                Shortlist
+              </button>
             </div>
 
             <div className="admin-jobslist-reject-btn">
-              <button>10<br />Reject</button>
+              <button>
+                10
+                <br />
+                Reject
+              </button>
             </div>
 
             <div className="admin-jobslist-dates">
@@ -120,7 +140,13 @@ function AdminJobsLists() {
             </div>
 
             <div className="admin-jobslist-preview-btn">
-              <button onClick={() => navigate("/admindashboard/adminjobslists/adminjobpreview")}>Job Preview</button>
+              <button
+                onClick={() =>
+                  navigate("/admindashboard/adminjobslists/adminjobpreview")
+                }
+              >
+                Job Preview
+              </button>
             </div>
           </div>
           <div className="row">
@@ -146,8 +172,6 @@ function AdminJobsLists() {
             </div>
           </div>
         </div>
-
-
       </section>
     </>
   );
