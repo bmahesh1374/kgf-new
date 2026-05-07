@@ -196,17 +196,14 @@ import OrgFlmIndustryView from "../Pages/OrgFlmIndustryView";
 import OsiFlmIndustryView from "../Pages/OsiFlmIndustryView";
 import GujFlmIndustryView from "../Pages/GujFlmIndustryView";
 import OrgsFlmIndustryView from "../Pages/OrgsFlmIndustryView";
-
 import AdminBloodDonorsDetails from "../Pages/AdminBloodDonorsDetails.js";
-
-
-
 import AdminBoardMembers from "../Pages/AdminBoardMembers";
 import AdminBoardMemForm from "../Pages/AdminBoardMemForm";
 import CollegesSchools from "../Pages/CollegesSchools";
 import AddSclForm from "../Pages/AddSclForm.js";
 import AddClgForm from "../Pages/AddClgForm";
 import Hospitals from "../Pages/Hospitals";
+import AddHospForm from "../Pages/AddHospForm";
 
 
 function AdminDashboardRoutes() {
@@ -586,6 +583,8 @@ function AdminDashboardRoutes() {
       <Route path="/addclgform" element={<AddClgForm/>} />
       <Route path="/collegesschools" element={<CollegesSchools/>} />
       <Route path="/hospitals" element={<Hospitals/>} />
+      <Route path="/addhosform" element={<AddHospForm/>} />
+     
       
        
 

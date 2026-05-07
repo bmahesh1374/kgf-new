@@ -134,13 +134,13 @@ const AdminJobs = () => {
             </td>
           </tr>
           <tr>
-<<<<<<< HEAD
+
             <td>{/* <input type="checkbox" /> */}</td>
-=======
+
             <td>
            
             </td>
->>>>>>> Surya
+
             <td></td>
             <td></td>
             <td></td>
@@ -165,13 +165,9 @@ const AdminJobs = () => {
           </tr>
 
           <tr>
-<<<<<<< HEAD
-            <td>{/* <input type="checkbox" /> */}</td>
-=======
             <td>
          
             </td>
->>>>>>> Surya
             <td></td>
             <td></td>
             <td></td>
@@ -184,13 +180,9 @@ const AdminJobs = () => {
           </tr>
 
           <tr>
-<<<<<<< HEAD
-            <td>{/* <input type="checkbox" /> */}</td>
-=======
             <td>
              
             </td>
->>>>>>> Surya
             <td></td>
             <td></td>
             <td></td>
@@ -203,13 +195,9 @@ const AdminJobs = () => {
           </tr>
 
           <tr>
-<<<<<<< HEAD
-            <td>{/* <input type="checkbox" /> */}</td>
-=======
             <td>
             
             </td>
->>>>>>> Surya
             <td></td>
             <td></td>
             <td></td>
@@ -222,13 +210,9 @@ const AdminJobs = () => {
           </tr>
 
           <tr>
-<<<<<<< HEAD
-            <td>{/* <input type="checkbox" /> */}</td>
-=======
             <td>
              
             </td>
->>>>>>> Surya
             <td></td>
             <td></td>
             <td></td>
@@ -241,13 +225,9 @@ const AdminJobs = () => {
           </tr>
 
           <tr>
-<<<<<<< HEAD
-            <td>{/* <input type="checkbox" /> */}</td>
-=======
             <td>
            
             </td>
->>>>>>> Surya
             <td></td>
             <td></td>
             <td></td>

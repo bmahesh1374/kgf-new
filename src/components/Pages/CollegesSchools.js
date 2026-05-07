@@ -36,7 +36,7 @@ function CollegesSchools() {
             <FaSearch className="search-icon" />
             <input
               type="text"
-              placeholder="Search by HsptlName, Medical Specializations, village/city"
+              placeholder="Search by School Name, College Name Specializations, village/city"
             />
           </div>
 
