@@ -206,6 +206,7 @@ import AdminBoardMemForm from "../Pages/AdminBoardMemForm";
 import CollegesSchools from "../Pages/CollegesSchools";
 import AddSclForm from "../Pages/AddSclForm.js";
 import AddClgForm from "../Pages/AddClgForm";
+import Hospitals from "../Pages/Hospitals";
 
 
 function AdminDashboardRoutes() {
@@ -584,6 +585,7 @@ function AdminDashboardRoutes() {
       <Route path="/addsclform" element={<AddSclForm/>} />
       <Route path="/addclgform" element={<AddClgForm/>} />
       <Route path="/collegesschools" element={<CollegesSchools/>} />
+      <Route path="/hospitals" element={<Hospitals/>} />
       
        
 
