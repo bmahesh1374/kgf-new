@@ -1,0 +1,154 @@
+.admin-boardmem-container {
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.admin-boardmem-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7B5825;
+}
+
+.admin-donation-total {
+    position: relative;
+    left: 38%;
+}
+
+.admin-donation-total p {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+
+.kgf-admin-boradmem-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    border: 1.5px solid;
+    padding: 4px;
+    border-radius: 10px;
+    
+}
+
+.kgf-admin-boardmem-checkbox {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.kgf-admin-donation-checkbox input {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+
+.kgf-admin-donation-send-btn button {
+    padding: 0px 15px;
+    border: none;
+    background-color: #7B5825;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-donation-search {
+    border: 1.5px solid;
+    border-radius: 10px;
+    padding: 2px;
+
+
+}
+
+.kgf-admin-donation-search input {
+    border: none;
+    padding: 2px 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.kgf-admin-donation-search button {
+    padding: 2px 16px;
+    border: none;
+    background-color: #211AEB;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-donation-download button {
+    padding: 2px 15px;
+    border: none;
+    background-color: #AF7E36;
+    color: #ffff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.kgf-admin-donation-delete button {
+    padding: 2px 15px;
+    border: none;
+    background-color: #EA4335;
+    color: #ffff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.kgf-admin-event-container {
+    max-width: 90%;
+    border: 1.5px solid;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.kgf-admin-donation-add-btn {
+    text-align: end;
+    max-width: 97%;
+}
+
+.kgf-admin-donation-add-btn button {
+    padding: 2px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #010088;
+    color: #ffff;
+    font-weight: 500;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.admin-donation-header th {
+  background-color: #D8BB79;
+  padding: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+tr{
+    border: 1px solid #333;  
+}
+
+/* tbody tr:hover {
+  background: #faf7ef;
+} */
+
+

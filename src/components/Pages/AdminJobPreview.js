@@ -33,7 +33,7 @@ function AdminJobPreview() {
     <>
       <section className="admin-job-preview-section">
         <button className="jobback" onClick={() => navigate(-1)}>
-          <TiArrowBack /> Back
+          <TiArrowBack/> Back
         </button>
         <div className="admin-job-preview-title">
           <h3>Job View</h3>
