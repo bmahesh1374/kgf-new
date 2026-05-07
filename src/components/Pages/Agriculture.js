@@ -1,26 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Agriculture.css";
 import AgriRequirement from "./AgriRequirement";
 import AgriMyRequirement from "./AgriMyRequirement";
-import { Route, Routes } from "react-router-dom";
-import AgriPostRequirements from "./AgriPostRequirement";
 
 function Agriculture() {
+  const [activeTab, setActiveTab] = useState("requirement");
+
   return (
-    <>
-      <section>
-        <div>
-          <h3>Agriculture</h3>
-        </div>
+    <section className="agriculture-section">
+      <div className="agriculture-container">
+        <h3>Agriculture</h3>
+        
         <div className="kgf-agri-req">
-          <h4>Requirement</h4>
-          <h4>My Requirement</h4>
+          <div
+            className={
+              activeTab === "requirement"
+                ? "agri-tab active-agri-tab"
+                : "agri-tab"
+            }
+            onClick={() => setActiveTab("requirement")}
+          >
+            <h4>Requirement</h4>
+          </div>
+
+          <div
+            className={
+              activeTab === "myrequirement"
+                ? "agri-tab active-agri-tab"
+                : "agri-tab"
+            }
+            onClick={() => setActiveTab("myrequirement")}
+          >
+            <h4>My Requirement</h4>
+          </div>
         </div>
-        {/* <AgriRequirement /> */}
-        {/* <AgriMyRequirement /> */}
-        <AgriPostRequirements />
-      </section>
-    </>
+
+        <div className="agri-content">
+          {activeTab === "requirement" ? (
+            <AgriRequirement />
+          ) : (
+            <AgriMyRequirement />
+          )}
+        </div>
+      </div>
+    </section>
   );
 }
 

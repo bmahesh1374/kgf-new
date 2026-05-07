@@ -10,6 +10,7 @@ import Events from "../Landing/Events";
 import Blood_Donate from "../Pages/Blood_Donate";
 import DEvents from "../Pages/DEvents";
 import ViewJob from "../Pages/ViewJob";
+import AgriPostRequirement from "../Pages/AgriPostRequirement";
 
 function DashboardRoutes() {
   return (
@@ -24,6 +25,9 @@ function DashboardRoutes() {
       <Route path="/devents" element={<DEvents />} />
       <Route path="/blood" element={<Blood_Donate />} />
       <Route path="/viewjob" element={<ViewJob />} />
+      <Route path="/postagrirequirement" element={<AgriPostRequirement />} />
+      
+
     </Routes>
 
   );

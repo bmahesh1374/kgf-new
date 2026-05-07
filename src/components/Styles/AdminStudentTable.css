@@ -158,3 +158,12 @@ tr{
     
  background: #5e431b;
 }
+
+
+.admin-student-table-container tbody  tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+.admin-student-table-container tbody  tr:nth-child(odd) {
+  background-color: #ffff;
+}
