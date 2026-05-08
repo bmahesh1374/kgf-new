@@ -98,11 +98,11 @@ const AdminEventsTable = () => {
               <input type="checkbox" />
             </th>
             <th>Name</th>
-            <th>College Name</th>
-            <th>Course</th>
-            <th>Blood Group</th>
+            <th>Phone Number</th>
+            <th>Email ID</th>
+            <th>Profession</th>
+            <th>State</th>
             <th>District</th>
-            <th>Village</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -112,10 +112,10 @@ const AdminEventsTable = () => {
               <input type="checkbox" />
             </td>
             <td>Surya</td>
-            <td>Gitam</td>
-            <td>B tech Cse</td>
-            <td>A+</td>
-            <td>Eluru</td>
+            <td>1234567890</td>
+            <td>surya@gmail.com</td>
+            <td>S/W Engg</td>
+            <td>AP</td>
             <td>Dubacherla</td>
             <td>
               <button className="kgf-admin-view-btn">View</button>
@@ -126,10 +126,10 @@ const AdminEventsTable = () => {
               <input type="checkbox" />
             </td>
             <td>Surya</td>
-            <td>Gitam</td>
-            <td>B tech Cse</td>
-            <td>A+</td>
-            <td>Eluru</td>
+            <td>1234567890</td>
+            <td>surya@gmail.com</td>
+            <td>S/W Engg</td>
+            <td>AP</td>
             <td>Dubacherla</td>
             <td>
               <button className="kgf-admin-view-btn">View</button>

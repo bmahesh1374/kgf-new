@@ -4,11 +4,8 @@ import "../Styles/AgriRequirement.css"
 function AgriRequirement() {
   return (
     <>
-    <section>
-         <div className="kgf-agri-req">
-          <h4>Requirement</h4>
-          <h4>My Requirement</h4>
-        </div>
+    <section className='kgf-agri-req-section'>
+         
         <div className="kgf-agri-req-inputs">
           <div>
             <label className="kgf-agri-req-form-label">

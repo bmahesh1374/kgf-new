@@ -1,18 +1,16 @@
 import React from "react";
-
+import {useNavigate} from 'react-router-dom'
 import "../Styles/AgriMyRequirement.css"
 
 
 function AgriMyRequirement() {
+  const navigate = useNavigate();
   return (
     <>
-      <section>
-        <div className="kgf-agri-myreq">
-          <h4>Requirement</h4>
-          <h4>My Requirement</h4>
-        </div>
+      <section className="kgf-agri-req-section">
+        
         <div className="kgf-agri-myreq-header">
-          <button className="kgf-agri-myreq-btn">Post Requirement</button>
+          <button className="kgf-agri-myreq-btn" onClick={() => navigate("/dashboard/postagrirequirement")}>Post Requirement</button>
         </div>
         <div className="kgf-agri-myreq-inputs">
           <div>

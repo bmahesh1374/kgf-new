@@ -113,7 +113,10 @@ const AdminJobs = () => {
             <th>Job Postings</th>
           </tr>
         </thead>
-        <tbody >
+
+   
+        <tbody className="admin-jobs-body">
+
           <tr>
             <td>
               <input type="checkbox" />

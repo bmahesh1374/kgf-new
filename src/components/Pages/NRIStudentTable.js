@@ -72,7 +72,26 @@ const NRIStudentTable = () => {
           <button className='atview-btn' onClick={()=> navigate("/admindashboard/nri-st-table-view")}>View</button>
             </td>
           </tr>
-        
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
       </table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     </div>

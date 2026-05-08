@@ -66,7 +66,7 @@ function AgriPostRequirement() {
             <label className="kgf-agri-postreq-form-label">Contact Details:</label>
             <div className="kgf-agri-postreq-inputs">
               <TextField placeholder="Contact" />
-              <span className="kgf-agri-postreq-form-label">Alternate Number</span>
+              <span className="kgf-agri-postreq-form-label-1">Alternate Number:</span>
               <TextField placeholder="Contact" />
             </div>
           </div>
