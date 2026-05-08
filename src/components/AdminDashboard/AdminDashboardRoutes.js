@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Student from "../Pages/Student";
 import Agriculture from "../Pages/Agriculture";
 import Education from "../Pages/Education";
@@ -157,11 +156,8 @@ import OsiOthersTableView from "../Pages/OsiOthersTableView";
 import GujOthersTableView from "../Pages/GujOthersTableView";
 import OrgsOthersTableView from "../Pages/OrgsOthersTableView";
 import AdminJobPreview from "../Pages/AdminJobPreview.js";
-
 import AdminDonorView from "../Pages/AdminDonorView.js";
 import AdminBloodDonors from "../Pages/AdminBloodDonors.js"
-
-
 import ApMediaTableView from "../Pages/ApMediaTableView";
 import ApFlmIndustryView from "../Pages/ApFlmIndustryView";
 import TgMediaTable from "../Pages/TgMediaTable";
@@ -196,18 +192,14 @@ import OrgFlmIndustryView from "../Pages/OrgFlmIndustryView";
 import OsiFlmIndustryView from "../Pages/OsiFlmIndustryView";
 import GujFlmIndustryView from "../Pages/GujFlmIndustryView";
 import OrgsFlmIndustryView from "../Pages/OrgsFlmIndustryView";
-
 import AdminBloodDonorsDetails from "../Pages/AdminBloodDonorsDetails.js";
-
-
-
 import AdminBoardMembers from "../Pages/AdminBoardMembers";
 import AdminBoardMemForm from "../Pages/AdminBoardMemForm";
 import CollegesSchools from "../Pages/CollegesSchools";
 import AddSclForm from "../Pages/AddSclForm.js";
 import AddClgForm from "../Pages/AddClgForm";
 import Hospitals from "../Pages/Hospitals";
-
+import AddHospForm from "../Pages/AddHospForm";
 
 function AdminDashboardRoutes() {
   return (
@@ -217,8 +209,7 @@ function AdminDashboardRoutes() {
       <Route path="/events" element={<AdminEvents />} />
       <Route path="/jobs" element={<AdminJobs />} />
       <Route path="/adminjobslists" element={<AdminJobsLists />} />
-
-      <Route path="/adminjobslists/adminjobpreview" element={<AdminJobPreview/>} />
+      <Route path="/adminjobslists/adminjobpreview" element={<AdminJobPreview />} />
       <Route path="/telangana" element={<Telangana/>} />
       <Route path="/andhra-pradesh" element={<AndhraPradesh/>} />
       <Route path="/gujarat" element={<Gujarat/>} />
@@ -238,7 +229,6 @@ function AdminDashboardRoutes() {
        <Route path="/guj-student-table" element={<GujStudentTable/>} />
        <Route path="/orgs-student-table" element={<OrgsStudentTable/>} />
        <Route path="/AdminStTbleView" element={<AdminStTbleView/>}/>
-
         <Route path="/adminAddEvents" element = {<AdminAddEvents  />} />
         <Route path="/adminEventsTable" element = {<AdminEventsTable />} />
         <Route path="/adminEventsPreview" element = {<AdminEventPreview />} />
@@ -247,7 +237,6 @@ function AdminDashboardRoutes() {
         <Route path="/donorview" element ={<AdminDonorView />} />
         <Route path="/blood-donors" element ={<AdminBloodDonors />} />
         <Route path="/blooddonorsdetails" element ={<AdminBloodDonorsDetails />} />
-        
        <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>} />
        <Route path="/tn-st-table-view" element={<TnStTableView/>} />
        <Route path="/nri-st-table-view" element={<NRIStTableView/>} />
@@ -400,8 +389,6 @@ function AdminDashboardRoutes() {
        <Route path="/osi-other-table-view" element={<OsiOthersTableView/>}/>
        <Route path="/guj-other-table-view" element={<GujOthersTableView/>}/>
        <Route path="/orgs-other-table-view" element={<OrgsOthersTableView/>}/>
-
-
       <Route path="/adminjobslists/adminjobpreview" element={<AdminJobPreview />}/>
       <Route path="/telangana" element={<Telangana />} />
       <Route path="/andhra-pradesh" element={<AndhraPradesh />} />
@@ -586,8 +573,7 @@ function AdminDashboardRoutes() {
       <Route path="/addclgform" element={<AddClgForm/>} />
       <Route path="/collegesschools" element={<CollegesSchools/>} />
       <Route path="/hospitals" element={<Hospitals/>} />
-      
-       
+      <Route path="/addhosform" element={<AddHospForm/>} />
 
     </Routes>
   );

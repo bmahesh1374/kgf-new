@@ -46,7 +46,7 @@ const AdminJobs = () => {
           onClick={() => setShowFilter(!showFilter)}
         />
       </div>
-
+ 
       {showFilter && (
         <div className="admin-jobs-filter-popup">
           <div className="admin-jobs-filter-box">
@@ -70,7 +70,7 @@ const AdminJobs = () => {
           </div>
         </div>
       )}
-
+ 
       {showDistFilter && (
         <div className="admin-jobs-dist-filter-popup">
           <div className="admin-jobs-dist-filter-box">
@@ -82,7 +82,7 @@ const AdminJobs = () => {
           </div>
         </div>
       )}
-
+ 
       {showBloodGroupFilter && (
         <div className="admin-jobs-blood-filter-popup">
           <div className="admin-jobs-blood-filter-box">
@@ -96,7 +96,7 @@ const AdminJobs = () => {
           </div>
         </div>
       )}
-
+ 
       {showDateFilter && (
         <div className="admin-jobs-date-filter-popup">
           <div className="admin-jobs-date-filter-box">
@@ -106,7 +106,7 @@ const AdminJobs = () => {
           </div>
         </div>
       )}
-
+ 
       <table>
         <thead className="admin-jobs-header">
           <tr>
@@ -122,7 +122,15 @@ const AdminJobs = () => {
             <th>Job Postings</th>
           </tr>
         </thead>
+
+
+
+
+        
+   
         <tbody className="admin-jobs-body">
+
+
           <tr>
             <td>
               <input type="checkbox" />
@@ -162,9 +170,23 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>
+         
+            </td>
           </tr>
-
+ 
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+           
+            </td>
+          </tr>
+ 
           <tr>
             <td></td>
             <td></td>
@@ -175,7 +197,7 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
           </tr>
-
+ 
           <tr>
             <td></td>
             <td></td>
@@ -183,46 +205,44 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>
+           
+            </td>
           </tr>
-
+ 
           <tr>
+            <td>
+             
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>
+             
+            </td>
           </tr>
-
+ 
           <tr>
+            <td>
+           
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+           
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
   );
-};
-
+}
+ 
 export default AdminJobs;
