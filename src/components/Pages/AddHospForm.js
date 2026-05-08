@@ -44,8 +44,8 @@ const AddHospForm = () => {
 
             <select className="kgf-admin-brdmem-form-control" required>
               <option value="">Select Sector</option>
-              <option value="IT">Government</option>
-              <option value="Education">Private</option>
+              <option value="Government">Government</option>
+              <option value="Private">Private</option>
              
             </select>
           </div>
