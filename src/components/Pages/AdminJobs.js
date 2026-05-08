@@ -116,7 +116,11 @@ const AdminJobs = () => {
 
 
 
-        <tbody >
+
+        
+   
+        <tbody className="admin-jobs-body">
+
 
           <tr>
             <td>
@@ -242,6 +246,6 @@ const AdminJobs = () => {
       </table>
     </div>
   );
-};
+}
  
 export default AdminJobs;
