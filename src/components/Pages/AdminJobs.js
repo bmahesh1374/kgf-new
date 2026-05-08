@@ -50,7 +50,16 @@ const AdminJobs = () => {
       {showFilter && (
         <div className="admin-jobs-filter-popup">
           <div className="admin-jobs-filter-box">
-            <span onClick={() => setShowFilter(false)}>X</span>
+            <span
+              onClick={() => {
+                setShowFilter(false);
+                setShowBloodGroupFilter(false);
+                setShowDistFilter(false);
+                setShowDateFilter(false);
+              }}
+            >
+              X
+            </span>
             <p onClick={() => setShowDistFilter(!showDistFilter)}>District</p>
             <p onClick={() => setShowBloodGroupFilter(!showBloodGroupFilter)}>
               Blood Group
@@ -134,9 +143,7 @@ const AdminJobs = () => {
             </td>
           </tr>
           <tr>
-            <td>
-           
-            </td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -155,84 +162,62 @@ const AdminJobs = () => {
             <td></td>
             <td></td>
             <td></td>
-            <td>
-          
-            </td>
+            <td></td>
           </tr>
 
           <tr>
-            <td>
-         
-            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
-            
-            </td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
-            <td>
-             
-            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              
-            </td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
-            <td>
-            
-            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
-           
-            </td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
-            <td>
-             
-            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
-             
-            </td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
-            <td>
-           
-            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>
-            
-            </td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>

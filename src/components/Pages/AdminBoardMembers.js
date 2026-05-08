@@ -34,7 +34,10 @@ const AdminBoardMembers = () => {
         <div className="kgf-admin-donation-delete">
           <button>Delete</button>
         </div>
-        <IoFilter className="admin-donation-filter-icon" onClick={() => setShowFilter(!showFilter)}/>
+        <IoFilter
+          className="admin-donation-filter-icon"
+          onClick={() => setShowFilter(!showFilter)}
+        />
       </div>
       <div className="kgf-admin-donation-add-btn mb-3">
         <button onClick={() => navigate("/admindashboard/addmember")}>
@@ -45,9 +48,19 @@ const AdminBoardMembers = () => {
       {showFilter && (
         <div className="admin-board-filter-popup">
           <div className="admin-board-filter-box">
-            <span onClick={() => setShowFilter(false)}>X</span>
+            <span
+              onClick={() => {
+                setShowFilter(false);
+                setShowNameFilter(false);
+                setShowProffFilter(false);
+              }}
+            >
+              X
+            </span>
             <p onClick={() => setShowNameFilter(!showNameFilter)}>Name</p>
-            <p onClick={() => setShowProffFilter(!showProffFilter)}>Professional</p>
+            <p onClick={() => setShowProffFilter(!showProffFilter)}>
+              Professional
+            </p>
           </div>
         </div>
       )}

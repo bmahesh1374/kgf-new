@@ -63,6 +63,39 @@ function AgriRequirement() {
                   </select>
                 </td>
               </tr>
+
+              <tr>
+                <td>RAJ</td>
+                <td>Tractor</td>
+                <td>01</td>
+                <td>Kurnool</td>
+                <td>AP</td>
+                <td>India</td>
+                <td>
+                  <select>
+                    <option>Select</option>
+                    <option>OPEN</option>
+                    <option>CLOSE</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>RAJ</td>
+                <td>Tractor</td>
+                <td>01</td>
+                <td>Kurnool</td>
+                <td>AP</td>
+                <td>India</td>
+                <td>
+                  <select>
+                    <option>Select</option>
+                    <option>OPEN</option>
+                    <option>CLOSE</option>
+                  </select>
+                </td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
