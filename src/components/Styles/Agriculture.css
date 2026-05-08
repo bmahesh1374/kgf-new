@@ -6,3 +6,19 @@
     padding: 10px;
     margin: 10px;
 }
+
+.agri-tab {
+  width: 200px;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.agri-tab h4 {
+  margin: 0;
+}
+
+.active-agri-tab {
+  color: #8B5E1A;
+  font-weight: bold;
+}

@@ -1,14 +1,13 @@
-
-import React from 'react';
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import msgicon from "../../assets/msgicon.png";
 import { IoMdDownload } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
 import "../Styles/AdminStudentTable.css";
 const TelanganaStudentTable = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div className='admin-student-table-container'>
+    <div className="admin-student-table-container">
       <h2>Student Table</h2>
       <div className="kgf-admin-table-flex-container">
         <div className="kgf-admin-table-ckeckbox">
@@ -34,7 +33,6 @@ const TelanganaStudentTable = () => {
         </div>
         <div className="kgf-admin-table-delete">
           <button>Delete</button>
-
         </div>
         <IoFilter />
       </div>
@@ -43,9 +41,11 @@ const TelanganaStudentTable = () => {
       </div>
 
       <table>
-        <thead className='admin-student-table-header'>
+        <thead className="admin-student-table-header">
           <tr>
-            <th><input type="checkbox" /></th>
+            <th>
+              <input type="checkbox" />
+            </th>
             <th>Name</th>
             <th>College Name</th>
             <th>Course</th>
@@ -57,7 +57,9 @@ const TelanganaStudentTable = () => {
         </thead>
         <tbody>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td>
+              <input type="checkbox" />
+            </td>
             <td>Surya</td>
             <td>Gitam</td>
             <td>B tech Cse</td>
@@ -65,11 +67,20 @@ const TelanganaStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-          <button className='atview-btn' onClick={()=> navigate("/admindashboard/telangana-st-table-view")}>View</button>
+              <button
+                className="atview-btn"
+                onClick={() =>
+                  navigate("/admindashboard/telangana-st-table-view")
+                }
+              >
+                View
+              </button>
             </td>
           </tr>
           <tr>
-            <td><input type="checkbox" /></td>
+            <td>
+              <input type="checkbox" />
+            </td>
             <td>Surya</td>
             <td>Gitam</td>
             <td>B tech Cse</td>
@@ -77,14 +88,48 @@ const TelanganaStudentTable = () => {
             <td>Eluru</td>
             <td>Dubacherla</td>
             <td>
-              <button className='atview-btn' onClick={()=> navigate("/admindashboard/")}>View</button>
-             
+              <button
+                className="atview-btn"
+                onClick={() => navigate("/admindashboard/")}
+              >
+                View
+              </button>
             </td>
           </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </tbody>
-      </table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+      </table>
     </div>
   );
-}
+};
 
 export default TelanganaStudentTable;
