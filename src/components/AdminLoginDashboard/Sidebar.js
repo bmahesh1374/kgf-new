@@ -48,12 +48,12 @@ function Sidebar() {
         </li>
         <li>
           <NavLink
-            to="/dashboard/education"
+            to="/dashboard/employee"
             className={({ isActive }) =>
               isActive ? "menu-item active" : "menu-item"
             }
           >
-            Education
+            Employee
           </NavLink>
         </li>
         <li>

@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Student from "../Pages/Student";
 import Agriculture from "../Pages/Agriculture";
-import Education from "../Pages/Education";
 import Business_man from "../Pages/Business_man";
 import Others from "../Pages/Others";
 import Events from "../Landing/Events";
