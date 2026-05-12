@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Blood_Donate() {
+function BloodDonateDashboard() {
   return (
     <div>
       <h1>Welcome to the Blood Donate Page</h1>
@@ -8,4 +8,4 @@ function Blood_Donate() {
   )
 }
 
-export default Blood_Donate
+export default BloodDonateDashboard;

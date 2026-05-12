@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import DashboardHome from "./DashboardHome";
 import Student from "../Pages/Student";
 import Agriculture from "../Pages/Agriculture";
-import Business_man from "../Pages/Business_man";
+import BusinessDashboard from "../Pages/BusinessDashboard";
 import Others from "../Pages/Others";
 import Events from "../Landing/Events";
-import Blood_Donate from "../Pages/Blood_Donate";
+import BloodDonateDashboard from "../Pages/BloodDonateDashboard";
 import DEvents from "../Pages/DEvents";
 import ViewJob from "../Pages/ViewJob";
 import AgriPostRequirement from "../Pages/AgriPostRequirement";
@@ -22,12 +22,12 @@ function DashboardRoutes() {
       <Route path="/student" element={<Student />} />
       <Route path="/agriculture" element={<Agriculture />} />
       <Route path="/employee" element={<EmployeeDashboard />} />
-      <Route path="/business" element={<Business_man />} />
+      <Route path="/business" element={<BusinessDashboard />} />
       <Route path="/others" element={<Others />} />
       <Route path="/devents" element={<DEvents />} />
-      <Route path="/blood" element={<Blood_Donate />} />
+      <Route path="/blood" element={<BloodDonateDashboard />} />
       <Route path="/viewjob" element={<ViewJob />} />
-      <Route path="/postagrirequirement" element={<AgriPostRequirement />} />
+      <Route path="/postrequirement" element={<AgriPostRequirement />} />
       <Route path="/jobpost" element={<EmployeePostDashboard />} />
       <Route path="/jobpreview" element={<EmployeePostDashboard />} />
       <Route path="/employresponses" element={<EmployeeViewDashboard />} />

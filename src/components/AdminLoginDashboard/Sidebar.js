@@ -63,7 +63,7 @@ function Sidebar() {
               isActive ? "menu-item active" : "menu-item"
             }
           >
-            Business Man
+            Business
           </NavLink>
         </li>
         <li>
