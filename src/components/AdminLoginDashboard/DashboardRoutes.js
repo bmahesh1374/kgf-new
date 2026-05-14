@@ -11,6 +11,10 @@ import Blood_Donate from "../Pages/Blood_Donate";
 import DEvents from "../Pages/DEvents";
 import ViewJob from "../Pages/ViewJob";
 import AgriPostRequirement from "../Pages/AgriPostRequirement";
+import ApplicationTracker from "../Pages/ApplicationTracker";
+import Applcationform from "../Pages/Applcationform";
+import JobsStatus from "../Pages/JobsStatus";
+
 
 function DashboardRoutes() {
   return (
@@ -26,8 +30,10 @@ function DashboardRoutes() {
       <Route path="/blood" element={<Blood_Donate />} />
       <Route path="/viewjob" element={<ViewJob />} />
       <Route path="/postagrirequirement" element={<AgriPostRequirement />} />
-      
-
+      <Route path="/application-tracker" element={<ApplicationTracker />}/>
+      <Route path="/view/:id" element={<ApplicationTracker />}/>
+      <Route path="/application-form" element={<Applcationform/>}/>
+       <Route path="/jobsstatus" element={<JobsStatus/>}/>
     </Routes>
 
   );
