@@ -18,6 +18,7 @@ function Sidebar() {
         <li>
           <NavLink
             to="/dashboard/"
+            end
             className={({ isActive }) =>
               isActive ? "menu-item active" : "menu-item"
             }

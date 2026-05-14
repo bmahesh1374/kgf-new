@@ -18,7 +18,7 @@ function Student() {
       qualification: "Any Degree",
       location: "Ameerpet Hyderabad",
       experience: "1-2 Years Experience",
-      logo: joblogoimg
+      logo: joblogoimg,
     },
 
     {
@@ -30,7 +30,7 @@ function Student() {
       qualification: "B.Tech / Degree",
       location: "Madhapur Hyderabad",
       experience: "1-3 Years Experience",
-      logo: joblogoimg
+      logo: joblogoimg,
     },
 
     {
@@ -42,7 +42,7 @@ function Student() {
       qualification: "BSC / MCA",
       location: "Kukatpally Hyderabad",
       experience: "2 Years Experience",
-      logo: joblogoimg
+      logo: joblogoimg,
     },
 
     {
@@ -54,32 +54,35 @@ function Student() {
       qualification: "Any Degree",
       location: "SR Nagar Hyderabad",
       experience: "1 Year Experience",
-      logo: joblogoimg
-    }
+      logo: joblogoimg,
+    },
   ];
 
   return (
     <section className="student-section">
       <div className="container">
-
         <h1 className="page-title">Student</h1>
         <div className="jobs-apptra">
-          <div className="jobs-stu active-tab">
+          <div
+            className="jobs-stu active-tab"
+            onClick={() => navigate("/dashboard/student")}
+          >
             <h3>Jobs</h3>
           </div>
-          <div className="application-track">
+
+          <div
+            className="application-track"
+          onClick={() => navigate("/dashboard/application-tracker")}
+          >
             <h3>Application Tracker</h3>
           </div>
         </div>
 
         <div className="row mt-3 g-3">
-
           {jobs.map((job) => (
             <div className="col-md-6 col-sm-12" key={job.id}>
               <div className="student-job-card">
-
                 <div className="job-top">
-
                   <div className="job-left">
                     <h4>{job.title}</h4>
                     <p className="salary">{job.salary}</p>
@@ -89,35 +92,36 @@ function Student() {
                   <div className="job-logo">
                     <img src={job.logo} alt="logo" />
                   </div>
-
                 </div>
 
                 <div className="content-jsb">
-
                   <div className="job-middle">
-                    <p><strong>Skills:</strong> {job.skills}</p>
-                    <p><strong>Qualification:</strong> {job.qualification}</p>
+                    <p>
+                      <strong>Skills:</strong> {job.skills}
+                    </p>
+                    <p>
+                      <strong>Qualification:</strong> {job.qualification}
+                    </p>
                   </div>
 
                   <div className="job-info">
-                    <span><FaLocationDot /> {job.location}</span>
-                    <span><MdWorkHistory /> {job.experience}</span>
+                    <span>
+                      <FaLocationDot /> {job.location}
+                    </span>
+                    <span>
+                      <MdWorkHistory /> {job.experience}
+                    </span>
                   </div>
-
                 </div>
 
                 <div className="job-bottom">
-
                   <button onClick={() => navigate(`/dashboard/view/${job.id}`)}>
                     View
                   </button>
-
                 </div>
-
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </section>
