@@ -51,7 +51,16 @@ const AdminDonations = () => {
       {showFilter && (
         <div className="admin-donation-filter-popup">
           <div className="admin-donation-filter-box">
-            <span onClick={() => setShowFilter(false)}>X</span>
+            <span
+              onClick={() => {
+                setShowFilter(false);
+                setShowLocationFilter(false);
+                setShowAmountFilter(false);
+                setShowDateFilter(false);
+              }}
+            >
+              X
+            </span>
             <p onClick={() => setShowLocationFilter(!showLocationFilter)}>
               Location
             </p>

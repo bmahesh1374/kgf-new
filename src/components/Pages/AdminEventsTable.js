@@ -56,7 +56,10 @@ const AdminEventsTable = () => {
       {showFilter && (
         <div className="admin-events-filter-popup">
           <div className="admin-events-filter-box">
-            <span onClick={() => setShowFilter(false)}>X</span>
+            <span onClick={() =>{ setShowFilter(false)
+              setShowLocationFilter(false)
+              setShowDateFilter(false)
+            }}>X</span>
             <p onClick={() => setShowLocationFilter(!showLocationFilter)}>
               Location
             </p>

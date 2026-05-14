@@ -2,12 +2,18 @@ import React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
+import { TiArrowBack } from "react-icons/ti";
+import { useNavigate } from "react-router-dom";
 import "../Styles/AgriPostRequirement.css";
 
 function AgriPostRequirement() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="kgf-agri-postreq-container">
+        <button className="bloodback" onClick={() => navigate(-1)}>
+                  <TiArrowBack /> Back
+                </button>
         <h3 className="kgf-agri-postreq-title">Post Requirement</h3>
         <Box sx={{ maxWidth: "100%" }}>
           <div className="kgf-agri-postreq-form">

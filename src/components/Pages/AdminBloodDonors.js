@@ -51,7 +51,16 @@ const AdminBloodDonors = () => {
       {showFilter && (
         <div className="admin-blood-donor-filter-popup">
           <div className="admin-blood-donor-filter-box">
-            <span onClick={() => setShowFilter(false)}>X</span>
+            <span
+              onClick={() => {
+                setShowFilter(false);
+                setShowDistFilter(false);
+                setShowBloodGroupFilter(false);
+                setShowDateFilter(false);
+              }}
+            >
+              X
+            </span>
             <p onClick={() => setShowDistFilter(!showDistFilter)}>District</p>
             <p onClick={() => setShowBloodGroupFilter(!showBloodGroupFilter)}>
               Blood Group
@@ -99,7 +108,6 @@ const AdminBloodDonors = () => {
         </div>
       )}
 
-      
       <div className="admin-blood-donor-table-data">
         <table>
           <thead className="admin-blood-donor-header">
@@ -126,7 +134,12 @@ const AdminBloodDonors = () => {
               <td>Kurnool</td>
               <td>Kurnool</td>
               <td>
-                <button className="kgf-admin-view-btn" onClick={() => navigate("/admindashboard/blooddonorsdetails")}>View</button>
+                <button
+                  className="kgf-admin-view-btn"
+                  onClick={() => navigate("/admindashboard/blooddonorsdetails")}
+                >
+                  View
+                </button>
               </td>
             </tr>
             <tr>
