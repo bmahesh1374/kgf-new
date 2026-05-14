@@ -11,6 +11,7 @@ import DEvents from "../Pages/DEvents";
 import ViewJob from "../Pages/ViewJob";
 import AgriPostRequirement from "../Pages/AgriPostRequirement";
 
+
 import EmployeeDashboard from "../Pages/EmployeeDashboard";
 import EmployeePostDashboard from "../Pages/EmployeePostDashboard";
 import EmployeeViewDashboard from "../Pages/EmployeeViewDashboard";
@@ -19,6 +20,9 @@ import ApplicationTracker from "../Pages/ApplicationTracker";
 import Applcationform from "../Pages/Applcationform";
 import JobsStatus from "../Pages/JobsStatus";
 
+import EmployeeDashboard from "../Pages/EmployeeDashboard";
+import EmployeePostDashboard from "../Pages/EmployeePostDashboard";
+import EmployeeViewDashboard from "../Pages/EmployeeViewDashboard";
 
 function DashboardRoutes() {
   return (
@@ -39,7 +43,6 @@ function DashboardRoutes() {
       <Route path="/jobpreview" element={<EmployeePostDashboard />} />
       <Route path="/employresponses" element={<EmployeeViewDashboard />} />
       
-
 
       <Route path="/postagrirequirement" element={<AgriPostRequirement />} />
       <Route path="/application-tracker" element={<ApplicationTracker />}/>
