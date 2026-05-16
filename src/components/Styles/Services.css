@@ -34,9 +34,15 @@
   max-width: 500px;
   height: auto;
   object-fit: contain;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   border-radius: 15px;
 }
- 
+
+.globalimg img:hover {
+  box-shadow: 0 8px 20px rgba(214, 168, 75, 0.45);
+  cursor: pointer;
+}
+
 .knowledge-title {
   font-size: 30px;
   font-weight: 700;
@@ -105,10 +111,7 @@
   font-size: 12px;
 }
  
-.service-content {
-  width: 62%;
-}
- 
+
 .service-content h3 {
   font-size: 22px;
   font-weight: 700;
@@ -121,7 +124,7 @@
   font-weight: 500;
 }
  
-.service-invite {
+.service-invitation {
   color: #7b5825;
   font-weight: 700;
   margin-bottom: 6px;
@@ -133,7 +136,7 @@
   margin: 4px 0;
 }
  
-.service-btn,
+.service-btnn,
 .service-btn-complete {
   margin-top: 12px;
   padding: 10px 15px;
@@ -144,7 +147,7 @@
   cursor: pointer;
 }
  
-.service-btn {
+.service-btnn {
   background: linear-gradient(90deg, #d6a84b, #f3d284);
   border-radius: 8px;
   border: 1px solid #000;
@@ -171,6 +174,7 @@
   .service-card {
     width: 100%;
   }
+  
 }
  
 @media (max-width: 768px) {
@@ -241,7 +245,7 @@
  
   .service-org,
   .service-content p,
-  .service-invite {
+  .service-invitation {
     font-size: 11px;
     line-height: 1.4;
     margin: 3px 0;
@@ -282,7 +286,7 @@
  
   .service-org,
   .service-content p,
-  .service-invite {
+  .service-invitation {
     font-size: 10px;
   }
 }
@@ -484,4 +488,13 @@
         width: 58%;
         padding: 15px;
     }
+}
+
+@media(min-width:992px){
+  .service-content {
+  width: 62%;
+  position: relative;
+  top: 20px;
+}
+ 
 }

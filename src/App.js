@@ -1,64 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-import Services from "./components/Services/Services";
-import NavbarSection from "./components/Landing/NavbarSection";
 import LandingPage from "./components/Landing/Landingpage";
-import Routing from "./components/Routings/Routing";
+import DashboardLayout from "./components/Dashboard/DashboardLayout";
+import AdminDashboardLayout from "./components/AdminDashboard/AdminDashboardLayout";
 import ScrollToHash from "./components/Landing/ScrollToHash";
 
-import getInTouchImg from "./assets/getintouch.png";
+// Public pages
+import FamilyTree from "./components/Pages/FamilyTree";
+import Gallery from "./components/Pages/Gallery";
+import AboutUs from "./components/Landing/AboutUs";
 import Getintouch from "./components/Landing/Getintouch";
-import DashboardLayout from "./components/AdminLoginDashboard/DashboardLayout";
-import AdminDashboardLayout from "./components/AdminDashboard/AdminDashboardLayout";
+import UserLogin from "./components/Pages/UserLogin";
+import Services from "./components/Services/Services";
+import PublicLayout from "./components/PublicLayout/PublicLayout";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(false);
-
-  const location = useLocation();
-
-  const hideNavbar = location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/admindashboard");
-
   return (
     <div className="App">
-
-  
-      {!hideNavbar && <NavbarSection />}
-
-      {!hideNavbar && <Routing />}
-
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/services" element={<Services />} />
+        <Route element={<PublicLayout />}>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/familytree" element={<FamilyTree />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/getintouch" element={<Getintouch />} />
+        </Route>
+
+        <Route path="/login" element={<UserLogin />} />
         <Route path="/dashboard/*" element={<DashboardLayout />} />
-        <Route path="/admindashboard/*" element={<AdminDashboardLayout/>} />
+        <Route path="/admindashboard/*" element={<AdminDashboardLayout />} />
       </Routes>
 
-      
       <ScrollToHash />
-
-      {!hideNavbar && (
-        <div
-          className="getintouch-img"
-          onClick={() => setShowPopup(true)}
-        >
-          <img src={getInTouchImg} alt="Get In Touch" />
-        </div>
-      )}
-
-    
-      {showPopup && !hideNavbar && (
-        <Getintouch closePopup={() => setShowPopup(false)} />
-      )}
-
     </div>
   );
 }
 
- 
 export default App;
- 
- 
-
- 

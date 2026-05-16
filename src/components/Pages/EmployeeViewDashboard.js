@@ -94,30 +94,7 @@ function EmployeeViewDashboard() {
               <td>BTech</td>
               <td style={{color:"green", fontWeight:"bold"}}>Shortlisted</td>
               <td>
-                <button
-                  className="dash-emp-view-btn"
-                  
-                >
-                  View
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>Mahesh</td>
-              <td>mahesh123@gmail.com</td>
-              <td>0</td>
-              <td>BTech</td>
-              <td style={{color:"red", fontWeight:"bold"}}>Rejected</td>
-              <td>
-                <button
-                  className="dash-emp-view-btn"
-                  
-                  style={{background:"transparent", color:"#000", borderRadius:"5px", border:"1px solid #000"}}
-                >
+                <button onClick={()=> navigate("/dashboard/application-form-preview")} className="dash-emp-view-btn">
                   View
                 </button>
               </td>

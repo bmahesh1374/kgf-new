@@ -112,7 +112,7 @@ const KgfskillsTraining = () => {
                   Hyderabad-500029
                 </p>
  
-                <button className="service-btn">
+                <button className="service-btnn">
                   REGISTER NOW
                 </button>
               </div>

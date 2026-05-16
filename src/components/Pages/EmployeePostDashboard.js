@@ -54,7 +54,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"React"}
               required
             />
           </div>
@@ -67,7 +66,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"YSK Infotech Pvt Ltd"}
               required
             />
           </div>
@@ -80,7 +78,6 @@ function EmployeePostDashboard() {
               type="text"
               className="dash-emp-job-preview-form-control"
               required
-              value={"IT"}
             />
           </div>
 
@@ -92,7 +89,6 @@ function EmployeePostDashboard() {
               type="text"
               className="dash-emp-job-preview-form-control"
               required
-              value={"Hybrid"}
             />
           </div>
 
@@ -104,9 +100,6 @@ function EmployeePostDashboard() {
             <textarea
               rows="3"
               cols="30"
-              value={
-                "Understand business requirements and convert them into technical solutions"
-              }
             />
             <div className="dash-emp-job-preview-form-content">
               <label className="dash-emp-job-preview-form-label">
@@ -116,7 +109,6 @@ function EmployeePostDashboard() {
               <input
                 type="text"
                 className="dash-emp-job-preview-form-control"
-                value={"BTech"}
                 required
               />
             </div>
@@ -130,7 +122,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"Required Skills"}
               required
             />
 
@@ -152,14 +143,12 @@ function EmployeePostDashboard() {
               <input
                 type="text"
                 className="dash-emp-job-preview-form-special"
-                value={"2"}
                 required
               />
 
               <input
                 type="text"
                 className="dash-emp-job-preview-form-special"
-                value={"5"}
                 required
               />
             </div>
@@ -176,13 +165,11 @@ function EmployeePostDashboard() {
               <input
                 type="text"
                 className="dash-emp-job-preview-form-special"
-                value={"5"}
                 required
               />
               <input
                 type="text"
                 className="dash-emp-job-preview-form-special"
-                value={"7"}
                 required
               />
             </div>
@@ -196,7 +183,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"Perks & Benifits"}
               required
             />
 
@@ -215,7 +201,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"Hyderabad"}
               required
             />
             <div className="dash-emp-job-preview-form-content">
@@ -226,7 +211,6 @@ function EmployeePostDashboard() {
               <input
                 type="text"
                 className="dash-emp-job-preview-form-control"
-                value={"Madhapur"}
                 required
               />
             </div>
@@ -240,7 +224,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"7"}
               required
             />
           </div>
@@ -253,7 +236,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"20-12-2025"}
               required
             />
           </div>
@@ -278,7 +260,6 @@ function EmployeePostDashboard() {
             <input
               type="text"
               className="dash-emp-job-preview-form-control"
-              value={"9000876534"}
               required
             />
           </div>

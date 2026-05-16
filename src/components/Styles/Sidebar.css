@@ -12,6 +12,7 @@
   transition: all 0.3s ease;
   z-index: 1000;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
 }
 
 .admin-sidebar.collapsed {

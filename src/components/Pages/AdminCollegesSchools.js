@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import "../Styles/clgsschools.css";
 import { useNavigate } from "react-router-dom";
 
-function CollegesSchools() {
+function  AdminCollegesSchools() {
   const navigate = useNavigate();
 
   const [activeTab, setActiveTab] = useState("schools");
@@ -99,4 +99,4 @@ function CollegesSchools() {
   );
 }
 
-export default CollegesSchools;
+export default AdminCollegesSchools;

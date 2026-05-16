@@ -3,7 +3,9 @@ import "../Styles/HeroSection.css";
 import heroImg from "../../assets/Herosecimg.png";
 
 
+
 function HeroSection() {
+
   return (
     <section
       className="hero-section"
@@ -21,7 +23,7 @@ function HeroSection() {
 
         <button className="hero-btn">READ MORE</button>
       </div>
-      
+        
     </section>
   );
 }

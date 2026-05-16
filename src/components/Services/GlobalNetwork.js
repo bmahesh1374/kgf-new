@@ -39,11 +39,10 @@ const GlobalNetwork = () => {
               </p>
             </div>
           </div>
- 
-          {/* EVENT CARDS */}
+
           <div className="service-events-row">
  
-            {/* CARD 1 */}
+      
             <div className="service-card">
               <div className="service-left">
                 <img src={event1Image} alt="Event" />
@@ -58,7 +57,7 @@ const GlobalNetwork = () => {
                   Organized by Sri JETTI KUSUM KUMAR
                 </p>
  
-                <p className="service-invite">
+                <p className="service-invitation">
                   You Are Invited!
                 </p>
  
@@ -75,7 +74,7 @@ const GlobalNetwork = () => {
                   Hyderabad-500029
                 </p>
  
-                <button className="service-btn">
+                <button className="service-btnn">
                   REGISTER NOW
                 </button>
               </div>

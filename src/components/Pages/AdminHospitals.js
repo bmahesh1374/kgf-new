@@ -3,32 +3,30 @@ import { FaSearch } from "react-icons/fa";
 import "../Styles/clgsschools.css";
 import { useNavigate } from "react-router-dom";
 
-function CollegesSchools() {
+function  AdminHospitals() {
   const navigate = useNavigate();
 
-  const [activeTab, setActiveTab] = useState("schools");
+  const [activeTab, setActiveTab] = useState("government");
 
   return (
     <section className="collegesschools">
-    <h3>SCHOOLS & COLLEGES</h3>
+      <h3>HOSPITALS</h3>
       <div className="container">
         <div className="clgsclbox">
           <div
             className={
-              activeTab === "schools" ? "schhead active-tab" : "schhead"
+              activeTab === "government" ? "schhead active-tab" : "schhead"
             }
-            onClick={() => setActiveTab("schools")}
-          >
-            <h4>Schools</h4>
+            onClick={() => setActiveTab("government")}>
+            <h4>Government</h4>
           </div>
 
           <div
             className={
-              activeTab === "colleges" ? "clghead active-tab" : "clghead"
+              activeTab === "private" ? "clghead active-tab" : "clghead"
             }
-            onClick={() => setActiveTab("colleges")}
-          >
-            <h4>Colleges</h4>
+            onClick={() => setActiveTab("private")}>
+            <h4>Private</h4>
           </div>
         </div>
 
@@ -37,37 +35,37 @@ function CollegesSchools() {
             <FaSearch className="search-icon" />
             <input
               type="text"
-              placeholder="Search by School Name, College Name Specializations, village/city"
-            />
+              placeholder="Search by HspName, Medical Specializations, village/city"/>
           </div>
 
           <button
             className="addclg"
             onClick={() =>
-              activeTab === "schools"
-                ? navigate("/admindashboard/addsclform")
-                : navigate("/admindashboard/addclgform")
-            }
-          >
-            {activeTab === "schools" ? "Add School +" : "Add College +"}
+              activeTab === "government"
+                ? navigate("/admindashboard/addhosform")
+                : navigate("/admindashboard/addhosform")
+            }>
+            {activeTab === "government"
+              ? "Add Govt Hospital +"
+              : "Add Private Hospital +"}
           </button>
         </div>
 
-        {activeTab === "schools" ? (
+        {activeTab === "government" ? (
           <table>
             <thead>
               <tr>
-                <th>School Name</th>
-                <th>Classes</th>
-                <th>Phone</th>
+                <th>Hospital Name</th>
+                <th> Specializations</th>
+                <th>Phone Number</th>
                 <th>Village</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td>Surya Public School</td>
-                <td>1 to 10th</td>
+                <td>Ram Mohan Hospitals</td>
+                <td>MultiSpeciality</td>
                 <td>9988774455</td>
                 <td>Jangareddygudem</td>
               </tr>
@@ -77,19 +75,19 @@ function CollegesSchools() {
           <table>
             <thead>
               <tr>
-                <th>College Name</th>
-                <th>Specialization</th>
-                <th>Phone</th>
+                <th>Hospital Name</th>
+                <th> Specializations</th>
+                <th>Phone Number</th>
                 <th>Village</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
-                <td>ABC College</td>
-                <td>B.Tech</td>
-                <td>9876543210</td>
-                <td>Hyderabad</td>
+                <td>Revanth Hospitals</td>
+                <td>MultiSpeciality</td>
+                <td>9988774455</td>
+                <td>Jangareddygudem</td>
               </tr>
             </tbody>
           </table>
@@ -99,4 +97,4 @@ function CollegesSchools() {
   );
 }
 
-export default CollegesSchools;
+export default AdminHospitals;

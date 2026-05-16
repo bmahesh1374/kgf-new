@@ -34,7 +34,7 @@ function NavbarSection() {
     setShowLogin(false);
     setSelectedLoginType(null);
   };
-
+ 
   useEffect(() => {
     if (location.hash) {
       const timer = setTimeout(() => {
@@ -78,8 +78,7 @@ function NavbarSection() {
             <div className="admin-member login-dropdown-container">
               <button
                 className="login-btn btn-outline-danger-custom"
-                onClick={handleLoginClick}
-              >
+                onClick={handleLoginClick}>
                 <LuLogIn /> LOGIN
               </button>
               {showLoginDropDown && (
@@ -96,11 +95,16 @@ function NavbarSection() {
               centered
               size="lg"
               backdrop="true"
-              className="login-modal">
-            <Modal.Header closeButton className="border-0"></Modal.Header>
+              className="login-modal"
+            >
+              <Modal.Header closeButton className="border-0"></Modal.Header>
               <Modal.Body className="p-0">
-                {selectedLoginType === "admin" && <AdminLogin onClose={handleCloseLogin}/>}
-                {selectedLoginType === "login" && <UserLogin onClose={handleCloseLogin}/>}
+                {selectedLoginType === "admin" && (
+                  <AdminLogin onClose={handleCloseLogin} />
+                )}
+                {selectedLoginType === "login" && (
+                  <UserLogin onClose={handleCloseLogin} />
+                )}
               </Modal.Body>
             </Modal>
 
@@ -119,16 +123,14 @@ function NavbarSection() {
             <div
               className="collapse navbar-collapse"
               id="navbarNavDropdown"
-              ref={navbarCollapseRef}
-            >
+              ref={navbarCollapseRef}>
               <ul className="navbar-nav mx-auto align-items-end gap-3">
                 <li className="nav-item">
                   <NavLink
                     className="nav-link"
                     to="/"
                     end
-                    onClick={closeNavbar}
-                  >
+                    onClick={closeNavbar}>
                     Home
                   </NavLink>
                 </li>
@@ -155,8 +157,7 @@ function NavbarSection() {
                       <a
                         className="dropdown-item"
                         href="#sponsorship"
-                        onClick={() => handleAnchorClick("/", "#sponsorship")}
-                      >
+                        onClick={() => handleAnchorClick("/", "#sponsorship")}>
                         Sponsorship
                       </a>
                     </li>
@@ -185,9 +186,7 @@ function NavbarSection() {
                         className="dropdown-item"
                         href="#talent-publications"
                         onClick={() =>
-                          handleAnchorClick("/", "#talent-publications")
-                        }
-                      >
+                          handleAnchorClick("/", "#talent-publications")}>
                         Talent Publications
                       </a>
                     </li>
@@ -351,7 +350,6 @@ function NavbarSection() {
         </div>
       </nav>
       {member && <StudentMembership closeMembership={() => setMember(false)} />}
-
     </>
   );
 }

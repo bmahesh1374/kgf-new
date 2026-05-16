@@ -3,6 +3,9 @@ import Footerphone from "../../assets/footerphone.png";
 import { IoCallSharp, IoLocationSharp } from "react-icons/io5";
 import { MdMarkEmailRead } from "react-icons/md";
 import Logo from "../../assets/Logo.png";
+import Getintouch from "./Getintouch";
+import getInTouchImg from "../../assets/getintouch.png";
+import { useNavigate } from "react-router-dom";
 
 import playstore from "../../assets/playstore.png";
 import appstore from "../../assets/applestore.png";
@@ -16,6 +19,7 @@ import pic5 from "../../assets/youtube.png";
 import "../Styles/Footer.css";
 
 function Footer() {
+const navigate = useNavigate()
   return (
     <section className="footer-section" id="contact">
       <div className="container">
@@ -108,6 +112,10 @@ function Footer() {
             </div>
           </div>
 
+        </div>
+        <div
+          className="getintouch-img">
+          <img src={getInTouchImg} alt="Get In Touch" onClick={()=>navigate("/getintouch")} />
         </div>
       </div>
     </section>

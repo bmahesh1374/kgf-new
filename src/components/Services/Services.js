@@ -5,11 +5,12 @@ import KgfskillsTraining from './KgfskillsTraining'
 import Support from './Support'
 import BloodDonors from './BloodDonors'
 import NavbarSection from '../Landing/NavbarSection'
+import Footer from '../Landing/Footer'
 
 function Services() {
   return (
     <>
-    <NavbarSection/>
+    {/* <NavbarSection/> */}
     <GlobalNetwork/>
     <KnowledgeSharing/>
     <KgfskillsTraining/>

@@ -389,36 +389,36 @@ function AdminDashboardRoutes() {
        <Route path="/guj-other-table-view" element={<GujOthersTableView/>}/>
        <Route path="/orgs-other-table-view" element={<OrgsOthersTableView/>}/>
       <Route path="/adminjobslists/adminjobpreview" element={<AdminJobPreview />}/>
-      <Route path="/telangana" element={<Telangana />} />
-      <Route path="/andhra-pradesh" element={<AndhraPradesh />} />
-      <Route path="/gujarat" element={<Gujarat />} />
+      <Route path="/telangana" element={<Telangana/>} />
+      <Route path="/andhra-pradesh" element={<AndhraPradesh/>} />
+      <Route path="/gujarat" element={<Gujarat/>} />
       <Route path="/karnataka" element={<Karnataka />} />
-      <Route path="/nri" element={<Nri />} />
+      <Route path="/nri" element={<Nri/>} />
       <Route path="/organization" element={<Organization />} />
-      <Route path="/outside-of-india" element={<OutsideOfIndia />} />
-      <Route path="/organizations" element={<Organizations />} />
-      <Route path="/tamil-nadu" element={<Tamilnadu />} />
-      <Route path="/andhra-student-table" element={<AndhraStudentTable />} />
-      <Route path="/telangana-student-table" element={<TelanganaStudentTable />}/>
-      <Route path="/tn-student-table" element={<TnStudentTable />} />
-      <Route path="/nri-student-table" element={<NRIStudentTable />} />
-      <Route path="/ka-student-table" element={<KaStudentTable />} />
-      <Route path="/org-student-table" element={<OrgStudentTable />} />
-      <Route path="/osi-student-table" element={<OsiStudentTable />} />
-      <Route path="/guj-student-table" element={<GujStudentTable />} />
-      <Route path="/orgs-student-table" element={<OrgsStudentTable />} />
-      <Route path="/AdminStTbleView" element={<AdminStTbleView />} />
-      <Route path="/adminAddEvents" element={<AdminAddEvents />} />
-      <Route path="/adminEventsTable" element={<AdminEventsTable />} />
-      <Route path="/adminEventsPreview" element={<AdminEventPreview />} />
-      <Route path="/donations" element={<AdminDonations />} />
-      <Route path="/addDonor" element={<AdminDonorForm />} />
-      <Route path="/board-members" element={<AdminBoardMembers/>} />
+      <Route path="/outside-of-india" element={<OutsideOfIndia/>} />
+      <Route path="/organizations" element={<Organizations/>} />
+      <Route path="/tamil-nadu" element={<Tamilnadu/>} />
+      <Route path="/andhra-student-table" element={<AndhraStudentTable/>} />
+      <Route path="/telangana-student-table" element={<TelanganaStudentTable/>}/>
+      <Route path="/tn-student-table" element={<TnStudentTable/>} />
+      <Route path="/nri-student-table" element={<NRIStudentTable/>} />
+      <Route path="/ka-student-table" element={<KaStudentTable/>} />
+      <Route path="/org-student-table" element={<OrgStudentTable/>} />
+      <Route path="/osi-student-table" element={<OsiStudentTable/>} />
+      <Route path="/guj-student-table" element={<GujStudentTable/>} />
+      <Route path="/orgs-student-table" element={<OrgsStudentTable/>} />
+      <Route path="/AdminStTbleView" element={<AdminStTbleView/>} />
+      <Route path="/adminAddEvents" element={<AdminAddEvents/>} />
+      <Route path="/adminEventsTable" element={<AdminEventsTable/>} />
+      <Route path="/adminEventsPreview" element={<AdminEventPreview/>} />
+      <Route path="/donations" element={<AdminDonations/>} />
+      <Route path="/addDonor" element={<AdminDonorForm/>} />
+      <Route path="/board-members" element={<AdminBoardMembers/>}/>
       <Route path="/addmember" element={<AdminBoardMemForm/>} />
-      <Route path="/telangana-st-table-view" element={<TelanganaStTableView />}/>
-      <Route path="/tn-st-table-view" element={<TnStTableView />} />
-      <Route path="/nri-st-table-view" element={<NRIStTableView />} />
-      <Route path="/ka-st-table-view" element={<KaStTableView />} />
+      <Route path="/telangana-st-table-view" element={<TelanganaStTableView/>}/>
+      <Route path="/tn-st-table-view" element={<TnStTableView/>} />
+      <Route path="/nri-st-table-view" element={<NRIStTableView/>} />
+      <Route path="/ka-st-table-view" element={<KaStTableView/>} />
       <Route path="/org-st-table-view" element={<OrgStTableView />} />
       <Route path="/osi-st-table-view" element={<OsiStTableView />} />
       <Route path="/guj-st-table-view" element={<GujStTableView />} />
@@ -447,7 +447,7 @@ function AdminDashboardRoutes() {
       <Route path="/nri-busi-table" element={<NriBusiTable />} />
       <Route path="/ka-busi-table" element={<KaBusiTable />} />
       <Route path="/org-busi-table" element={<OrgBusiTable />} />
-      <Route path="/osi-busi-table" element={<OsiBusiTable />} />
+      <Route path="/osi-busi-table" element={<OsiBusiTable/>} />
       <Route path="/guj-busi-table" element={<GujBusiTable />} />
       <Route path="/orgs-busi-table" element={<OrgsBusiTable />} />
       <Route path="/andhra-busi-table-view" element={<AndhraBusiTableView />} />

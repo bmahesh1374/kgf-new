@@ -106,7 +106,7 @@ const KnowledgeSharing = () => {
                   <IoLocationOutline /> Venkata Function Hall, Hyderabad-500009
                 </p>
 
-                <button className="service-btn" onClick={() => setForm(true)}>
+                <button className="service-btnn" onClick={() => setForm(true)}>
                   REGISTER NOW
                 </button>
               </div>

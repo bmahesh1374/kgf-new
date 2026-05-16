@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "../Styles/getintouch.css";
 import { MdClose } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 function Getintouch({ closePopup }) {
+  const navigate=useNavigate()
   return (
     <div className="popup-overlay">
       <div className="getintouch-section">
 
-        <div className="close-icon" onClick={closePopup}>
+        <div className="close-icon" onClick={()=> navigate(-1)}>
           <MdClose size={22} />
         </div>
 

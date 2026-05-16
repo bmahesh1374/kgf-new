@@ -6,17 +6,13 @@ import MemberBenefits from "./MemberBenifits";
 import TalentPublication from "./TalentPublication";
 import KgfKingdom from "./KgfKingdom";
 import Events from "./Events";
-import Footer from "./Footer";
-import GlobalNetwork from "../Services/GlobalNetwork";
-import FamilyTree from "../Pages/FamilyTree";
 import Donate from "./Donate";
-import NavbarSection from "./NavbarSection";
 
 
 function LandingPage() {
   return (
     <>
-      <NavbarSection/>
+    
       <HeroSection />
       <AboutUs />
       <BoardMembers />
@@ -25,8 +21,6 @@ function LandingPage() {
       <KgfKingdom />
       <Events/>
       <Donate/>
-      <Footer /> 
-     
     </>
   );
 }

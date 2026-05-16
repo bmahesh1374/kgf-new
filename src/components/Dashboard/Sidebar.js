@@ -89,7 +89,7 @@ function Sidebar() {
         </li>
         <li>
           <NavLink
-            to="/dashboard/blood"
+            to="/dashboard/add-donor"
             className={({ isActive }) =>
               isActive ? "menu-item active" : "menu-item"
             }
@@ -97,8 +97,42 @@ function Sidebar() {
             Donate Blood
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/dashboard/bloodgroup"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            Blood Groups
+          </NavLink>
+        </li>
+         <li>
+          <NavLink
+            to="/dashboard/admin-hospitals"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            Hospitals
+          </NavLink>
+        </li>
+         <li>
+          <NavLink
+            to="/dashboard/admin-schools-collgs"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            Colleges & Schools
+          </NavLink>
+        </li>
+        
+
       </ul>
+      
     </div>
+    
   );
 }
 
