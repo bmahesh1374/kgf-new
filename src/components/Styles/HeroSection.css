@@ -11,7 +11,7 @@
    position: fixed;
    right: 0px;
    bottom: 20px;
-   z-index: 2;
+   z-index: 1000;  /* Updated */
 }
 
 .getintouch-img img{

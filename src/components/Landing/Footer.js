@@ -15,6 +15,7 @@ import pic2 from "../../assets/facebook.png";
 import pic3 from "../../assets/twitter.png";
 import pic4 from "../../assets/instagram.png";
 import pic5 from "../../assets/youtube.png";
+import whatsappicon from '../../assets/whatsApp-icon.png'
 
 import "../Styles/Footer.css";
 
@@ -103,11 +104,12 @@ const navigate = useNavigate()
               <h5>Follow Us</h5>
 
               <div className="social-icons">
-                <img src={pic1} alt="" />
-                <img src={pic2} alt="" />
-                <img src={pic3} alt="" />
-                <img src={pic4} alt="" />
-                <img src={pic5} alt="" />
+                <a href="#"><img src={pic1} alt="linkein"/></a>
+                <a href="https://www.facebook.com/kammaglobalfederation"><img src={pic2} alt="facebook"/></a>
+                <a href="https://x.https://x.com/KammaGlobalKGFcom/KammaGlobalKGF"><img src={pic3} alt="x" /></a>
+                <a href="https://www.instagram.com/kammaglobalfederationkgf/"><img src={pic4} alt="instagram" /></a>
+                <a href="https://www.youtube.com/@KammaGlobalKGF"><img src={pic5} alt="youtube" /></a>
+                <a href="https://www.whatsapp.com/channel/0029VaiYbNRLCoX40QxpZj02"><img src={whatsappicon} alt="whatsapp" /></a>
               </div>
             </div>
           </div>

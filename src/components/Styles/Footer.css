@@ -137,7 +137,7 @@
 
 .social-icons {
   display: flex;
-  gap: 12px;
+  /* gap: 12px; */
   justify-content: center;
   margin-top: 18px;
 }
