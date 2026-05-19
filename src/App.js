@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import LandingPage from "./components/Landing/Landingpage";
+import LandingPage from "./components/Landing/LandingPage";
 import DashboardLayout from "./components/Dashboard/DashboardLayout";
 import AdminDashboardLayout from "./components/AdminDashboard/AdminDashboardLayout";
 import ScrollToHash from "./components/Landing/ScrollToHash";

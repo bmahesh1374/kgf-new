@@ -11,7 +11,7 @@ import event3Image from "../../assets/Events1.png";
 import logo from "../../assets/Logo.png";
 import DonateQrCode from "../../assets/Amountqr.png";
 
-import "../../Styles/DashboardHome.css";
+import "../Styles/DashboardHome.css";
 
 function DashboardHome() {
 

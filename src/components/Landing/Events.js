@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Events.css";
 import { SlCalender } from "react-icons/sl";
 import { FaClock, FaArrowRight } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
-import { useState } from "react";
-import RegistrationForm from "../Services/RegistrationForm";
+import ServicesKnoweldgeRegister  from "../ServicesKnoweldgeRegister";
 
 
 import img1 from "../../assets/Events1.png";
@@ -13,7 +12,11 @@ import img3 from "../../assets/Events3.png";
 import img4 from "../../assets/Events4.png";
 
 function Events() {
-  const [form, setForm] = useState(false)
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => setShowPopup(true);
+  const closePopup = () => setShowPopup(false);
+
   return (
     <>
     <section className="events-section mb-5 mt-3">
@@ -48,7 +51,7 @@ function Events() {
                 <IoLocationOutline /> Venkata Function Hall, Hyderabad
               </p>
               <div className="event-btn">
-                <button className="register-btn" onClick={() => setForm(true)}>REGISTER NOW</button>
+                <button className="register-btn"  onClick={openPopup}>REGISTER NOW</button>
               </div>
             </div>
           </div>
@@ -72,13 +75,12 @@ function Events() {
                 <IoLocationOutline /> Venkata Function Hall, Hyderabad
               </p>
               <div className="event-btn">
-                <button className="register-btn" onClick={() => setForm(true)}>REGISTER NOW</button>
+                <button className="register-btn" onClick={openPopup}>REGISTER NOW</button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Completed Events */}
         <div className="events-header">
           <h4>Past/Completed Events :</h4>
           <button className="view-btn">View All <FaArrowRight /></button>
@@ -134,7 +136,7 @@ function Events() {
       </div>
     </section>
 
-    {form && <RegistrationForm closeForm = {() => setForm(false)}/>}
+   <ServicesKnoweldgeRegister show={showPopup} onClose={closePopup} />
     </>
   );
 }

@@ -59,6 +59,7 @@
 .small-label {
   font-size: 0.9rem !important;
   color: #222;
+  display: flex;
 }
 
 .unique-login-input {
