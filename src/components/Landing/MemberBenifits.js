@@ -14,7 +14,7 @@ const benefits = [
   { icon: "🏠", label: "Housing Support", tag: "Housing" },
 ];
                                                 
-function MemberBenefits() {
+function MemberBenifits() {
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -70,4 +70,4 @@ function MemberBenefits() {
   );
 }
 
-export default MemberBenefits;
+export default MemberBenifits;

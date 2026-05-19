@@ -152,3 +152,7 @@
   padding: 40px 20px;
 }
 }
+
+.aboutus-card img {
+  filter: drop-shadow(0 0 3px #000) drop-shadow(0 0 1px #000);
+}

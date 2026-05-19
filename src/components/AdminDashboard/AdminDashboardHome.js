@@ -73,6 +73,7 @@ function AdminDashboardHome() {
         </card>
       </div>
     </section>
+    
   );
 }
 

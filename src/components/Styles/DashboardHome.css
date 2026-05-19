@@ -187,6 +187,10 @@
   margin-bottom: 8px !important;
 }
 
+.service-invite {
+  display: none;
+}
+
 .service-content-dh p {
   font-size: 15px;
   margin-bottom: 6px;
@@ -195,6 +199,9 @@
   gap: 6px;
 }
 
+.service-btn {
+  display: none;
+}
 
 .logo-dh {
   width: 20%;

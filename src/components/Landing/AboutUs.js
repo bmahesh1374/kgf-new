@@ -8,11 +8,8 @@ import networkimg from "../../assets/network.png";
 function AboutUs() {
     return (
         <section className="aboutus-section container" id='Aboutus'>
-
-         
             <div className="row align-items-center g-0">
 
-                {/* LEFT CONTENT */}
                 <div className="col-lg-6 aboutus-text">
                     <h6 className="aboutus-subheading">ABOUT KGF</h6>
 
@@ -25,7 +22,6 @@ function AboutUs() {
                     </p>
                 </div>
 
-                {/* RIGHT IMAGE */}
                 <div className="col-lg-6">
                     <div className="aboutus-card">
                         <img src={Aboutus} alt="About Group" className="w-100" />
@@ -34,9 +30,6 @@ function AboutUs() {
 
             </div>
 
-
-
-    
             <div className="text-center mt-5">
 
                 <h2>
@@ -49,8 +42,6 @@ function AboutUs() {
 
             </div>
 
-
-      
             <div className="row mt-4 mb-5">
 
                 <div className="col-lg-4 col-md-6 col-sm-12 d-flex">
